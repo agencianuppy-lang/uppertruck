@@ -8,7 +8,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <!-- ====== SEO PRINCIPAL ====== -->
-  <title>Transportadora para Indústrias | LogÃ­stica Industrial Segura e Especializada</title>
+  <title>aTransportadora para Indústrias | LogÃ­stica Industrial Segura e Especializada</title>
 
   <meta name="description"
     content="Transportadora para indÃºstria especializada em cargas industriais, equipamentos, mÃ¡quinas e logÃ­stica pesada. SeguranÃ§a, prazo e operaÃ§Ã£o sob medida para o setor industrial.">
@@ -269,7 +269,8 @@
               <div class="about__content-inner mb-25">
                 <p class="mb-15 ut-s2__lead">
                   Se a carga atrasa, a linha para. Se avaria, vira prejuÃ­zo. Por isso, a Uppertruck atua com
-                  <strong>planejamento logÃ­stico, equipe tÃ©cnica e protocolos de seguranÃ§a</strong> para indÃºstrias que
+                  <strong>planejamento logÃ­stico, equipe tÃ©cnica e protocolos de seguranÃ§a</strong> para indÃºstrias
+                  que
                   exigem
                   precisÃ£o em cada etapa.
                 </p>
@@ -370,12 +371,14 @@
               <div class="about__content-inner mb-35">
                 <p class="mb-15">
                   Se sua empresa precisa transportar <strong>mÃ¡quinas, equipamentos, componentes de alto valor</strong>
-                  ou cargas que nÃ£o podem sofrer atrasos, vocÃª precisa de uma transportadora preparada para o padrÃ£o da
+                  ou cargas que nÃ£o podem sofrer atrasos, vocÃª precisa de uma transportadora preparada para o padrÃ£o
+                  da
                   indÃºstria.
                 </p>
 
                 <p class="mb-15">
-                  A Uppertruck atende operaÃ§Ãµes com foco em <strong>previsibilidade, integridade da carga e continuidade
+                  A Uppertruck atende operaÃ§Ãµes com foco em <strong>previsibilidade, integridade da carga e
+                    continuidade
                     da produÃ§Ã£o</strong>,
                   apoiando desde rotinas recorrentes atÃ© projetos e paradas programadas.
                 </p>
@@ -530,7 +533,8 @@
                   <li style="display:flex; gap:12px; margin-bottom:14px; align-items:flex-start;">
                     <span class="iconify" data-icon="mdi:chip" data-width="26" data-height="26"></span>
                     <span>
-                      <strong>AutomaÃ§Ã£o e elÃ©trica industrial:</strong> painÃ©is elÃ©tricos, instrumentaÃ§Ã£o, inversores e
+                      <strong>AutomaÃ§Ã£o e elÃ©trica industrial:</strong> painÃ©is elÃ©tricos, instrumentaÃ§Ã£o,
+                      inversores e
                       componentes sensÃ­veis.
                     </span>
                   </li>
@@ -643,7 +647,8 @@
                 3) VeÃ­culo adequado e preparaÃ§Ã£o
               </h3>
               <p class="services__3-item-text">
-                Selecionamos o veÃ­culo conforme a operaÃ§Ã£o (dedicado, carga pesada, especial, etc.) e orientamos sobre
+                Selecionamos o veÃ­culo conforme a operaÃ§Ã£o (dedicado, carga pesada, especial, etc.) e orientamos
+                sobre
                 acondicionamento, proteÃ§Ã£o e requisitos para o carregamento.
               </p>
             </div>
@@ -657,7 +662,8 @@
               </h3>
               <p class="services__3-item-text">
                 Realizamos a coleta com procedimentos de seguranÃ§a e atenÃ§Ã£o ao manuseio.
-                A fixaÃ§Ã£o (amarraÃ§Ã£o/estabilizaÃ§Ã£o) Ã© feita para reduzir vibraÃ§Ã£o e movimentaÃ§Ã£o durante o trajeto.
+                A fixaÃ§Ã£o (amarraÃ§Ã£o/estabilizaÃ§Ã£o) Ã© feita para reduzir vibraÃ§Ã£o e movimentaÃ§Ã£o durante o
+                trajeto.
               </p>
             </div>
           </div>
@@ -695,7 +701,8 @@
           <div class="col-xl-8">
             <div class="contact__cta-text text-center" style="margin-top: 30px;">
               <p style="color:#000; margin-bottom: 18px;">
-                Quer um plano rÃ¡pido para sua operaÃ§Ã£o? Fale com a equipe e receba orientaÃ§Ã£o conforme sua carga e seu
+                Quer um plano rÃ¡pido para sua operaÃ§Ã£o? Fale com a equipe e receba orientaÃ§Ã£o conforme sua carga e
+                seu
                 prazo.
               </p>
 
@@ -857,7 +864,8 @@
                 <div class="ut-faq__answer">
                   Atendemos diversos segmentos, como metalÃºrgicas, siderÃºrgicas, automaÃ§Ã£o, elÃ©trica industrial,
                   mÃ¡quinas
-                  e equipamentos, quÃ­mica e plÃ¡sticos, alimentos e bebidas, alÃ©m de centros de distribuiÃ§Ã£o e operaÃ§Ãµes
+                  e equipamentos, quÃ­mica e plÃ¡sticos, alimentos e bebidas, alÃ©m de centros de distribuiÃ§Ã£o e
+                  operaÃ§Ãµes
                   entre plantas.
                 </div>
               </details>
@@ -890,8 +898,10 @@
                   Como Ã© feita a seguranÃ§a e a integridade da carga?
                 </summary>
                 <div class="ut-faq__answer">
-                  Utilizamos procedimentos de acondicionamento, fixaÃ§Ã£o (amarraÃ§Ã£o/estabilizaÃ§Ã£o), proteÃ§Ã£o adequada e
-                  orientaÃ§Ãµes de manuseio conforme o tipo de equipamento. O objetivo Ã© reduzir vibraÃ§Ã£o, movimentaÃ§Ã£o e
+                  Utilizamos procedimentos de acondicionamento, fixaÃ§Ã£o (amarraÃ§Ã£o/estabilizaÃ§Ã£o), proteÃ§Ã£o
+                  adequada e
+                  orientaÃ§Ãµes de manuseio conforme o tipo de equipamento. O objetivo Ã© reduzir vibraÃ§Ã£o,
+                  movimentaÃ§Ã£o e
                   risco de avarias.
                 </div>
               </details>
@@ -901,7 +911,8 @@
                   Como funciona o orÃ§amento (cotaÃ§Ã£o) do transporte industrial?
                 </summary>
                 <div class="ut-faq__answer">
-                  VocÃª informa dados bÃ¡sicos da operaÃ§Ã£o (tipo de carga, dimensÃµes/peso, origem/destino e prazo). Com
+                  VocÃª informa dados bÃ¡sicos da operaÃ§Ã£o (tipo de carga, dimensÃµes/peso, origem/destino e prazo).
+                  Com
                   isso,
                   nossa equipe avalia a melhor soluÃ§Ã£o e retorna com a proposta alinhada ao nÃ­vel de exigÃªncia
                   industrial.
@@ -925,7 +936,8 @@
                 </summary>
                 <div class="ut-faq__answer">
                   A disponibilidade e formato de seguro podem variar conforme o tipo de operaÃ§Ã£o e a carga.
-                  Recomendamos alinhar polÃ­tica e cobertura no momento da cotaÃ§Ã£o para adequaÃ§Ã£o ao risco e ao valor do
+                  Recomendamos alinhar polÃ­tica e cobertura no momento da cotaÃ§Ã£o para adequaÃ§Ã£o ao risco e ao
+                  valor do
                   equipamento.
                 </div>
               </details>
@@ -1131,4 +1143,3 @@
 </body>
 
 </html>
-

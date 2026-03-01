@@ -8,7 +8,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <!-- ====== SEO PRINCIPAL ====== -->
-  <title>aTransportadora para Indústrias | LogÃ­stica Industrial Segura e Especializada</title>
+  <title>aaTransportadora para Indústrias | LogÃ­stica Industrial Segura e Especializada</title>
 
   <meta name="description"
     content="Transportadora para indÃºstria especializada em cargas industriais, equipamentos, mÃ¡quinas e logÃ­stica pesada. SeguranÃ§a, prazo e operaÃ§Ã£o sob medida para o setor industrial.">

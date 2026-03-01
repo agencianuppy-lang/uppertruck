@@ -1,0 +1,17 @@
+Tomador do Serviço: PRIME LOCAÇÃO DE ESTRUTURAS E SERVIÇOS DE CONSERVAÇÃO LTDA
+Dados do tomador: 26.875.979/0001-35
+Local de coleta: Barueri - SP
+Solicitante Tel: Guto - 63 99984-9000
+Local de entrega: Gurupi - TO
+Produto: Caixas com materiais de reposição
+Medidas unitarias: 42x62x58cm
+Quantidade: 3
+Unitilizacao: Granel
+Peso total: 45 KG
+Valor: R$ 1350,00
+Cubagem total: 1m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

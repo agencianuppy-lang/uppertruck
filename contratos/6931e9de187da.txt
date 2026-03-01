@@ -1,0 +1,17 @@
+Tomador do Serviço: KTELI
+Dados do tomador: 09.273.196/0001-62
+Local de coleta: Limeira - SP
+Solicitante Tel:  Nascimento - 85 98646‑2117‬
+Local de entrega: Fortaleza - CE
+Produto: Cones
+Medidas unitarias: Isento
+Quantidade: 80
+Unitilizacao: Granel
+Peso total: 8400 KG
+Valor: R$ 8500,00
+Cubagem total: 25m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

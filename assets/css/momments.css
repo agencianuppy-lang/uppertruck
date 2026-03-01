@@ -1,0 +1,1526 @@
+/* =========================================================
+   UPPERTRUCK — PÁGINA: TRANSPORTADORA PARA INDÚSTRIA
+   Arquivo: estilo.css
+   Parte 1/4 — Base + Hero + Tipografia + Section Autoridade
+   Escopo recomendado: <main class="ut-industria-page">
+   ========================================================= */
+
+/* ---------- 1) Variáveis e ajustes globais (somente na página) ---------- */
+.ut-industria-page{
+  --ut-primary: #f69608;
+  --ut-dark: #0f1115;
+  --ut-text: #111827;
+  --ut-muted: #6b7280;
+  --ut-bg: #ffffff;
+  --ut-soft: #f6f7f9;
+  --ut-border: rgba(17, 24, 39, .10);
+
+  font-family: 'Roboto', sans-serif;
+  color: var(--ut-text);
+}
+
+/* Tipografia mais “premium” (resolve o “feio” do print) */
+.ut-industria-page p{
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ut-text);
+}
+
+.ut-industria-page .section__title .title{
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.ut-industria-page .section__title .title-sm{
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 40px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+/* Títulos dos cards: menos “gritado”, mais elegante */
+.ut-industria-page .services__3-item-title{
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+/* Melhorar espaçamentos gerais das seções */
+.ut-industria-page .pt-120{ padding-top: 96px !important; }
+.ut-industria-page .pb-90{ padding-bottom: 80px !important; }
+.ut-industria-page .pt-60{ padding-top: 56px !important; }
+.ut-industria-page .pb-60{ padding-bottom: 56px !important; }
+
+/* ---------- 2) HERO (Parte 2) ---------- */
+.ut-industria-page .page-title-area.breadcrumb-spacing{
+  padding: 150px 0 !important; /* antes tava alto demais e desbalanceado */
+  position: relative;
+  background-size: cover !important;
+  background-position: center center !important;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* overlay mais bonito (sem “cinza lavado”) */
+.ut-industria-page .page-title-area.breadcrumb-spacing.overlay::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(1200px 500px at 30% 20%, rgba(246,150,8,.25), transparent 60%),
+    linear-gradient(90deg, rgba(15,17,21,.88) 0%, rgba(15,17,21,.68) 55%, rgba(15,17,21,.55) 100%);
+  z-index: -1;
+}
+
+.ut-industria-page .hj{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.ut-industria-page .page-title{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 22px !important;
+  line-height: 1.35 !important;
+  color: rgba(255,255,255,.92) !important;
+  margin-top: 10px;
+}
+
+.ut-industria-page .page-title-wrapper .content-para{
+  margin-top: 18px;
+  color: rgba(255,255,255,.90) !important;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* CTA do hero: mais “call-to-action” e menos genérico */
+.ut-industria-page .fill-btn.clip-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 28px !important;
+  border-radius: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: .01em;
+  transition: transform .15s ease, filter .15s ease;
+  will-change: transform;
+}
+
+.ut-industria-page .fill-btn.clip-btn:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.02);
+}
+
+/* bullets no hero: virar “checklist” bonito */
+.ut-industria-page .page-title-wrapper .bull{
+  list-style: none;
+  padding-left: 0;
+  margin: 18px 0 0;
+  color: rgba(255,255,255,.92) !important;
+  display: grid;
+  gap: 10px;
+  max-width: 680px;
+}
+
+.ut-industria-page .page-title-wrapper .bull li{
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.5;
+}
+
+.ut-industria-page .page-title-wrapper .bull li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  background: rgba(246,150,8,.95);
+  box-shadow: 0 8px 18px rgba(0,0,0,.25);
+}
+
+/* ---------- 3) Section 3 (Parte 3): “não é só frete” ---------- */
+.ut-industria-page .about__area{
+  background: var(--ut-bg);
+}
+
+.ut-industria-page .about__content .title{
+  font-size: 48px;
+}
+
+.ut-industria-page .about__content-inner p{
+  color: var(--ut-text);
+  max-width: 620px;
+}
+
+/* Lista com ícones (iconify) — deixar alinhado e com boa hierarquia */
+.ut-industria-page .about__content-inner ul{
+  margin-top: 18px;
+}
+
+.ut-industria-page .about__content-inner ul li{
+  background: var(--ut-soft);
+  border: 1px solid var(--ut-border);
+  border-radius: 16px;
+  padding: 14px 14px;
+}
+
+.ut-industria-page .about__content-inner ul li strong{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Ícones Iconify com “badge” */
+.ut-industria-page .about__content-inner .iconify{
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--ut-primary);
+}
+
+/* Imagem ao lado: cantos e sombra (fica muito mais “caro”) */
+.ut-industria-page .about__img img{
+  border-radius: 22px;
+  box-shadow: 0 18px 50px rgba(15,17,21,.16);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+/* ---------- 4) Responsivo (mobile-first) ---------- */
+@media (max-width: 991px){
+  .ut-industria-page .page-title-area.breadcrumb-spacing{
+    padding: 110px 0 !important;
+  }
+  .ut-industria-page .hj{
+    font-size: 44px;
+  }
+  .ut-industria-page .about__content .title{
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px){
+  .ut-industria-page .hj{
+    font-size: 38px;
+  }
+  .ut-industria-page .page-title{
+    font-size: 18px !important;
+  }
+  .ut-industria-page .fill-btn.clip-btn{
+    width: 100%;
+    padding: 0 18px !important;
+  }
+  .ut-industria-page .page-title-wrapper .bull li{
+    padding-left: 28px;
+  }
+}
+
+
+/* =========================================================
+   Parte 2/4 — Seção BENEFÍCIOS (Parte 4) + Ajustes de grid/cards
+   ========================================================= */
+
+/* ---------- 5) Seção de Benefícios (services__3) ---------- */
+.ut-industria-page .services__3{
+  background: #fff;
+}
+
+/* Título grande central sem parecer “pesado demais” */
+.ut-industria-page .services__3 .section__title .title{
+  font-size: 44px;
+  font-weight: 900;
+  text-wrap: balance;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Subtexto central com largura ideal */
+.ut-industria-page .services__3 .section__title p{
+  color: var(--ut-muted);
+  max-width: 820px;
+  margin: 14px auto 0;
+  font-size: 16px;
+}
+
+/* Melhorar espaçamento do grid (resolve “buraco” no layout) */
+.ut-industria-page .services__3 .row{
+  row-gap: 18px;
+}
+
+/* Card base (reaproveita a classe já existente sem quebrar site) */
+.ut-industria-page .services__3-item{
+  background: #ffffff;
+  border: 1px solid var(--ut-border);
+  border-radius: 20px;
+  padding: 28px 26px;
+  box-shadow: 0 14px 36px rgba(15,17,21,.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform .15s ease, box-shadow .15s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* detalhe visual discreto (identidade) */
+.ut-industria-page .services__3-item::before{
+  content:"";
+  position:absolute;
+  inset: 0;
+  background:
+    radial-gradient(600px 240px at 10% 10%, rgba(246,150,8,.14), transparent 60%);
+  pointer-events:none;
+}
+
+.ut-industria-page .services__3-item:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 20px 50px rgba(15,17,21,.12);
+}
+
+/* Título do card: reduzir “caixa alta gritante” e melhorar leitura */
+.ut-industria-page .services__3-item-title{
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: var(--ut-dark);
+}
+
+/* Texto do card: mais confortável */
+.ut-industria-page .services__3-item-text{
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: rgba(17,24,39,.82);
+  margin-bottom: 0;
+}
+
+/* Garantir que os cards fiquem com alturas parecidas em desktop */
+@media (min-width: 992px){
+  .ut-industria-page .services__3 .col-xl-4,
+  .ut-industria-page .services__3 .col-md-6{
+    display: flex;
+  }
+  .ut-industria-page .services__3-item{
+    width: 100%;
+  }
+}
+
+/* ---------- 6) Ajustes para seção com fundo (grey-bg-4) ---------- */
+/* você usa grey-bg-4 na parte do processo (e pode usar em outras) */
+.ut-industria-page .grey-bg-4{
+  background: linear-gradient(180deg, #fff 0%, rgba(246,150,8,.18) 100%) !important;
+}
+
+/* Seções com fundo claro: título preto bem contrastado */
+.ut-industria-page .grey-bg-4 .section__title .title{
+  color: #0f1115;
+}
+
+/* ---------- 7) Ajustes finos de espaçamento (pra não ficar “vazio”) ---------- */
+.ut-industria-page .mb-55{ margin-bottom: 42px !important; }
+.ut-industria-page .mb-35{ margin-bottom: 26px !important; }
+.ut-industria-page .mb-30{ margin-bottom: 18px !important; }
+
+/* ---------- 8) Responsivo Benefícios ---------- */
+@media (max-width: 991px){
+  .ut-industria-page .services__3 .section__title .title{
+    font-size: 34px;
+  }
+  .ut-industria-page .services__3-item{
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+  .ut-industria-page .services__3-item-title{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px){
+  .ut-industria-page .services__3 .section__title .title{
+    font-size: 30px;
+  }
+  .ut-industria-page .services__3 .section__title p{
+    font-size: 15px;
+  }
+}
+
+/* =========================================================
+   Parte 3/4 — Segmentos (Parte 5) + Tipos de cargas (Parte 6) + Processo (Parte 7)
+   ========================================================= */
+
+/* ---------- 9) Parte 5 (Segmentos): equilibrar texto + cards ---------- */
+.ut-industria-page .about__content .section__title .title{
+  text-wrap: balance;
+}
+
+.ut-industria-page .about__content-inner .bull{
+  margin-top: 18px;
+}
+
+/* Bullets “normais” (quando for lista tradicional) */
+.ut-industria-page ul.bull{
+  color: var(--ut-text);
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.ut-industria-page ul.bull li{
+  position: relative;
+  padding-left: 28px;
+  line-height: 1.55;
+}
+
+.ut-industria-page ul.bull li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 6px;
+  background: rgba(246,150,8,.95);
+  box-shadow: 0 10px 22px rgba(15,17,21,.10);
+}
+
+/* Cards de segmentos (usam services__3-item dentro do about) */
+.ut-industria-page .about__area .services__3-item{
+  padding: 22px 20px;
+  border-radius: 18px;
+  box-shadow: 0 14px 36px rgba(15,17,21,.07);
+}
+
+.ut-industria-page .about__area .services__3-item-title{
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.ut-industria-page .about__area .services__3-item-text{
+  font-size: 14.8px;
+  color: rgba(17,24,39,.82);
+}
+
+/* Ícones nos títulos dos cards de segmento */
+.ut-industria-page .services__3-item-title .iconify{
+  color: var(--ut-primary);
+}
+
+/* ---------- 10) Parte 6 (Tipos de cargas): lista rica com cards ---------- */
+.ut-industria-page .about__content-inner ul[style*="list-style: none"] li{
+  background: #ffffff;
+  border: 1px solid var(--ut-border);
+  border-radius: 16px;
+  padding: 14px 14px;
+  box-shadow: 0 12px 30px rgba(15,17,21,.06);
+}
+
+/* Melhorar o texto dentro dessas listas ricas */
+.ut-industria-page .about__content-inner ul[style*="list-style: none"] li span{
+  color: rgba(17,24,39,.88);
+  line-height: 1.55;
+}
+
+/* ---------- 11) Parte 7 (Processo): seção com fundo + contraste ---------- */
+.ut-industria-page .services__3.grey-bg-4{
+  position: relative;
+  overflow: hidden;
+}
+
+/* fundo mais sofisticado (tirar “laranja chapado”) */
+.ut-industria-page .services__3.grey-bg-4::before{
+  content:"";
+  position:absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 300px at 15% 10%, rgba(246,150,8,.22), transparent 60%),
+    radial-gradient(700px 260px at 85% 30%, rgba(246,150,8,.16), transparent 55%);
+  pointer-events:none;
+}
+
+.ut-industria-page .services__3.grey-bg-4 .container{
+  position: relative;
+  z-index: 1;
+}
+
+/* Cards do processo: destaque, mas sem “pesar” */
+.ut-industria-page .services__3.grey-bg-4 .services__3-item{
+  border-radius: 20px;
+  border: 1px solid rgba(15,17,21,.10);
+  box-shadow: 0 18px 48px rgba(15,17,21,.10);
+}
+
+/* título do processo um pouco menor em telas menores */
+.ut-industria-page .services__3.grey-bg-4 .section__title .title{
+  font-size: 42px;
+}
+
+/* Texto do bloco CTA dentro do processo */
+.ut-industria-page .services__3.grey-bg-4 .contact__cta-text p{
+  color: rgba(15,17,21,.85);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ---------- 12) CTA buttons: consistência e acessibilidade ---------- */
+.ut-industria-page .contact__cat-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.ut-industria-page .contact__cat-btn .fill-btn.clip-btn{
+  box-shadow: 0 18px 45px rgba(0,0,0,.20);
+}
+
+.ut-industria-page .contact__cat-btn .fill-btn.clip-btn:focus{
+  outline: 3px solid rgba(246,150,8,.35);
+  outline-offset: 3px;
+}
+
+/* ---------- 13) Ajustes de colunas e respiro (evita layout “apertado” ou “vazio”) ---------- */
+.ut-industria-page .about__area .row.align-items-center{
+  row-gap: 24px;
+}
+
+.ut-industria-page .about__content{
+  padding-right: 12px;
+}
+
+@media (max-width: 991px){
+  .ut-industria-page .about__content{
+    padding-right: 0;
+  }
+
+  .ut-industria-page .services__3.grey-bg-4 .section__title .title{
+    font-size: 32px;
+  }
+}
+
+/* ---------- 14) Melhorar imagens responsivas (não estourar e manter “premium”) ---------- */
+.ut-industria-page img.w-100{
+  object-fit: cover;
+}
+
+@media (max-width: 575px){
+  .ut-industria-page .about__img img{
+    border-radius: 18px;
+  }
+}
+
+
+/* =========================================================
+   Parte 4/4 — Diferenciais (Parte 8) + FAQ (Parte 9) + CTA final (Parte 10) + Acabamento
+   ========================================================= */
+
+/* ---------- 15) Parte 8 (Diferenciais + Prova Social) ---------- */
+.ut-industria-page .about__area .section__title p{
+  color: var(--ut-muted);
+}
+
+/* Cards de depoimento (exemplos) */
+.ut-industria-page .about__area .services__3-item p strong{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Bloco “sinais de autoridade” (onde tem 3 colunas) */
+.ut-industria-page .about__area .services__3-item .row.text-center h3{
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.ut-industria-page .about__area .services__3-item .row.text-center p{
+  font-size: 14.6px;
+  color: rgba(17,24,39,.80);
+}
+
+/* ---------- 16) Parte 9 (FAQ) — visual de cards/accordion “clean” ---------- */
+.ut-industria-page .postbox-area{
+  background: #fff;
+}
+
+.ut-industria-page .postbox-area .section__title .title{
+  font-size: 40px;
+  font-weight: 900;
+  text-wrap: balance;
+}
+
+/* Cards do FAQ (reaproveitando services__3-item) */
+.ut-industria-page .postbox-area .services__3-item{
+  border-radius: 18px;
+  padding: 22px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfc 100%);
+  border: 1px solid var(--ut-border);
+  box-shadow: 0 14px 36px rgba(15,17,21,.06);
+}
+
+/* Pergunta */
+.ut-industria-page .postbox-area .services__3-item-title{
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+/* Ícone “+” visual na pergunta (sem JS) */
+.ut-industria-page .postbox-area .services__3-item-title::before{
+  content: "+";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(246,150,8,.14);
+  color: #8a4b00;
+  font-weight: 900;
+}
+
+/* Resposta */
+.ut-industria-page .postbox-area .services__3-item-text{
+  color: rgba(17,24,39,.84);
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+/* ---------- 17) Parte 10 (CTA final) — overlay + bloco branco destacado ---------- */
+.ut-industria-page .contact__cta{
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+
+/* overlay mais elegante */
+.ut-industria-page .contact__cta.overlay::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(900px 340px at 30% 20%, rgba(246,150,8,.22), transparent 60%),
+    linear-gradient(90deg, rgba(15,17,21,.88) 0%, rgba(15,17,21,.70) 50%, rgba(15,17,21,.62) 100%);
+  z-index: 0;
+}
+
+/* garantir conteúdo acima do overlay */
+.ut-industria-page .contact__cta .container{
+  position: relative;
+  z-index: 1;
+}
+
+/* títulos no CTA */
+.ut-industria-page .contact__cta .section__title .sub-title.white{
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: .02em;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.18);
+  margin-bottom: 14px;
+}
+
+.ut-industria-page .contact__cta .section__title .title.white{
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+/* texto no CTA */
+.ut-industria-page .contact__cta p{
+  color: rgba(255,255,255,.92);
+}
+
+/* bloco branco interno (o que tem 3 etapas) — deixar bem “card premium” */
+.ut-industria-page .contact__cta .services__3-item{
+  border-radius: 22px !important;
+  padding: 24px 22px !important;
+  border: 1px solid rgba(255,255,255,.35) !important;
+  box-shadow: 0 28px 70px rgba(0,0,0,.30) !important;
+}
+
+.ut-industria-page .contact__cta .services__3-item-title{
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.ut-industria-page .contact__cta .services__3-item-text{
+  font-size: 14.6px;
+  color: rgba(17,24,39,.80);
+}
+
+/* CTA principal no final: maior e mais chamativo */
+.ut-industria-page .contact__cta .contact__cat-btn .fill-btn.clip-btn{
+  min-height: 56px;
+  font-size: 15.5px;
+  border-radius: 16px;
+}
+
+/* ---------- 18) Ajustes finais de espaçamento e largura (visual “respirado”) ---------- */
+.ut-industria-page .container{
+  max-width: 1180px; /* melhora a composição em telas grandes */
+}
+
+/* Evitar que os textos fiquem muito largos (cansa leitura) */
+.ut-industria-page .section__title p,
+.ut-industria-page .about__content-inner p{
+  text-wrap: pretty;
+}
+
+/* ---------- 19) Responsivo final ---------- */
+@media (max-width: 991px){
+  .ut-industria-page .postbox-area .section__title .title{
+    font-size: 32px;
+  }
+
+  .ut-industria-page .contact__cta .section__title .title.white{
+    font-size: 34px;
+  }
+
+  .ut-industria-page .contact__cta .services__3-item{
+    border-radius: 18px !important;
+  }
+}
+
+@media (max-width: 575px){
+  .ut-industria-page .postbox-area .services__3-item-title{
+    font-size: 16.5px;
+  }
+
+  .ut-industria-page .contact__cta .section__title .title.white{
+    font-size: 30px;
+  }
+
+  .ut-industria-page .contact__cta .section__title .sub-title.white{
+    width: 100%;
+  }
+
+  .ut-industria-page .contact__cta .services__3-item{
+    padding: 18px 16px !important;
+  }
+}
+
+/* =========================================================
+   AJUSTE VISUAL — SECTION 2 (ut-s2)
+   ========================================================= */
+
+.ut-industria-page .ut-s2{
+  position: relative;
+}
+
+/* Título mais elegante (e não “quebrando” feio) */
+.ut-industria-page .ut-s2__title{
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.ut-industria-page .ut-s2__title span{
+  display: block;
+  color: rgba(15,17,21,.78);
+  font-weight: 900;
+}
+
+/* Texto de abertura mais “lead” */
+.ut-industria-page .ut-s2__lead{
+  color: rgba(17,24,39,.85);
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid 2x2 dos benefícios */
+.ut-industria-page .ut-s2__grid{
+  max-width: 560px;
+  margin: 18px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Card compacto premium */
+.ut-industria-page .ut-s2__card{
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 14px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(17,24,39,.10);
+  box-shadow: 0 14px 30px rgba(15,17,21,.06);
+}
+
+.ut-industria-page .ut-s2__card strong{
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 900;
+  color: #0f1115;
+  font-size: 14.5px;
+  line-height: 1.2;
+}
+
+.ut-industria-page .ut-s2__card p{
+  margin: 0;
+  font-size: 13.8px;
+  line-height: 1.45;
+  color: rgba(17,24,39,.78);
+}
+
+/* Ícone com “bolinha” (fica profissional) */
+.ut-industria-page .ut-s2__icon{
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(246,150,8,.14);
+  border: 1px solid rgba(246,150,8,.25);
+  color: #8a4b00;
+  flex: 0 0 auto;
+}
+
+.ut-industria-page .ut-s2__cta{
+  justify-content: flex-start;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Media com proporção e crop (se a imagem for grande) */
+.ut-industria-page .ut-s2__media{
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(15,17,21,.14);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.ut-industria-page .ut-s2__media img{
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsivo */
+@media (max-width: 991px){
+  .ut-industria-page .ut-s2__title{
+    font-size: 36px;
+    max-width: 680px;
+    text-align: left;
+    margin-left: 0;
+  }
+  .ut-industria-page .ut-s2__lead,
+  .ut-industria-page .ut-s2__grid,
+  .ut-industria-page .ut-s2__cta{
+    max-width: 680px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .ut-industria-page .ut-s2__media img{
+    height: 420px;
+  }
+}
+
+@media (max-width: 575px){
+  .ut-industria-page .ut-s2__title{
+    font-size: 30px;
+  }
+  .ut-industria-page .ut-s2__grid{
+    grid-template-columns: 1fr;
+  }
+  .ut-industria-page .ut-s2__media img{
+    height: 320px;
+  }
+}
+
+/* ===== AJUSTE FINAL SECTION 2 (SEM IMAGEM) ===== */
+
+.ut-industria-page .ut-s2__title{
+  max-width: 760px;
+  margin-left: 0;
+}
+
+.ut-industria-page .ut-s2__lead{
+  max-width: 760px;
+}
+
+.ut-industria-page .ut-s2__grid{
+  max-width: 760px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 575px){
+  .ut-industria-page .ut-s2__grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.about__content {
+    padding-left: 0;
+    padding-right: 53px;
+    line-height: 1;
+}
+/* =========================================================
+   AJUSTE FINO — SEÇÃO BENEFÍCIOS (services__3)
+   Sem alterar HTML
+   ========================================================= */
+
+.ut-industria-page .services__3{
+  background: radial-gradient(900px 260px at 50% 0%, rgba(246,150,8,.10), transparent 55%), #fff;
+}
+
+/* Limitar largura do título e melhorar “respiro” */
+.ut-industria-page .services__3 .section__title .title{
+  max-width: 980px;
+  margin: 0 auto;
+  letter-spacing: -0.02em;
+}
+
+.ut-industria-page .services__3 .section__title p{
+  max-width: 760px;
+  margin: 14px auto 0;
+}
+
+/* Cards mais “premium”: contraste, borda e sombra melhor */
+.ut-industria-page .services__3 .services__3-item{
+  border-radius: 22px;
+  padding: 28px 26px;
+  border: 1px solid rgba(17,24,39,.10);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+  box-shadow: 0 18px 50px rgba(15,17,21,.08);
+}
+
+/* Linha de destaque no topo (identidade Uppertruck) */
+.ut-industria-page .services__3 .services__3-item::after{
+  content:"";
+  position:absolute;
+  left: 18px;
+  right: 18px;
+  top: 14px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(246,150,8,.0) 0%, rgba(246,150,8,.75) 35%, rgba(246,150,8,.0) 100%);
+  opacity: .9;
+}
+
+/* Título do card: melhor leitura e menos “quebra” feia */
+.ut-industria-page .services__3 .services__3-item-title{
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  padding-top: 10px; /* pra não colar na linha de destaque */
+}
+
+/* Texto do card */
+.ut-industria-page .services__3 .services__3-item-text{
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(17,24,39,.82);
+}
+
+/* Hover mais “chique” */
+.ut-industria-page .services__3 .services__3-item:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 26px 70px rgba(15,17,21,.12);
+}
+
+/* Consistência de altura no desktop */
+@media (min-width: 992px){
+  .ut-industria-page .services__3 .services__3-item{
+    min-height: 190px;
+  }
+}
+
+/* Responsivo */
+@media (max-width: 575px){
+  .ut-industria-page .services__3 .services__3-item{
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+  .ut-industria-page .services__3 .services__3-item-title{
+    font-size: 16.5px;
+  }
+}
+
+
+.ut-industria-page .services__3-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(600px 240px at 10% 10%, rgb(255 255 255 / 14%), transparent 60%);
+    pointer-events: none;
+}
+.ut-industria-page .services__3 .services__3-item {
+    border-radius: 22px;
+    padding: 28px 26px;
+    border: none;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+    box-shadow: none !important;
+}
+
+.ut-industria-page .services__3-item-title .iconify {
+    color: var(--ut-primary);
+    width: 3rem;
+    height: 4rem;
+}
+.ut-industria-page ul.bull li::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 16px;
+    width: 3px;
+    height: 18px;
+    border-radius: 6px;
+    background: rgba(246, 150, 8, .95);
+    box-shadow: 0 10px 22px rgba(15, 17, 21, .10);
+}
+.ut-industria-page .services__3.grey-bg-4::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #f5f5f5;
+    pointer-events: none;
+}
+.ut-industria-page .about__content .title {
+    font-size: 38px;
+}
+.ut-industria-page .services__3.grey-bg-4 .services__3-item {
+    border-radius: 20px;
+    border: 1px solid rgb(15 17 21 / 0%);
+    box-shadow: 0 18px 48px rgba(15, 17, 21, .10);
+    padding: 3rem;
+}
+
+.ut-industria-page .services__3 .services__3-item {
+    border-radius: 22px;
+    padding: 28px 26px;
+    border: none;
+    background: #f5f5f500;
+    box-shadow: none !important;
+}
+/* =========================================================
+   FIX — FAQ (postbox-area) estava herdando estilos de cards
+   ========================================================= */
+
+.ut-industria-page .postbox-area .services__3-item{
+  /* mata a “herança” do layout de cards */
+  display: block !important;
+  height: auto !important;
+  min-height: unset !important;
+
+  /* aparência de FAQ */
+  padding: 18px 18px !important;
+  border-radius: 18px !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(17,24,39,.10) !important;
+  box-shadow: 0 12px 28px rgba(15,17,21,.06) !important;
+
+  overflow: hidden;
+}
+
+/* remove qualquer decoração de topo que esteja entrando do services__3-item */
+.ut-industria-page .postbox-area .services__3-item::before,
+.ut-industria-page .postbox-area .services__3-item::after{
+  content: none !important;
+}
+
+/* título do FAQ mais compacto + com “ícone” visual */
+.ut-industria-page .postbox-area .services__3-item-title{
+  margin: 0 !important;
+  padding: 0 0 10px 34px !important;
+  font-size: 17px !important;
+  line-height: 1.25 !important;
+  font-weight: 900 !important;
+  position: relative;
+}
+
+/* ícone + do FAQ (visual) */
+.ut-industria-page .postbox-area .services__3-item-title::before{
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(246,150,8,.14);
+  border: 1px solid rgba(246,150,8,.25);
+  color: #8a4b00;
+  font-weight: 900;
+}
+
+/* texto da resposta sem “sumir” e sem margem estranha */
+.ut-industria-page .postbox-area .services__3-item-text{
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: rgba(17,24,39,.82) !important;
+}
+
+/* espaçamento entre os itens do FAQ */
+.ut-industria-page .postbox-area .mb-30{
+  margin-bottom: 14px !important;
+}
+
+
+/* =========================================================
+   FAQ ACCORDION — clique e abre (details/summary)
+   ========================================================= */
+
+.ut-industria-page .ut-faq{
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+
+/* Card */
+.ut-industria-page .ut-faq__item{
+  border-radius: 18px;
+  border: 1px solid rgba(17,24,39,.10);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+  box-shadow: 0 14px 36px rgba(15,17,21,.06);
+  overflow: hidden;
+}
+
+/* Remove marcador padrão do summary */
+.ut-industria-page .ut-faq__question{
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 18px 18px 54px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 16.5px;
+  line-height: 1.25;
+  color: #0f1115;
+  position: relative;
+  user-select: none;
+}
+
+/* Safari/Chrome marker */
+.ut-industria-page .ut-faq__question::-webkit-details-marker{
+  display: none;
+}
+
+/* Ícone “?” à esquerda */
+.ut-industria-page .ut-faq__question::before{
+  content: "?";
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(246,150,8,.14);
+  border: 1px solid rgba(246,150,8,.25);
+  color: #8a4b00;
+  font-weight: 900;
+}
+
+/* “+ / -” à direita */
+.ut-industria-page .ut-faq__question::after{
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15,17,21,.06);
+  color: rgba(15,17,21,.75);
+  font-weight: 900;
+  transition: transform .2s ease, background .2s ease;
+}
+
+/* Quando aberto: vira “–” e gira suave */
+.ut-industria-page .ut-faq__item[open] .ut-faq__question::after{
+  content: "–";
+  background: rgba(246,150,8,.12);
+  color: #8a4b00;
+}
+
+/* Resposta */
+.ut-industria-page .ut-faq__answer{
+  padding: 0 18px 18px 54px;
+  color: rgba(17,24,39,.82);
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+/* Linha divisória discreta quando abre */
+.ut-industria-page .ut-faq__item[open] .ut-faq__answer{
+  border-top: 1px solid rgba(17,24,39,.08);
+  padding-top: 14px;
+}
+
+/* Hover */
+.ut-industria-page .ut-faq__question:hover{
+  background: rgba(246,150,8,.06);
+}
+
+/* Foco (acessibilidade) */
+.ut-industria-page .ut-faq__question:focus{
+  outline: 3px solid rgba(246,150,8,.30);
+  outline-offset: 3px;
+}
+
+/* Mobile */
+@media (max-width: 575px){
+  .ut-industria-page .ut-faq__question{
+    padding: 16px 14px 16px 48px;
+    font-size: 15.5px;
+  }
+  .ut-industria-page .ut-faq__question::before{
+    left: 12px;
+    top: 12px;
+  }
+  .ut-industria-page .ut-faq__question::after{
+    right: 12px;
+    top: 10px;
+  }
+  .ut-industria-page .ut-faq__answer{
+    padding: 0 14px 16px 48px;
+    font-size: 15px;
+  }
+}
+
+/* =========================================================
+   FAQ ACCORDION — clique e abre (details/summary)
+   ========================================================= */
+
+.ut-industria-page .ut-faq{
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+
+/* Card */
+.ut-industria-page .ut-faq__item{
+  border-radius: 18px;
+  border: 1px solid rgba(17,24,39,.10);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+  box-shadow: 0 14px 36px rgba(15,17,21,.06);
+  overflow: hidden;
+}
+
+/* Remove marcador padrão do summary */
+.ut-industria-page .ut-faq__question{
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 18px 18px 54px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 16.5px;
+  line-height: 1.25;
+  color: #0f1115;
+  position: relative;
+  user-select: none;
+}
+
+/* Safari/Chrome marker */
+.ut-industria-page .ut-faq__question::-webkit-details-marker{
+  display: none;
+}
+
+/* Ícone “?” à esquerda */
+.ut-industria-page .ut-faq__question::before{
+  content: "?";
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(246,150,8,.14);
+  border: 1px solid rgba(246,150,8,.25);
+  color: #8a4b00;
+  font-weight: 900;
+}
+
+/* “+ / -” à direita */
+.ut-industria-page .ut-faq__question::after{
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15,17,21,.06);
+  color: rgba(15,17,21,.75);
+  font-weight: 900;
+  transition: transform .2s ease, background .2s ease;
+}
+
+/* Quando aberto: vira “–” e gira suave */
+.ut-industria-page .ut-faq__item[open] .ut-faq__question::after{
+  content: "–";
+  background: rgba(246,150,8,.12);
+  color: #8a4b00;
+}
+
+/* Resposta */
+.ut-industria-page .ut-faq__answer{
+  padding: 0 18px 18px 54px;
+  color: rgba(17,24,39,.82);
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+/* Linha divisória discreta quando abre */
+.ut-industria-page .ut-faq__item[open] .ut-faq__answer{
+  border-top: 1px solid rgba(17,24,39,.08);
+  padding-top: 14px;
+}
+
+/* Hover */
+.ut-industria-page .ut-faq__question:hover{
+  background: rgba(246,150,8,.06);
+}
+
+/* Foco (acessibilidade) */
+.ut-industria-page .ut-faq__question:focus{
+  outline: 3px solid rgba(246,150,8,.30);
+  outline-offset: 3px;
+}
+
+/* Mobile */
+@media (max-width: 575px){
+  .ut-industria-page .ut-faq__question{
+    padding: 16px 14px 16px 48px;
+    font-size: 15.5px;
+  }
+  .ut-industria-page .ut-faq__question::before{
+    left: 12px;
+    top: 12px;
+  }
+  .ut-industria-page .ut-faq__question::after{
+    right: 12px;
+    top: 10px;
+  }
+  .ut-industria-page .ut-faq__answer{
+    padding: 0 14px 16px 48px;
+    font-size: 15px;
+  }
+}
+
+.services__3-item {
+    background: var(--clr-common-white);
+    position: relative;
+    padding: 50px 50px 46px;
+    clip-path: none;
+}
+.services__3-item {
+    background: var(--clr-common-white);
+    position: relative;
+    padding: 50px 50px 46px;
+    clip-path: none;
+}
+
+.ut-industria-page .postbox-area {
+    background: #f5f5f5;
+}
+.ut-industria-page .postbox-area .section__title .title {
+    font-size: 40px;
+    font-weight: 600;
+    text-wrap: balance;
+}
+.ut-industria-page .postbox-area {
+    background: #f5f5f5;
+}
+.ut-industria-page .services__3.grey-bg-4::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #f0f1f7;
+    pointer-events: none;
+}
+.ut-industria-page .postbox-area {
+    background: #f0f1f7;
+}
+.ut-industria-page .contact__cta .section__title .title.white {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.08;
+    text-wrap: balance;
+}
+/* =========================================================
+   BOTÃO PREMIUM — Uppertruck (CTA principal)
+   Usa: class="fill-btn clip-btn ut-btn-primary"
+   ========================================================= */
+
+.ut-btn-primary{
+  --btn-main: #f69608;
+  --btn-dark: #c87500;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 56px;
+  padding: 0 36px !important;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15.5px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+
+  color: #0f1115 !important;
+  background: linear-gradient(135deg, var(--btn-main), #ffb347);
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 25px rgba(246,150,8,.35),
+    inset 0 -2px 0 rgba(0,0,0,.12);
+
+  border: none;
+  overflow: hidden;
+
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease,
+    filter .15s ease;
+}
+
+/* brilho animado */
+.ut-btn-primary::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,.45) 45%,
+    transparent 60%
+  );
+  transform: translateX(-120%);
+  transition: transform .6s ease;
+}
+
+/* hover */
+.ut-btn-primary:hover{
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 45px rgba(246,150,8,.45),
+    inset 0 -2px 0 rgba(0,0,0,.14);
+  filter: brightness(1.03);
+}
+
+.ut-btn-primary:hover::before{
+  transform: translateX(120%);
+}
+
+/* clique */
+.ut-btn-primary:active{
+  transform: translateY(0);
+  box-shadow:
+    0 8px 20px rgba(246,150,8,.35),
+    inset 0 2px 6px rgba(0,0,0,.25);
+}
+
+/* foco acessível */
+.ut-btn-primary:focus{
+  outline: 3px solid rgba(246,150,8,.4);
+  outline-offset: 4px;
+}
+
+.clip-btn {
+    clip-path: none;
+}
+.ut-industria-page .contact__cat-btn {
+    display: flex;
+    justify-content: left;
+}
+.contact__cat-btn .fill-btn {
+    background: #ed920c;
+    color: var(--clr-common-heading);
+}
+.ut-industria-page .hj {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.ut-industria-page .services__3 .section__title .title {
+    font-size: 44px;
+    font-weight: 700;
+    text-wrap: balance;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ut-industria-page .about__content .title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.ut-industria-page .ut-s2__title span {
+    margin-top: 2rem;
+    display: block;
+    color: rgba(15, 17, 21, .78);
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+.ut-industria-page .ut-s2__title span {
+    margin-top: 2rem;
+    display: block;
+    color: rgba(15, 17, 21, .78);
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: math-auto;
+    font-family: sans-serif;
+}
+.about__img img {
+    clip-path: none;
+}
+@media (max-width: 748px) {
+    .hj {
+        font-size: 2rem !important;
+        color: white;
+    }
+}

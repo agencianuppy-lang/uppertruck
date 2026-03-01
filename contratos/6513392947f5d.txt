@@ -1,0 +1,16 @@
+Tomador do Serviço: Ivan Alexandre da Silva Zafalon
+Dados do tomador:  135.935.678-90
+Local de coleta: R. Melo Franco, 195 - Vila Esportiva, Vespasiano - MG, 33200-000
+Solicitante tel: Lucilene - 31 98578-3712
+Local de entrega: R. Gen. Sebastião Barreto, 139 - Niterói, Canoas - RS, 92130-350
+Produto: Containers
+Medidas unitarias:  2,5X1,55X2,0M
+Quantidade: 9
+Unitilizacao: Granel
+Peso total: 2.700
+Cubagem total: Carreta de 14,5m dedicada
+Seguro: Array
+Prazo: 48-72h
+extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

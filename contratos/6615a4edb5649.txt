@@ -1,0 +1,17 @@
+Tomador do Serviço: Caldas Banheiros Químicos
+Dados do tomador: 30.725.776/0001-30
+Local de coleta: Av. Pirelli, 1051 - Éden, Sorocaba - SP, 18103-085
+Solicitante Tel: Ilara -  64 98401-6284
+Local de entrega: https://maps.app.goo.gl/MymgUxHLkdBeFmdAA
+Produto: Banheiros químicos montados
+Medidas unitarias: .
+Quantidade: 10
+Unitilizacao: Granel
+Peso total: 700
+Valor: R$4.000,00
+Cubagem total: 30
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 48-72h
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

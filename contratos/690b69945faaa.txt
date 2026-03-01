@@ -1,0 +1,17 @@
+Tomador do Serviço: SONNE DA AMAZÔNIA COMÉRCIO DE PRODUTOS MÉDICOS
+Dados do tomador: 17.957.456/0002-28
+Local de coleta: Contagem - MG
+Solicitante Tel: Cláudia - +55 95 99157-4773
+Local de entrega: Boa Vista - RR
+Produto: Refratários
+Medidas unitarias: 1,0x1,2x0,7m
+Quantidade: 2
+Unitilizacao: Pallet
+Peso total: 2.000 KG
+Valor: R$ 4500,00
+Cubagem total: 2m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 15-20 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

@@ -1,0 +1,17 @@
+Tomador do Serviço: 
+Dados do tomador: 
+Local de coleta: 
+Solicitante Tel: 
+Local de entrega: 
+Produto: 
+Medidas unitarias: 
+Quantidade: 
+Unitilizacao: 
+Peso total: 
+Valor: 
+Cubagem total: 
+Seguro: Nenhum seguro selecionado
+Prazo: 
+Extras: 
+Pagamento: 
+Demonstracao: 

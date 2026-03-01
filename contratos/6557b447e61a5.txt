@@ -1,0 +1,17 @@
+Tomador do Serviço: Ativa Locação LTDA
+Dados do tomador: 02.580.316/0003-97
+Local de coleta: R. dos Pinheiros, 155 - Chacara Santa Maria, Itapecerica da Serra - SP, 06857-790
+Solicitante Tel: Thaynara - 34 99164-0348
+Local de entrega: Av Aírton Borges Da Silva, 1500 - Minas Gerais Uberlândia - MG, 38402-333
+Produto: Pias avulsas
+Medidas unitarias: 1,12x0,5x0,3m
+Quantidade: 100
+Unitilizacao: Granel
+Peso total: 650Kg
+Valor: R$3.150,00
+Cubagem total: 17
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 48-72h
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: CT-e

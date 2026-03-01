@@ -1,0 +1,17 @@
+Tomador do Serviço: Agrocana
+Dados do tomador: 30.202.653/0001-14
+Local de coleta: São João da Boa VIsta - PR
+Solicitante Tel: Luís - ‪44 99851‑1923‬
+Local de entrega: Paraíso do Norte - PR
+Produto: Chapa, barra e pallet
+Medidas unitarias: Chapa: 3,0x1,5x0,016m Barra: 6,0x0,07m  Pallet: 1,0x1,5m
+Quantidade: 3
+Unitilizacao: Granel
+Peso total: 2037 KG
+Valor: R$ 4450,00
+Cubagem total: 1m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

@@ -1,0 +1,16 @@
+Tomador do Serviço: NAGAWA DO BRASIL INDUSTRIA DE CONSTRUCOES MODULARES LTDA
+Dados do tomador: 12.661.123/0001-52
+Local de coleta: Rod. Luiz Rosso, 8480 - Dagostin, Criciúma - SC, 88812-000
+Solicitante tel: Gustavo - 11 94132-0532
+Local de entrega: RUA CORONEL JOSÉ NUNES DOS SANTOS, 722 CENTRO Vargem Grande Paulista - SP - CEP: 06730-000
+Produto: Revestimentos
+Medidas unitarias: 1,2x1,0m
+Quantidade: 9 pallets
+Unitilizacao: Pallet
+Peso total: 13.000
+Cubagem total: Truck Dedicado
+Seguro: Array
+Prazo: 24-48h
+extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

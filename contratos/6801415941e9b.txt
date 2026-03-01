@@ -1,0 +1,17 @@
+Tomador do Serviço: EMPAC DO NORDESTE
+Dados do tomador: 07.002.612/0001-62
+Local de coleta: Belo Jardim - PE
+Solicitante Tel: Galba - 87 99611-8232
+Local de entrega: Tocantins - MG
+Produto: Tambores 
+Medidas unitarias: 1,0x0,5m
+Quantidade: 10
+Unitilizacao: Granel
+Peso total: 2.381 KG
+Valor: R$ 4550,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

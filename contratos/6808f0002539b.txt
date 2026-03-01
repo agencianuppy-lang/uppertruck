@@ -1,0 +1,17 @@
+Tomador do Serviço: ATIVA LOCAÇÃO
+Dados do tomador: 02.580.316/0003-97
+Local de coleta: Mairiporã - SP
+Solicitante Tel: BRUNO - 34 99164-0348
+Local de entrega: Uberlândia - MG
+Produto: Lavatórios e Mictórios
+Medidas unitarias: 1050X450X400MM
+Quantidade: 10
+Unitilizacao: Granel
+Peso total: 90 KG
+Valor: R$ 2100,00
+Cubagem total: 2m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: CT-e

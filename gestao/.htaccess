@@ -1,0 +1,7 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/uppertru/public_html/uppergestao"
+PassengerBaseURI "/gestao"
+PassengerNodejs "/home/uppertru/nodevenv/public_html/uppergestao/10/bin/node"
+PassengerAppType node
+PassengerStartupFile index.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END

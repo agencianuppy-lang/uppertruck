@@ -1,0 +1,17 @@
+Tomador do Serviço: Associação de Moradores do Residencial Alphaville Porto Alegre
+Dados do tomador: 12.489.453/0001-02
+Local de coleta: R. Pte. Pensil, 608 - Centro, Schroeder - SC, 89275-000
+Solicitante Tel: Bruno - 51 99477-2991
+Local de entrega: Estr. das Três Meninas, 1701 - Vila Nova, Porto Alegre - RS, 91787-400
+Produto: 1 bomba de sucção + 3 caixas
+Medidas unitarias: 1 bomba de sucção 0,73x0,6x1,23 + 3 caixas 40x40x50cm
+Quantidade: 4
+Unitilizacao: Pallet
+Peso total: 550
+Valor: R$2.450,00
+Cubagem total: 1
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 24h
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

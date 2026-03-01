@@ -1,0 +1,17 @@
+Tomador do Serviço: NACIONAL LOCAÇÕES
+Dados do tomador: 49.904.479/0001-80
+Local de coleta: Barueri - SP
+Solicitante Tel: Dalila - 63 99276-1464
+Local de entrega: Porto Nacional - TO
+Produto: Lavatório portátil
+Medidas unitarias: 1,15xx1,15x1,75m
+Quantidade: 1
+Unitilizacao: Pallet
+Peso total: 50 KG
+Valor: R$ 2000,00
+Cubagem total: 2m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 7-10 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

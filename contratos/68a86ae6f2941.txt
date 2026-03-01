@@ -1,0 +1,17 @@
+Tomador do Serviço: KTELI INDÚSTRIA E COMÉRCIO
+Dados do tomador: 09.273.196/0001-62
+Local de coleta: Limeira - SP
+Solicitante Tel: Yohan - 19 2113-0685
+Local de entrega: Lucas do Rio Verde - MT
+Produto: Materiais de sinalização
+Medidas unitarias: .
+Quantidade: 101
+Unitilizacao: Granel
+Peso total: 1610 KG
+Valor: R$ 4000,00
+Cubagem total: 10m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

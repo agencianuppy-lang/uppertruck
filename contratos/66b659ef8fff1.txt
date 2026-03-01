@@ -1,0 +1,17 @@
+Tomador do Serviço: MATTE MATERIAIS DE CONSTRUÇÃO
+Dados do tomador: 09.650.965/0001-02
+Local de coleta: FER ÁLVAREZ
+Solicitante Tel: Daniel - 45 99132-9047
+Local de entrega: Rodovia BR 277, Km 664,5 Zona Rural, Matelândia - PR, 85887-000
+Produto: CHAPAS DE AÇO
+Medidas unitarias: 4,0x0,25m
+Quantidade: 4
+Unitilizacao: Granel
+Peso total: 340 KG
+Valor: R$ 2650,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

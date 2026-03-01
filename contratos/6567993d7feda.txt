@@ -1,0 +1,17 @@
+Tomador do Serviço: SALMERON ENERGIA RENOVÁVEL
+Dados do tomador: 07.200.160/0001-23
+Local de coleta: Rod. da Convenção, 30 - Salto de São José, Salto - SP, 13324-240
+Solicitante Tel: Peterson - 15 99122-4879
+Local de entrega:  R. Divino Espírito Santo, 1100 - Carangola, Petrópolis - RJ, 25715-410
+Produto: Bombas d'água
+Medidas unitarias: (1,55C x 0,63L x 1,00A) Pallet + (0,41C x 0,32L x 0,30A) Caixa Papelão
+Quantidade: 2
+Unitilizacao: Pallet
+Peso total: 175Kg
+Valor: R$1.450,00
+Cubagem total: 1
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 24-48h
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: CT-e

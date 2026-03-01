@@ -1,0 +1,17 @@
+Tomador do Serviço: Moss Quatro M
+Dados do tomador: 04.471.785/0001-31
+Local de coleta: São José - SC
+Solicitante Tel: Ana - 92 98217‑0010‬
+Local de entrega: Manaus - AM
+Produto: Máquinas de corte à laser
+Medidas unitarias: V1 = 5,70 x 2,10 x 2,00 3.000Kg V2 = 6,650 x 0,90 x 1,15 880Kg V3 = 1,50 x 0,65 x 0,94 50Kg V4 = 1,63 x 0,74 x 1,70 400Kg V5 = 1,38 x 0,75 x 0,81 40Kg V6 = 0,80 x 1,03 x 1,70 80Kg V7 = 0,70 x 0,58 x 1,04 30Kg V8 = 0,68 x 0,60 x 0,94 20Kg
+Quantidade: 8
+Unitilizacao: Granel
+Peso total: 4500 KG
+Valor: R$ 45000,00
+Cubagem total: 37m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 15-20 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

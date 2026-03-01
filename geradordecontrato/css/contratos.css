@@ -1,0 +1,291 @@
+.qrd {
+        display: block;
+        background: white;
+        border: 12px solid white;
+        border-radius: 5px;
+    }
+
+    dl,
+    ol,
+    ul {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        height: 400px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background: white;
+        padding: 3rem;
+        border-radius: 5px;
+    }
+
+    .go {
+        background: #214683;
+        padding: 2rem;
+        color: white;
+        width: 100%;
+    }
+
+    button,
+    input {
+        overflow: visible;
+        color: white;
+        background: #ff0092;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        margin-left: 32px;
+    }
+
+    body {
+        background-repeat: no-repeat;
+        background-size: 42%;
+        background-color: white;
+    }
+
+    .selecione {
+        width: 100%;
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-left: -3rem;
+        color: #ff008d;
+        text-transform: uppercase;
+    }
+
+    .h2,
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding-top: 0.6rem;
+        color: #212529;
+    }
+
+    body {
+        background: #ff008d;
+        height: 100vh !important;
+        background-size: cover;
+        margin-bottom: 3rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .form-check {
+        position: relative;
+        padding: 0rem;
+        border-bottom: 1px solid #80808024;
+        display: block;
+    }
+
+    .form-check-input[type="checkbox"] {
+        transform: scale(1.5);
+        background-color: pink;
+        margin-top: 1.4rem;
+        border-color: pink;
+    }
+
+    .form-check-label {
+        margin-bottom: 0;
+        cursor: pointer;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .caixa {
+        background: white;
+        padding: 4rem;
+        box-shadow: 6px 7px 8px #cc0272;
+        border-radius: 19px;
+    }
+
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 49%;
+        max-width: 49%;
+        margin-left: 1%;
+    }
+
+    /* Estilo personalizado para os checkboxes */
+    .form-check-input[type="checkbox"] {
+        transform: scale(1.5);
+        /* Aumenta o tamanho dos checkboxes */
+        background-color: pink;
+        /* Define a cor de fundo rosa */
+        border-color: pink;
+        /* Define a cor da borda rosa */
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        width: 100%;
+        margin-left: -9%;
+    }
+
+    .btn-primary {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: #7c00ff;
+        /* border-color: #ffffff; */
+        border-radius: 13px;
+        border: 2px solid #ff008d;
+        margin-top: 3rem;
+        padding: 1rem 3rem;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: left;
+        margin-left: -9%;
+        color: gray;
+        font-size: 0.8rem;
+    }
+
+    .alerta {
+        color: white;
+        padding: 0rem;
+        background: #ff008d;
+        padding: 0rem 0.5rem;
+        border-radius: 5px;
+        margin-right: 0.5rem;
+    }
+
+    .icone {
+        width: 41px;
+        position: absolute;
+        right: 0;
+        top: 8px;
+    }
+
+    .contratos {
+        color: white !important;
+        position: absolute;
+        top: 0;
+        font-size: 1rem;
+        background: #ff008d;
+        right: 3%;
+        border: 2px solid white;
+    }
+
+    .contratos:hover {
+        color: white !important;
+        position: absolute;
+        top: 0;
+        font-size: 1rem;
+        background: #ff0d8d;
+        right: 3%;
+        border: 2px solid white;
+    }
+
+    .contratos:hover {
+        color: #ff008d !important;
+        position: absolute;
+        top: 0;
+        font-size: 1rem;
+        background: #ffffff;
+        right: 3%;
+        border: 2px solid white;
+    }
+
+    .alerta-validacao {
+        color: #ff008d;
+        position: absolute;
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    .form-group {
+        margin-bottom: 2rem;
+        width: 100%;
+        margin-left: -9%;
+    }
+
+    .titulo-servicos {
+        color: #1b1b1b;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1.25rem;
+        background: #f1f1f1;
+    }
+
+    tr {
+        background: white;
+    }
+
+    th {
+        text-align: inherit;
+        background: #eaeaea;
+    }
+
+    .qrd a img canvas {
+        background: black;
+    }
+
+    @media (max-width:748px) {
+        .qrd {
+            display: none
+        }
+    }
+
+    .bg-dark {
+        background-color: #093663 !important;
+    }
+
+    .h2,
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding-top: 0.6rem;
+        color: #ffffff;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: left;
+        margin-left: 0;
+        color: #1c1c1c;
+        font-size: 0.8rem;
+    }
+
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1.25rem;
+        font-size: 0.8rem;
+        background: #f1f1f1;
+    }
+
+    body {
+        background: #e0e0e0;
+        height: 100vh !important;
+        background-size: cover;
+        margin-bottom: 3rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-primary {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: #007bff;
+        /* border-color: #ffffff; */
+        border-radius: 13px;
+        border: 2px solid #007bff;
+        margin-top: 3rem;
+        padding: 1rem 3rem;
+        margin: 0;
+    }

@@ -1,0 +1,254 @@
+.sidebar{
+    position: absolute;
+}
+
+/* === Sidebar Custom Dark — Parte 1/3 === */
+
+/* Estrutura principal */
+.sidebar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background: #0f172a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-custom:hover {
+    width: 240px;
+  }
+  
+  /* Header com logo */
+  .sidebar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .logo-circle {
+    width: 42px;
+    height: 42px;
+    background: #1e293b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #38bdf8;
+    font-size: 18px;
+  }
+  
+  .site-name {
+    color: #cbd5e1;
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .sidebar-custom:hover .site-name {
+    opacity: 1;
+  }
+  
+  /* Lista de navegação */
+  .sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    width: 100%;
+  }
+  
+  .sidebar-nav li {
+    width: 100%;
+  }
+  
+  .sidebar-nav a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 20px;
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  
+  .sidebar-nav a i {
+    font-size: 18px;
+    min-width: 20px;
+    text-align: center;
+    transition: color 0.2s ease;
+  }
+  
+  .sidebar-nav a span {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .sidebar-custom:hover .sidebar-nav a span {
+    opacity: 1;
+  }
+  
+  .sidebar-nav a:hover {
+    background: #1e293b;
+    color: #ffffff;
+  }
+  
+  /* === Sidebar Custom Dark — Parte 2/3 === */
+
+/* Estilo para link ativo */
+.sidebar-nav a.active,
+.sidebar-nav a.active:hover {
+  background: #1e40af;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.sidebar-nav a.active i {
+  color: #ffffff;
+}
+
+/* Rodapé com ícone de logout */
+.sidebar-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  margin-top: auto;
+}
+
+.sidebar-footer .logout {
+  color: #ef4444;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.2s ease, background 0.2s ease;
+  border-radius: 8px;
+}
+
+.sidebar-footer .logout:hover {
+  background-color: #1e293b;
+  color: #f87171;
+}
+
+/* Tooltip customizado (hover com sidebar fechada) */
+.sidebar-nav a[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 90px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1e293b;
+  color: #f8fafc;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 13px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+  opacity: 0;
+  animation: showTooltip 0.3s forwards;
+}
+
+@keyframes showTooltip {
+  to { opacity: 1; }
+}
+
+/* Garante que os tooltips apareçam só quando a sidebar está colapsada */
+.sidebar-custom:hover .sidebar-nav a[data-tooltip]::after {
+  display: none !important;
+}
+
+/* === Sidebar Custom Dark — Parte 3/3 === */
+
+/* Scroll interno se necessário */
+.sidebar-custom {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #334155 #0f172a;
+  }
+  
+  .sidebar-custom::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .sidebar-custom::-webkit-scrollbar-thumb {
+    background-color: #334155;
+    border-radius: 8px;
+  }
+  .loplop {
+    object-fit: cover;
+    max-height: 40rem !important;
+    height: 75vh!important;
+}
+  
+  /* Mobile behavior - fixa como drawer se necessário */
+  @media (max-width: 768px) {
+    .sidebar-custom {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .sidebar-custom.open {
+      width: 240px;
+      visibility: visible;
+      opacity: 1;
+      z-index: 9999;
+    }
+    .display-5 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+  }
+
+.loplop {
+  object-fit: cover;
+  max-height: 27rem !important;
+  height: 58vh!important;
+}
+  }
+
+  
+  /* Transições extras para suavidade */
+  .sidebar-nav a,
+  .sidebar-nav a i,
+  .sidebar-nav a span,
+  .sidebar-footer .logout {
+    transition: all 0.25s ease-in-out;
+  }
+  
+  /* Variáveis CSS para facilitar customização futura */
+  :root {
+    --sidebar-bg: #0f172a;
+    --sidebar-hover: #1e293b;
+    --sidebar-active: #1e40af;
+    --sidebar-text: #94a3b8;
+    --sidebar-text-light: #f8fafc;
+    --sidebar-danger: #ef4444;
+    --sidebar-danger-hover: #f87171;
+  }
+  
+
+  .post-content {
+    max-width: 800px;
+}
+@media (min-width: 1200px) {
+  .h2, h2 {
+      font-size: 1.5rem;
+  }
+}

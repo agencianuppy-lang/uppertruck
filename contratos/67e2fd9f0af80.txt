@@ -1,0 +1,17 @@
+Tomador do Serviço: CONSTRUTORA MILÃO
+Dados do tomador:  01.990.199/0001-05
+Local de coleta: Itapecerica da Serra - SP
+Solicitante Tel: Resmyller - 62 99667-4811
+Local de entrega: Abadia de Goiás - GO
+Produto: Banheiros químicos montados
+Medidas unitarias: 1200X1100X2350mm
+Quantidade: 3
+Unitilizacao: Granel
+Peso total: 255 KG
+Valor: R$ 2500,00
+Cubagem total: 9m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

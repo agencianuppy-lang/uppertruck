@@ -1,0 +1,17 @@
+Tomador do Serviço: EMPAC DO NORDESTE
+Dados do tomador: 07.002.612/0001-62
+Local de coleta: Franca - SP
+Solicitante Tel: Galba - 87 99611-8232
+Local de entrega: Belo Jardim - PE
+Produto: Bobinas 
+Medidas unitarias: 1,1x0,52x0,52m
+Quantidade: 15
+Unitilizacao: Granel
+Peso total: 375 KG
+Valor: R$ 3150,00
+Cubagem total: 5m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: CT-e

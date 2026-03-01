@@ -1,0 +1,17 @@
+Tomador do Serviço: SMART LOCSERVICE
+Dados do tomador: 54.151.801/0001-87
+Local de coleta: R. do Cravo, 271 - Jardim Florida, Barueri - SP, 06407-220
+Solicitante Tel: José - 88 98226-9028
+Local de entrega: R. José de Alencar, 200 - Areias I, Iguatu - CE, 63500-000
+Produto: Banheiros químicos desmontados
+Medidas unitarias: 1,12x1,2x2,3m
+Quantidade: 15
+Unitilizacao: Granel
+Peso total: 1050 KG
+Valor: R$ 4000,00
+Cubagem total: 22m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 7-10 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

@@ -1,0 +1,412 @@
+<?php
+class CotacaoFormList extends TStandardList
+{
+    protected $form;      // form
+    protected $datagrid;  // datagrid
+    protected $loaded;
+    protected $pageNavigation;  // pagination component
+    protected $input;
+    
+    
+    // trait with onSave, onEdit, onDelete, onReload, onSearch...
+    use Adianti\Base\AdiantiStandardFormListTrait;
+    
+    /**
+     * Class constructor
+     * Creates the page, the form and the listing
+     */
+    public function __construct()
+    {
+        parent::__construct();
+        
+        $this->setDatabase('uppertruck'); // define the database
+        $this->setActiveRecord('Cotacao'); // define the Active Record
+        $this->setDefaultOrder('id', 'asc'); // define the default order
+        $this->setLimit(-1); // turn off limit for datagrid
+        
+        
+        $criteria = new TCriteria;
+        $criteria->add( new TFilter( 'status_id', '=', '1'  ) ); // Listar apenas cotaçãoe com status 1 - pendente de análise pela uppertruck 
+        parent::setCriteria($criteria);
+        
+        
+        // create the form
+        $this->form = new BootstrapFormBuilder('form_cotacao');
+        $this->form->setFormTitle('Pedido de cotação');
+        
+        // create the form fields
+        $this->input['id']             = new TEntry('id');
+        $this->input['data_pedido']  = new TDate('data_pedido');
+        
+        
+        $filter = new TCriteria;
+        $filter->add(new TFilter('id', '<', '0'));
+        
+        $this->input['origem_estado_id']     = new TDBCombo('origem_estado_id', 'uppertruck', 'Estado', 'id', '{nome} ({uf})');
+        $this->input['origem_estado_id']->setChangeAction( new TAction( [$this, 'onChangeEstadoOrigem'] ) );
+        $this->input['origem_cidade_id']  = new TDBCombo('origem_cidade_id',  'uppertruck', 'Cidade', 'id', 'nome', 'nome', $filter);
+        
+        $this->input['destino_estado_id']     = new TDBCombo('destino_estado_id', 'uppertruck', 'Estado', 'id', '{nome} ({uf})');
+        $this->input['destino_estado_id']->setChangeAction( new TAction( [$this, 'onChangeEstadoDestino'] ) );
+        $this->input['destino_cidade_id'] = new TDBCombo('destino_cidade_id', 'uppertruck', 'Cidade', 'id', 'nome', 'nome', $filter);
+        
+        $this->input['tipo_produto']      = new TEntry('tipo_produto');
+        $this->input['kg']                = new TSpinner('kg');
+        $this->input['m3']                = new TSpinner('m3');
+        $this->input['volumes']           = new TSpinner('volumes');
+        
+        $this->input['embalagem_id']     = new TDBCombo('embalagem_id', 'uppertruck', 'Embalagem', 'id', 'nome');
+        
+        $this->input['kg']->setRange(1, 1000, 1);
+        $this->input['m3']->setRange(0, 1000, 1);
+        $this->input['volumes']->setRange(1, 1000, 1);
+        
+        
+        $this->input['valor_nf']          = new TEntry('valor_nf');
+        $this->input['status_id']         = new TEntry('status_id');
+        
+        $this->input['data_cotacao']      = new TDate('data_cotacao');
+        $this->input['valor_cotacao']     = new TEntry('valor_cotacao');
+        
+        $this->input['obs']               = new TText('obs');
+        
+        
+        
+        
+        $this->input['valor_cotacao']->setNumericMask(2, ',', '.', true);
+        $this->input['valor_nf']->setNumericMask(2, ',', '.', true);
+        
+        
+        $this->input['obs']->setSize('100%', 60);
+        $this->input['id']->setSize('100%');
+        $this->input['data_pedido']->setSize('100%');       
+        $this->input['origem_estado_id']->setSize('100%');     
+        $this->input['origem_cidade_id']->setSize('100%'); 
+        $this->input['destino_estado_id']->setSize('100%');
+        $this->input['destino_cidade_id']->setSize('100%'); 
+        $this->input['tipo_produto']->setSize('100%');     
+        $this->input['kg']->setSize('100%');               
+        $this->input['m3']->setSize('100%');             
+        $this->input['volumes']->setSize('100%');          
+        $this->input['embalagem_id']->setSize('100%');   
+        $this->input['kg']->setSize('100%');
+        $this->input['m3']->setSize('100%');
+        $this->input['volumes']->setSize('100%');
+        $this->input['valor_nf']->setSize('100%');        
+        $this->input['status_id']->setSize('100%');        
+        $this->input['data_cotacao']->setSize('100%');      
+        $this->input['valor_cotacao']->setSize('100%');     
+        
+        // add the form fields
+        $this->form->addFields( [new TLabel('ID')],             [$this->input['id']], [new TLabel('Solicitação / Alteração')],    [$this->input['data_pedido']] );
+        //$this->form->addFields( [new TLabel('Cliente')],        [$cliente_id] );
+        
+        //$this->form->addFields( [new TLabel('Data pedido de cotação')],    [$data_pedido] );
+        
+        $this->form->addContent( [new TFormSeparator('')]);
+        $this->form->addFields( [ new TLabel('UF Origem') ],  [$this->input['origem_estado_id']],  [ new TLabel('Cidade Origem') ], [ $this->input['origem_cidade_id' ]] );
+        $this->form->addFields( [ new TLabel('UF Destino') ], [$this->input['destino_estado_id']], [ new TLabel('Cidade Destino')], [ $this->input['destino_cidade_id']] );
+        $this->form->addContent( [new TFormSeparator('')]);
+        
+        $this->form->addFields( [new TLabel('Tipo de produto')], [$this->input['tipo_produto']],   [ new TLabel('Peso/Kg') ], [$this->input['kg']] );
+        
+        $this->form->addFields( [ new TLabel('Cubagem/m3') ], [ $this->input['m3']],               [ new TLabel('Embalagens') ], [$this->input['embalagem_id']] );
+        
+        $this->form->addFields( [new TLabel('Qtd. de Volumes')], [$this->input['volumes']], [new TLabel('Valor Nota Fiscal/R$')], [$this->input['valor_nf']] );
+        
+        $this->form->addContent( [new TFormSeparator('')]);
+        $this->form->addFields( [new TLabel('obs')], [$this->input['obs']] );
+        
+        
+        
+        // define the form actions
+        $this->form->addAction( 'Enviar', new TAction([$this, 'onSave']), 'fa:save green');
+        $this->form->addActionLink( 'Limpar',new TAction([$this, 'onClear']), 'fa:eraser red');
+        
+        // make id not editable
+        $this->input['id']->setEditable(FALSE);
+        $this->input['data_pedido']->setEditable(FALSE);
+        $this->input['data_pedido']->setMask('dd/mm/yyyy');
+        $this->input['data_pedido']->setDatabaseMask('yyyy-mm-dd');
+        
+        // create the datagrid
+        $this->datagrid = new BootstrapDatagridWrapper(new TDataGrid);
+        $this->datagrid->width = '100%';
+        
+        // add the columns
+        $col_id           = new TDataGridColumn('id', 'Id', 'right');
+        $col_data_pedido  = new TDataGridColumn('data_pedido', 'Solicitação / Alteração', 'left');    
+        $col_origem       = new TDataGridColumn('origem_cidade_id', 'Origem', 'left');
+        $col_destino      = new TDataGridColumn('destino_cidade_id', 'Destino', 'left');
+        $col_produto      = new TDataGridColumn('tipo_produto', 'Produto', 'left');
+        $col_valor_nf     = new TDataGridColumn('valor_nf', 'Valor NF', 'left');      
+        
+        
+        $col_data_pedido->setTransformer( function($value) {
+            return TDate::convertToMask($value, 'yyyy-mm-dd', 'dd/mm/yyyy');
+        });
+        
+        $col_origem->setTransformer( function($value) { 
+            TTransaction::open('uppertruck');
+            $cidade = new Cidade($value);
+            TTransaction::close();
+            $estado = $cidade->get_estado();
+            return "{$cidade->nome} - {$estado->uf}";
+        });
+        
+        $col_destino->setTransformer( function($value) { 
+            TTransaction::open('uppertruck');
+            $cidade = new Cidade($value);
+            TTransaction::close();
+            $estado = $cidade->get_estado();
+            return "{$cidade->nome} - {$estado->uf}";
+        });
+        
+        $col_valor_nf->setTransformer( function($value) {
+            if (is_numeric($value)) {
+                return 'R$&nbsp;'.number_format($value, 2, ',', '.');
+            }
+            return $value;
+        });
+        
+        
+        
+        $this->datagrid->addColumn($col_id);
+        $this->datagrid->addColumn($col_data_pedido);
+        $this->datagrid->addColumn($col_origem);
+        $this->datagrid->addColumn($col_destino);
+        $this->datagrid->addColumn($col_produto);
+        $this->datagrid->addColumn($col_valor_nf);
+        
+        $col_id->setAction( new TAction([$this, 'onReload']),   ['order' => 'id']);
+        $col_data_pedido->setAction( new TAction([$this, 'onReload']), ['order' => 'name']);
+        
+        // define row actions
+        $action1 = new TDataGridAction([$this, 'onEdit'],   ['key' => '{id}'] );
+        $action2 = new TDataGridAction([$this, 'onDelete'], ['key' => '{id}'] );
+        
+        $this->datagrid->addAction($action1, 'Alterar',   'far:edit blue');
+        $this->datagrid->addAction($action2, 'Deletar', 'far:trash-alt red');
+        
+        // create the datagrid model
+        $this->datagrid->createModel();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        // wrap objects inside a table
+        $vbox = new TVBox;
+        $vbox->style = 'width: 100%';
+        $vbox->add(new TXMLBreadCrumb('menu.xml', __CLASS__));
+        $vbox->add($this->form);
+        $vbox->add(TPanelGroup::pack('', $this->datagrid));
+        
+        
+//         $obj = new StdClass;
+//         $obj->data_pedido  = date('Y-m-d');
+//         TForm::sendData('form_cotacao', $obj);
+        
+        
+        // pack the table inside the page
+        parent::add($vbox);
+    }
+    
+    
+    
+    public static function onChangeEstadoOrigem($param)
+    {
+        try
+        {
+            TTransaction::open('uppertruck');
+            if (!empty($param['origem_estado_id']))
+            {
+                $criteria = TCriteria::create( ['estado_id' => $param['origem_estado_id'] ] );
+                
+                // formname, field, database, model, key, value, ordercolumn = NULL, criteria = NULL, startEmpty = FALSE
+                TDBCombo::reloadFromModel('form_cotacao', 'origem_cidade_id', 'uppertruck', 'Cidade', 'id', '{nome} ({id})', 'nome', $criteria, TRUE);
+            }
+            else
+            {
+                TCombo::clearField('form_cotacao', 'origem_cidade_id');
+            }
+            
+            TTransaction::close();
+        }
+        catch (Exception $e)
+        {
+            new TMessage('error', $e->getMessage());
+        }
+    }
+    
+    
+    public static function onChangeEstadoDestino($param)
+    {
+        try
+        {
+            TTransaction::open('uppertruck');
+            if (!empty($param['destino_estado_id']))
+            {
+                $criteria = TCriteria::create( ['estado_id' => $param['destino_estado_id'] ] );
+                
+                // formname, field, database, model, key, value, ordercolumn = NULL, criteria = NULL, startEmpty = FALSE
+                TDBCombo::reloadFromModel('form_cotacao', 'destino_cidade_id', 'uppertruck', 'Cidade', 'id', '{nome} ({id})', 'nome', $criteria, TRUE);
+            }
+            else
+            {
+                TCombo::clearField('form_cotacao', 'destino_cidade_id');
+            }
+            
+            TTransaction::close();
+        }
+        catch (Exception $e)
+        {
+            new TMessage('error', $e->getMessage());
+        }
+    }
+    
+    
+    function onSave()
+    {
+        try
+        {
+            // open a transaction with database 'samples'
+            TTransaction::open('uppertruck');
+            
+            $this->form->validate(); // run form validation
+            
+            $data = $this->form->getData(); // get form data as array
+            
+            $object = new Cotacao;  // create an empty object
+            $object->fromArray( (array) $data); // load the object with data
+            
+            $object->data_pedido = date('Y-m-d');
+            $object->cliente_id = TSession::getValue('userid');
+            $object['status_id']  = 1;  // Enviado
+            
+            $object->store(); // save the object
+            
+            // fill the form with the active record data
+            $this->form->setData($object);
+            
+            
+            //enviar pedido de orçamento desta cotação para todos os motoristas
+            $criteria = new TCriteria; 
+            $criteria->add(new TFilter('grupo', '=', 4));   //motorista
+            $repository = new TRepository('SystemUser'); 
+            $motoristas = $repository->load($criteria); 
+            foreach ($motoristas as $motorista) 
+            { 
+               $orcamento = new OrcamentoMotorista;
+               $orcamento->cotacao_id = $object->id;
+               $orcamento->motorista_id = $motorista->id;
+               $orcamento->status = 1;
+               $orcamento->store(); 
+            }
+            
+            TTransaction::close();  // close the transaction
+            
+            // shows the success message
+            new TMessage('info', 'Pedido de cotação enviado.');
+            
+        }
+        catch (Exception $e) // in case of exception
+        {
+            new TMessage('error', $e->getMessage()); // shows the exception error message
+            $this->form->setData( $this->form->getData() ); // keep form data
+            TTransaction::rollback(); // undo all pending operations
+        }
+    }
+    
+    
+    function onEdit($param)
+    {
+        try
+        {
+            if (isset($param['id']))
+            {
+            
+                //$this->obs->setEditable(FALSE);
+                $key = $param['id'];  // get the parameter
+                TTransaction::open('uppertruck');   // open a transaction with database 'samples'
+                $object  = new Cotacao($key);        // instantiates object City
+                $cidade  = new Cidade($object->origem_cidade_id);
+                $cidade2 = new Cidade($object->destino_cidade_id);
+                $object->origem_estado_id  = $cidade->estado_id;
+                $object->destino_estado_id = $cidade2->estado_id;
+                
+                $criteria =  TCriteria::create( ['estado_id' => $object->origem_estado_id] );
+                $criteria2 = TCriteria::create( ['estado_id' => $object->destino_estado_id] );
+                TDBCombo::reloadFromModel('form_cotacao', 'origem_cidade_id',  'uppertruck', 'Cidade', 'id', '{nome} ({id})', 'nome', $criteria, TRUE);
+                TDBCombo::reloadFromModel('form_cotacao', 'destino_cidade_id', 'uppertruck', 'Cidade', 'id', '{nome} ({id})', 'nome', $criteria2, TRUE);
+                //new TMessage('info', json_decode($object['origem_cidade_id']));
+                
+                $this->form->setData($object);   // fill the form with the active record data
+                
+                
+                
+                 $input = (array)$this->form->getData();
+                 foreach ($input as $key => $value)
+                 {
+                     //echo $key;
+                     $this->input[$key]->setEditable(FALSE);
+                 }
+                
+                
+                $obj = new StdClass;
+                $obj->origem_cidade_id  = $object->origem_cidade_id;
+                $obj->destino_cidade_id = $object->destino_cidade_id;
+                TForm::sendData('form_cotacao', $obj);
+                
+                TTransaction::close();           // close the transaction
+            }
+            else
+            {
+                $this->form->clear( true );
+            }
+        }
+        catch (Exception $e) // in case of exception
+        {
+            new TMessage('error', $e->getMessage()); // shows the exception error message
+            TTransaction::rollback(); // undo all pending operations
+        }
+    }
+    
+    
+    public function Delete($param)
+    {
+        try
+        {
+            $key=$param['id']; // get the parameter $key
+            TTransaction::open('uppertruck'); // open a transaction with database
+            
+            $repos = new TRepository('OrcamentoMotorista');
+            $criteria = new TCriteria;
+            $criteria->add(new TFilter('cotacao_id', '=', $key));
+            $repos->delete($criteria);
+            
+            $object = new Cotacao($key); // instantiates the Active Record
+            $object->delete(); // deletes the object from the database
+            TTransaction::close(); // close the transaction
+            
+            $pos_action = new TAction([__CLASS__, 'onReload']);
+            new TMessage('info', AdiantiCoreTranslator::translate('Record deleted'), $pos_action); // success message
+        }
+        catch (Exception $e) // in case of exception
+        {
+            new TMessage('error', $e->getMessage()); // shows the exception error message
+            TTransaction::rollback(); // undo all pending operations
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formalização de transporte
+    - Uppertruck</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-form/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css-form/bootstrap.min.css">
+  <link rel="stylesheet" href="css-form/bootstrap.css">
+  <link rel="stylesheet" href="css-form/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/ec0f95ce9f.js" crossorigin="anonymous"></script>
+  <script src="js-form/jquery.min.js"></script>
+
+</head>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+  p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+.login-card .card-body {
+    padding: 85px 100px 60px;
+}
+.login-card-footer-text {
+    font-size: 13px;
+    color: #0d2366;
+    margin-bottom: 60px;
+}
+h2{
+  font-family: 'Inter', sans-serif;
+}
+
+
+body {
+            background-image: url('img-form/back-form.jpg');
+            background-size: cover; /* Para ajustar a imagem ao tamanho da tela */
+            background-repeat: no-repeat; /* Para impedir a repetição da imagem */
+        }
+.h4, h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.h2, h2 {
+    font-size: 2.8rem;
+}
+.fancy-file-upload{
+background: #ebebeb;
+    padding: 17px;
+    border-radius: 6px;
+  }
+  .brand-wrapper .logo {
+    height: 78px;
+    margin-left: 39%;
+}
+@media (max-width:748px){
+  .login-card .card-body {
+    padding: 85px 37px 60px;
+}
+}
+
+</style>
+
+
+	<body>
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="">
+        <div class="row no-gutters">
+       
+          <div class="col-md-8 offset-md-2 card login-card">
+            <div class="card-body">
+              
+            <h2>Utilize essa página para gerar um<b style="    color: #ebb100;"> contráto</b></h2>
+            <h4>Essas informações que serão preenchidas no formulário, irão gerar um contrato novo para o cliente. <br><br></h4>
+
+              <p class="login-card-description"></p>
+
+                <form action="gerar_contrato.php" method="POST" enctype="multipart/form-data"  style="width:100%;    max-width: 100%;">
+                  <div style="    padding: 0;" class="col-md-12">
+                    <div class="row">
+
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <span>Tomador do Serviço</span>
+                          <input required="" type="text" class="form-control" id="tomador" name="tomador" placeholder="*Nome completo ou razão social para uso no faturamento do frete
+                          ">
+                        </div>
+                      </div>
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <span>CPF/CNPJ</span>
+                        <input required="" type="text" class="form-control" id="dadostomador" name="dadostomador" placeholder="*Dados do tomador do serviço">
+                      </div>
+                    </div>
+
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span>Local Coleta</span>
+                      <input required="" type="text" class="form-control" id="localcoleta" name="localcoleta" placeholder="*Endereço completo com nome do estabelecimento e horário de funcionamento">
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span>Solicitante - Tel</span>
+                      <input required="" type="text" class="form-control" id="solicitantetel" name="solicitantetel" placeholder="*Nome - Telefone
+                      ">
+                    </div>
+                  </div>
+
+				
+
+
+					
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <span>Local Entrega:</span>
+                        <input required="" type="text" class="form-control" id="localentrega" name="localentrega" placeholder="*Endereço completo com nome do estabelecimento e horário de funcionamento">
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <span>Produto:</span>
+                        <input required="" type="text" class="form-control" id="produto" name="produto" placeholder="*Tipo de produto/material transportado">
+                      </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <span>Medidas unitárias:</span>
+                        <input required="" type="text" class="form-control" id="medidasunitarias" name="medidasunitarias" placeholder="*CxLxA">
+                      </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <span>Quantidade</span>
+                        <input required="" type="text" class="form-control" id="quantidade" name="quantidade" placeholder="*Volumetria">
+                      </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                          <label for="unitizacao">Unitização:</label>
+                          <select required="" class="form-control" id="unitizacao" name="unitizacao">
+                              <option value="Pallet">Pallet</option>
+                              <option value="Big Bag">Big Bag</option>
+                              <option value="Rolos">Rolos</option>
+                              <option value="Granel">Granel</option>
+                              <option value="Fardos">Fardos</option>
+                          </select>
+                      </div>
+                  </div>
+
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span>Peso Total:</span>
+                      <input required="" type="text" class="form-control" id="pesototal" name="pesototal" placeholder="*Em quilos">
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span>Cubagem Total:</span>
+                      <input required="" type="text" class="form-control" id="cubagemtotal" name="cubagemtotal" placeholder="*Em m³">
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <span>Valor:</span>
+                      <input required="" type="text" class="form-control" id="valor" name="valor" placeholder="*Valor do frete em R$
+                      ">
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                        <label>Seguro:</label><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="seguro[]" id="perda_total_parcial" value="Perda Total/Parcial">
+                            <label class="form-check-label" for="perda_total_parcial">Perda Total/Parcial</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="seguro[]" id="roubo" value="roubo">
+                            <label class="form-check-label" for="roubo">Roubo</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="seguro[]" id="avarias" value="avarias">
+                            <label class="form-check-label" for="avarias">Avarias</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="seguro[]" id="ambiental" value="ambiental">
+                            <label class="form-check-label" for="ambiental">Ambiental</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <span>Prazo de entrega:</span>
+                    <input required="" type="text" class="form-control" id="prazodeentrega" name="prazodeentrega" placeholder="*Em horas ou dias">
+                  </div>
+                </div>
+
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                      <label for="extras">Extras:</label>
+                      <select required=""  class="form-control" id="extras" name="extras">
+                          <option value="Empilhadeira">Empilhadeira</option>
+                          <option value="Munk">Munk</option>
+                          <option value="Paleteira">Paleteira</option>
+                          <option value="Nenhum">Nenhum</option>
+                      </select>
+                      <small><b>Custos cobrados a parte</b></small>
+                  </div>
+              </div>
+
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="pagamento">Pagamento via:</label>
+                    <select required=""  class="form-control" id="pagamentovia" name="pagamentovia">
+                        <option value="TED ou PIX">TED ou PIX</option>
+                        <option value="Boleto">Boleto</option>
+                        <option value="Cartão - PayPal">Cartão - PayPal</option>
+                    </select>
+                    <small><b>ICMS/ST: Recolhido pelo contratante (não caberá a transportadora responsabilidade sobre estes).</b> </small>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="form-group">
+                  <label for="demonstracao">Demonstração via:</label>
+                  <select required=""  class="form-control" id="demonstracao" name="demonstracao">
+                      <option value="Recibo">Recibo</option>
+                      <option value="CT-e">CT-e*</option>
+                  </select>
+                  <small><b>Caso escolhido CT-e, será adicionada a alíquota proporcional ao estado.
+                  </b> </small>
+              </div>
+          </div>
+
+
+          <div class="col-sm-12">
+           
+                <small><b>Coletas e/ou entregas em Zona Rural terão um acréscimo de R$200,00 + R$22,00 por Km. (compreende-se Zona Rural o acesso à vias não pavimentadas)
+
+                </b> </small>
+           
+        </div>
+
+
+
+
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <button type="submit" name="submit" value="Gerar Contrato" class="btn btn-primary btn-featured" required="required" style="  width: 100%;  background: #ebb100;margin-top:10px;padding: 1rem 6rem;">
+                          <span>ENVIAR</span>
+                          <i class="fa fa-envelope-open"></i>
+                        </button>
+                      </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <hr>
+                      </div>
+                  
+                
+                  </div>
+                </form>
+
+              
+                <div class="brand-wrapper">
+                <img src="assets/img/logo/logo.png" alt="logo" class="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js-form/bootstrap.min.js"></script>
+</body>
+</html>

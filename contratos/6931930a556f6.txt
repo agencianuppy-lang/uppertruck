@@ -1,0 +1,17 @@
+Tomador do Serviço: RS CONSTRUTORA
+Dados do tomador: 04.446.606/0001-06
+Local de coleta: Jundiaí - SP
+Solicitante Tel: Francisco - 11 96447-6587
+Local de entrega: Barcarena - PA
+Produto: Brocas e espaçadores
+Medidas unitarias: LARG: 50 cm  ALT:    90 cm   COMP: 1,80 M
+Quantidade: 8
+Unitilizacao: Granel
+Peso total: 100 KG
+Valor: R$ 2650,00
+Cubagem total: 7m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

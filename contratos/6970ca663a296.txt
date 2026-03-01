@@ -1,0 +1,17 @@
+Tomador do Serviço: Compmetal Industria e Comercio 
+Dados do tomador: 08.182.691/0001-01
+Local de coleta: Brasília - DF
+Solicitante Tel: João Victor - 41 99286-2727
+Local de entrega: Curitiba - PR
+Produto: Caixas 
+Medidas unitarias: 50x50x50cm
+Quantidade: 1
+Unitilizacao: Granel
+Peso total: 10 KG
+Valor: R$ 870,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

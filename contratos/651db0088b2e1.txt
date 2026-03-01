@@ -1,0 +1,16 @@
+Tomador do Serviço: RS CONSTRUÇÕES E EMPREENDIMENTOS IMOBILIÁRIOS LTDA
+Dados do tomador: 04.446.606/0001-06
+Local de coleta: R. Jurupari, 740 - Jardim Oriental, São Paulo - SP, 04348-070
+Solicitante tel: Maria Zilda - 24 98186-2991
+Local de entrega: Tv. Inácio Furtado - Murucupi, Barcarena - PA, 68447-000
+Produto: 3 cortinas, 1 grade de piso, 1 bobina e 7 sacos de ráfia
+Medidas unitarias: 1,7x0,6x0,6 + 0,7x0,7x0,4 + 0,5x0,5x0,3m + 0,84x0,84m
+Quantidade: 12
+Unitilizacao: Granel
+Peso total: 763
+Cubagem total: 3
+Seguro: Array
+Prazo: 5-7 dias
+extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

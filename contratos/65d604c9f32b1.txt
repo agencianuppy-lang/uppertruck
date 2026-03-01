@@ -1,0 +1,17 @@
+Tomador do Serviço: HMLB LOCAÇÕES DE IMÓVEIS E EQUIPAMENTOS
+Dados do tomador: 15.775.686/0001-60
+Local de coleta: Barracão Casa Grande
+Solicitante Tel: (14) 99753-3663
+Local de entrega: Rua Dr. Próspero Cecílio Coimbra, 333 - Jardim São Gabriel, Marília - SP, 17525-140
+Produto: Guarita de fibra montada
+Medidas unitarias: 1,2x1,2x2,3m
+Quantidade: 1
+Unitilizacao: Pallet
+Peso total: 100Kg
+Valor: R$1.400,00
+Cubagem total: 3
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 24h
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

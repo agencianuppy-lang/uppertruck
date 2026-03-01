@@ -1,0 +1,17 @@
+Tomador do Serviço: CONSTRUTORA A. GASPAR
+Dados do tomador: 08.323.347/0001-87
+Local de coleta: Rua B-1, s/N - Distrito Industrial, João Pessoa - PB, 58.082-036 (Redecorda) 
+Solicitante Tel: Katia - 84 99997-8797
+Local de entrega: Rua Poxoréo, 1064 - Centro, Rondonópolis - MT, 78700-060
+Produto: Volumes
+Medidas unitarias: 36x45x75cm
+Quantidade: 3
+Unitilizacao: Granel
+Peso total: 52 KG
+Valor: R$ 1170,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

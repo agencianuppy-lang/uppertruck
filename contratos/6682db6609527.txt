@@ -1,0 +1,17 @@
+Tomador do Serviço: CBM MONTAGEM E MANUTENÇÃO
+Dados do tomador: 43.474.409/0001-52
+Local de coleta: RUA ESTRADA DA GRACIOSA, 1151 - ATUBA 82840-360 CURITIBA - PR
+Solicitante Tel: Marli - 47 98852-2664
+Local de entrega: R. Aruana, 20 - Centro, Marcelândia - MT, 78535-000
+Produto: Tubos de aço
+Medidas unitarias: 6m
+Quantidade: 19
+Unitilizacao: Granel
+Peso total: 4000 KG
+Valor: R$ 9450,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 7-10 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

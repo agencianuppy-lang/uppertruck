@@ -1,0 +1,17 @@
+Tomador do Serviço: Riosanit Locação de Equipamentos
+Dados do tomador: 29.850.593/0001-67
+Local de coleta: R. dos Pinheiros, 155 - Chacara Santa Maria, Itapecerica da Serra - SP, 06857-790
+Solicitante Tel: Renato - 21 99508-6915
+Local de entrega: https://ul.waze.com/ul?ll=-22.96561000%2C-43.61879100&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location
+Produto: 10 banheiros standard montados + 1 banheiro PNE montado
+Medidas unitarias: 1,2x1,1x2,35m + 1,5x1,5x2,35m
+Quantidade: 11
+Unitilizacao: Pallet
+Peso total: 805Kg
+Valor: R$5.000,00
+Cubagem total: 35
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 24-48h
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

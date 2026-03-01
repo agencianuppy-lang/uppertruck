@@ -1,0 +1,17 @@
+Tomador do Serviço: CONSTRUTORA LUIZ COSTA
+Dados do tomador: 00.779.059/0001-20
+Local de coleta: Fer Alvarez
+Solicitante Tel: Jéssica - 84 99829-3077
+Local de entrega: Rodovia BR 110, Km 525.50, Nº 201 - Alto do Sumaré, Mossoró - RN, 59600970
+Produto: CHAPAS DE AÇO
+Medidas unitarias: 3,0x1,5m
+Quantidade: 3
+Unitilizacao: Granel
+Peso total: 943 KG
+Valor: R$ 3500,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: CT-e

@@ -1,0 +1,17 @@
+Tomador do Serviço: COMBER INDÚSTRIA
+Dados do tomador: 24322907000135
+Local de coleta: RUA I, 1015 - LOTE 1 - DISTRITO INDUSTRIAL, RONDONÓPOLIS - MT, 78745-740
+Solicitante Tel: Danielly - 64 99968-7439
+Local de entrega: VIA SECUNDÁRIA, 8 - DISTRITO AGROINDUSTRIAL DARV II, RIO VERDE - GO, 75913-558
+Produto: Janelas fundidas
+Medidas unitarias: 1,2x1,2m
+Quantidade: 2
+Unitilizacao: Pallet
+Peso total: 330 KG
+Valor: R$ 3350,00
+Cubagem total: 2m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

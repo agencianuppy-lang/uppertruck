@@ -1,0 +1,17 @@
+Tomador do Serviço: INTERATIVA FACILITIES
+Dados do tomador: 05.058.935/0001-42
+Local de coleta: Brasília - DF
+Solicitante Tel: Matheus - 61 99878-2275
+Local de entrega: Indaiatuba - SP
+Produto: Lavadoras de piso
+Medidas unitarias: 1,19x0,54x1,0
+Quantidade: 2
+Unitilizacao: Granel
+Peso total: 268 KG
+Valor: R$ 1850,00
+Cubagem total: 2m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

@@ -1,0 +1,17 @@
+Tomador do Serviço: ASSOCIAÇÃO AUTO GÁVEA TÁXI
+Dados do tomador: 05022448000120
+Local de coleta: São Paulo - SP
+Solicitante Tel: 21 98119‑1134‬
+Local de entrega: Rio de Janeiro - RJ
+Produto: Guarita de fibra
+Medidas unitarias: 2,0x105x2,2m
+Quantidade: 1
+Unitilizacao: Granel
+Peso total: 150 KG
+Valor: R$ 1850,00
+Cubagem total: 5m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

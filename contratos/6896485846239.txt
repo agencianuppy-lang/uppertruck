@@ -1,0 +1,17 @@
+Tomador do Serviço: COPAVI
+Dados do tomador: 13.610.525/0003-52
+Local de coleta: São Caetano do Sul - SP
+Solicitante Tel: Cristina - 51 99745-6560
+Local de entrega: Uruaçu - GO
+Produto: Cones
+Medidas unitarias: 1,2x1,2x1,7m
+Quantidade: 1
+Unitilizacao: Pallet
+Peso total: 700 KG
+Valor: R$ 3000,00
+Cubagem total: 3m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

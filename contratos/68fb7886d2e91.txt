@@ -1,0 +1,17 @@
+Tomador do Serviço: Sonne da Amazônia Comércio de Produtos Médicos
+Dados do tomador: 17.957.456/0002-28
+Local de coleta: Limeira - SP
+Solicitante Tel: Adriely - 92 98263-9873
+Local de entrega: Boa Vista - RR
+Produto: Lavadora + Secadora
+Medidas unitarias: Lavadora: 2,3x2,14x2,14m Secadora: 2,1x1,8x2,6m
+Quantidade: 2
+Unitilizacao: Granel
+Peso total: 5.500 KG
+Valor: R$ 15650,00
+Cubagem total: 20m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 15-20 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

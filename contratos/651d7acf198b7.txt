@@ -1,0 +1,16 @@
+Tomador do Serviço: POTÊNCIA LIMPEZA E LOCAÇÕES 
+Dados do tomador: 18.317.798/0001-65
+Local de coleta: R. dos Pinheiros, 155 - Chacara Santa Maria, Itapecerica da Serra - SP, 06857-790
+Solicitante tel: Flávia - 71 99939-8490
+Local de entrega: Av Onze de Agosto , 37E - Federação- Salvador - Bahia / cep: 40230-110
+Produto: 5 banheiros químicos desmontados + 1 pia avulsa
+Medidas unitarias: 1,2x1,1x2,35m
+Quantidade: 11
+Unitilizacao: Granel
+Peso total: 360
+Cubagem total: 8
+Seguro: Array
+Prazo: 4-5 dias
+extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

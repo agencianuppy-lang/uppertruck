@@ -1,0 +1,16 @@
+Tomador do Serviço: Jonathas Narevicius
+Dados do tomador: 
+Local de coleta: Brasil
+Solicitante tel: 11959674023
+Local de entrega: Sao Paulo
+Produto: Caixas de vidro
+Medidas unitarias: 12unidades
+Quantidade: 15
+Unitilizacao: Rolos
+Peso total: 150kg
+Cubagem total: 15
+Seguro: Roubo
+Prazo: 15 dias
+extras: Munk
+Pagamento: Boleto
+Demonstracao: Recibo

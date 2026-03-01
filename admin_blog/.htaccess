@@ -1,0 +1,40 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1. Forçar HTTPS
+RewriteCond %{HTTP_HOST} ^fatorph\.com\.br [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# 2. Bloquear métodos perigosos
+RewriteCond %{REQUEST_METHOD} ^TRACE
+RewriteRule ^ - [F]
+
+# 3. Proteger arquivos sensíveis
+<FilesMatch "^(\.env|\.git|composer\.json|composer\.lock|package\.json|README\.md)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# 4. Remover barra final das URLs (ex: /blog/teste/ → /blog/teste)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# 5. Rota amigável: posts individuais
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/([^/]+)$ detalhe-newblog.php?slug=$1 [L,QSA]
+
+# 6. Rota para listagem do blog
+RewriteRule ^blog$ new-blog.php [L,QSA]
+
+RewriteRule ^sistema$ sistema/index.php [L,QSA]
+
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

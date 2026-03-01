@@ -1,0 +1,17 @@
+Tomador do Serviço: GSC CONSTRUTORA
+Dados do tomador: 42.345.268/0001-05
+Local de coleta: Rua Tiradentes, 509 - V.Martins - Pinheiro Machado, Avaré - SP, 18705-410
+Solicitante Tel: Rubens - 91 98161-4170
+Local de entrega: https://maps.app.goo.gl/TKSWKARaEu3jVSkz9?g_st=ic
+Produto: Banheiro químico montado
+Medidas unitarias: 1,2x1,1x2,35m
+Quantidade: 1
+Unitilizacao: Granel
+Peso total: 70
+Valor: R$1.900,00
+Cubagem total: 3
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

@@ -1,0 +1,17 @@
+Tomador do Serviço: MG Vidros Automotivos
+Dados do tomador: 07.571.746/0033-81
+Local de coleta: Barracão Casa Grande
+Solicitante Tel: Edineia - 27 99261-5663
+Local de entrega:  Avenida Miguel Rosa - Redenção - Teresina/PI - 64017-770
+Produto: Guarita de fibra
+Medidas unitarias:  2,0x1,05x2,2m
+Quantidade: 1
+Unitilizacao: Granel
+Peso total: 150 KG
+Valor: R$ 4000,00
+Cubagem total: 5m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 7-10 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

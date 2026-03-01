@@ -1,0 +1,17 @@
+Tomador do Serviço: DATA SHOW
+Dados do tomador: 44.104.045/0001-81
+Local de coleta: São Paulo - SP
+Solicitante Tel: Ladyanne - 16 98224-5273
+Local de entrega: Rio de Janeiro - RJ
+Produto: Peças para instalação de show
+Medidas unitarias: 24 peças de 1,5x0,7x0,1m + 18 peças de 40x20x20cm
+Quantidade: 42
+Unitilizacao: Granel
+Peso total: 600 KG
+Valor: R$ 2150,00
+Cubagem total: 3m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

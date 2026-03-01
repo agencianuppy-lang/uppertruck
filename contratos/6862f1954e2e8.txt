@@ -1,0 +1,17 @@
+Tomador do Serviço: CONDOMÍNIO RESIDENCIAL SAN PIETRO SPE LTDA
+Dados do tomador: CONDOMÍNIO RESIDENCIAL SAN PIETRO SPE LTDA
+Local de coleta: CONDOMÍNIO RESIDENCIAL SAN PIETRO SPE LTDA Nº223 QD 17 LT 1-A
+Solicitante Tel: (62)3315-0000
+Local de entrega: OBRA ANÁPOLIS
+Produto: CAIXA
+Medidas unitarias: 0,60 X 0,60 X 0,60
+Quantidade: 1
+Unitilizacao: Pallet
+Peso total: 39 KG
+Valor: R$ 800,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

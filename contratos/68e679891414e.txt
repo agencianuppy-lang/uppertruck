@@ -1,0 +1,17 @@
+Tomador do Serviço: HARAS JML
+Dados do tomador: 46.101.594/0001-28
+Local de coleta: Indaiatuba - SP
+Solicitante Tel: MATEUS ARISTIDES BELEI - 14 99680-9940
+Local de entrega: Lençóis Paulista - SP
+Produto: Cocho para gado
+Medidas unitarias:  0,7x1,0x0,6m
+Quantidade: 7
+Unitilizacao: Granel
+Peso total: 98 KG
+Valor: R$ 800,00
+Cubagem total: 3m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

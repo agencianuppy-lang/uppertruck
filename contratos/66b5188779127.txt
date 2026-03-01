@@ -1,0 +1,17 @@
+Tomador do Serviço: ABR BIOENERGIA 
+Dados do tomador: 42.078.165/0001-26
+Local de coleta: R. Servidao, 432 - Vila Sadokim, Guarulhos - SP, 08584-195
+Solicitante Tel: Edmilson - 27 99903-6950
+Local de entrega: DISTRITO JUERANA, SN - ZONA RURAL, CARAVELAS - BA, 45900-000 (ABR BIOENERGIA)
+Produto: BARRIL
+Medidas unitarias: 90x60x60cm
+Quantidade: 1
+Unitilizacao: Pallet
+Peso total: 320 KG
+Valor: R$ 1650,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

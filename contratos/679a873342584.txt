@@ -1,0 +1,17 @@
+Tomador do Serviço: SMART LOCSERVICE
+Dados do tomador: 54.151.801/0001-87
+Local de coleta: BARUERI - SP
+Solicitante Tel: José - 88 98226-9028
+Local de entrega: IGUATU - CE
+Produto: Banheiros químicos desmontados
+Medidas unitarias: 1,2X1,1X2,35M
+Quantidade: 20
+Unitilizacao: Granel
+Peso total: 1400 KG
+Valor: R$ 6000,00
+Cubagem total: 30m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 7-10 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

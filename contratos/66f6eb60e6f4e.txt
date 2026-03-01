@@ -1,0 +1,17 @@
+Tomador do Serviço: Matte Materiais de Construção
+Dados do tomador: 09.650.965/0001-02
+Local de coleta: Britaço
+Solicitante Tel: Daniel - 45 99132-9047
+Local de entrega: https://maps.app.goo.gl/Y4DJfLERT5EHb8eu7?g_st=com.google.maps.preview.copy
+Produto: Chapas de aço
+Medidas unitarias: 3,0x1,0m
+Quantidade: 3
+Unitilizacao: Granel
+Peso total: 452 KG
+Valor: R$ 4500,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

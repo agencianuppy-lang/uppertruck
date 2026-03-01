@@ -1,0 +1,17 @@
+Tomador do Serviço: MODULIZA INDÚSTRIA DE ESTRURAS
+Dados do tomador: 57.183.570/0001-81
+Local de coleta: São Paulo - SP
+Solicitante Tel: Guto - 73 98804‑6668‬
+Local de entrega: Porto Seguro - BA
+Produto: Máquinas de corte
+Medidas unitarias: Carreta de 14m dedicada 
+Quantidade: 1
+Unitilizacao: Pallet
+Peso total: 5000 KG
+Valor: R$ 17500,00
+Cubagem total: 170m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

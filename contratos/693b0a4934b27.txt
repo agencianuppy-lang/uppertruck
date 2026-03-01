@@ -1,0 +1,17 @@
+Tomador do Serviço: CSI NORDESTE
+Dados do tomador: 06.146.986/0001-99
+Local de coleta: São João da Boa Vista - SP
+Solicitante Tel: Idervan - 71 98172-3121
+Local de entrega: Dias D'ávila
+Produto: CHAPAS, VIGAS E TUBOS
+Medidas unitarias: Viga W: 2,0m Chapa: 2,0x2,0m Tubo: 2,2x1,5m
+Quantidade: 4
+Unitilizacao: Granel
+Peso total: 4390 KG
+Valor: R$ 7250,00
+Cubagem total: Isento
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

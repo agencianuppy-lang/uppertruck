@@ -1,0 +1,17 @@
+Tomador do Serviço: Ferragens Londrina
+Dados do tomador: 50.171.897/0001-94
+Local de coleta: Guarulhos - SP
+Solicitante Tel: Abner - 43 3323-4141
+Local de entrega: Duque de Caxias - RJ
+Produto: Bombonas
+Medidas unitarias: 30x30x30cm
+Quantidade: 10
+Unitilizacao: Granel
+Peso total: 210 KG
+Valor: R$ 1850,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

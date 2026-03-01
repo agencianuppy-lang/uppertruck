@@ -1,0 +1,17 @@
+Tomador do Serviço: CLUB MED BRASIL S.A.
+Dados do tomador: 03.010.384/0010-02
+Local de coleta: São Paulo - SP
+Solicitante Tel: Rafaela - 11 97695-5856
+Local de entrega: Fortaleza - CE, Niterói - RJ, Goiânia - GO, Porto Alegre - RS, Sorocaba - SP
+Produto: Caixas e livros
+Medidas unitarias: 23 cm de largura x  17,5 de altura  x 35,5 cm de comprimento
+Quantidade: 117 volumes totais
+Unitilizacao: Granel
+Peso total: 600 KG
+Valor: R$ 3000,00
+Cubagem total: 1m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 7-10 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: CT-e

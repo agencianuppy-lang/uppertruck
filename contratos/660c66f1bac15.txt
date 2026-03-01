@@ -1,0 +1,17 @@
+Tomador do Serviço: Perito Equipamentos 
+Dados do tomador: 17.872.270/0001-95
+Local de coleta: Rua Engenheiro Paulino Francisco de Carvalho, 81 A - Vila Formosa, São Paulo - SP, 03471-120
+Solicitante Tel: Juliana - 11 99880-00383
+Local de entrega: Rua dos Abacateiros, 15 - Jardim São Francisco, São Luís - MA, 65076-010
+Produto: Botinas de EPI
+Medidas unitarias: 50x40x40cm
+Quantidade: 63
+Unitilizacao: Granel
+Peso total: 557
+Valor: R$3.000,00
+Cubagem total: 5
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

@@ -1,0 +1,17 @@
+Tomador do Serviço: PRIME EMPREENDIMENTOS
+Dados do tomador: 24.283.035/0001-43
+Local de coleta: MR & LAMY PLAST
+Solicitante Tel: Giovanne - 96 98111-3102
+Local de entrega: Av. Primeiro de Maio, 576 - Buritizal, Macapá - AP, 68901-000
+Produto: PALLET
+Medidas unitarias:  2,0x1,0x2,3m
+Quantidade: 1
+Unitilizacao: Pallet
+Peso total: 340 KG
+Valor: R$ 2450,00
+Cubagem total: 5m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 7-10 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

@@ -1,0 +1,16 @@
+Tomador do Serviço: Jonathas Nareviciuss
+Dados do tomador: 438.097.088-44
+Local de coleta: São Paulo
+Solicitante tel: 11959674023
+Local de entrega: Rio de Janeiro
+Produto: Caixas de vidro
+Medidas unitarias: 12
+Quantidade: 133
+Unitilizacao: Granel
+Peso total: 150kg
+Cubagem total: 15
+Seguro: Roubo
+Prazo: 15 dias
+extras: Paleteira
+Pagamento: Boleto
+Demonstracao: CT-e*

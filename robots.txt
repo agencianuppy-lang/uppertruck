@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap:https://uppertruck.com/sitemap.xml
+Sitemap:https://uppertruck.com/sitemap_1.xml

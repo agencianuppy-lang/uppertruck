@@ -1,0 +1,17 @@
+Tomador do Serviço: PRO-PALCO LOCACAO E EVENTOS LTDA
+Dados do tomador: 10.883.142/0001-06
+Local de coleta: Estr. da Fazendinha, 1169 - Pousada dos Bandeirantes, Carapicuíba - SP, 06351-040
+Solicitante Tel: Euçan - 61 98404-8948
+Local de entrega: R 10 QUADRA 14, LOTE 01 S/N SETOR CENTRAL, SANTO ANTONIO DO DESCOBERTO - GO, 72900-001
+Produto: Talhas
+Medidas unitarias: 0,9x0,7x0,9m
+Quantidade: 1
+Unitilizacao: Pallet
+Peso total: 210Kg
+Valor: R$1.850,00
+Cubagem total: 1
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 48-72h
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

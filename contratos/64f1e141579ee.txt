@@ -1,0 +1,16 @@
+Tomador do Serviço: 
+Dados do tomador: 
+Local de coleta: sasas
+Solicitante tel: asasas
+Local de entrega: asasas
+Produto: sasasa
+Medidas unitarias: sasasa
+Quantidade: ssasasa
+Unitilizacao: Big Bag
+Peso total: sasasasa
+Cubagem total: sasasa
+Seguro: Roubo
+Prazo: sasas
+extras: Empilhadeira
+Pagamento: TED ou PIX
+Demonstracao: Recibo

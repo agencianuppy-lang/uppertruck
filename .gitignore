@@ -1,0 +1,32 @@
+# WORDPRESS COMPLETO
+wp-admin/
+wp-includes/
+wp-content/
+
+newsite/wp-admin/
+newsite/wp-includes/
+newsite/wp-content/
+
+# vídeos
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# compactados
+*.zip
+*.rar
+*.7z
+
+# logs
+*.log
+error_log
+
+# node
+node_modules/
+
+# build/cache
+dist/
+build/
+.cache/
+tmp/

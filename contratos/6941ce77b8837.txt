@@ -1,0 +1,17 @@
+Tomador do Serviço: HOTEL ALFAMA
+Dados do tomador: 04.603.830/0001- 64
+Local de coleta: LIMEIRA - SP
+Solicitante Tel: Marcelo - 71 98881‑2332‬
+Local de entrega: SALVADOR - BA
+Produto: Calandra
+Medidas unitarias: 1,6x4,0x1,95m
+Quantidade: 1
+Unitilizacao: Granel
+Peso total: 1500 KG
+Valor: R$ 7500,00
+Cubagem total: 8m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

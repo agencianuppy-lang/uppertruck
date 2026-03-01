@@ -1,0 +1,17 @@
+Tomador do Serviço: ATIVA LOCAÇÃO LTDA
+Dados do tomador: 02.580.316/0003-97
+Local de coleta: Av. Marco, 790 - Chácaras Marco, Barueri - SP, 06419-000
+Solicitante Tel: Thaynara - 34 99164-0348
+Local de entrega: Av. Airton Borges da Silva, 1500 - Minas Gerais, Uberlândia - MG, 38402-333
+Produto: Lavatórios portáteis
+Medidas unitarias: 1,75x0,9x1,15m
+Quantidade: 5
+Unitilizacao: Granel
+Peso total: 200
+Valor: R$1.650,00
+Cubagem total: 9
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 48-72h
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

@@ -1,0 +1,17 @@
+Tomador do Serviço: MDE RECICLAGEM
+Dados do tomador: 08.084.521/0001-86
+Local de coleta: Caxias do Sul - RS
+Solicitante Tel: Ednalva - 27 99808-49938
+Local de entrega: Aracruz - ES
+Produto: Empilhadeira
+Medidas unitarias: 3,8x1,2x2,9m
+Quantidade: 1
+Unitilizacao: Granel
+Peso total: 2400 KG
+Valor: R$ 6500,00
+Cubagem total: 14m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

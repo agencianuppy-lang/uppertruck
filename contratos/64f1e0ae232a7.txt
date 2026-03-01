@@ -1,0 +1,16 @@
+Tomador do Serviço: 
+Dados do tomador: 
+Local de coleta: 
+Solicitante tel: 
+Local de entrega: 
+Produto: 
+Medidas unitarias: 
+Quantidade: 
+Unitilizacao: Big Bag
+Peso total: 
+Cubagem total: 
+Seguro: Array
+Prazo: 
+extras: Array
+Pagamento: 
+Demonstracao: Array

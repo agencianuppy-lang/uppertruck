@@ -1,0 +1,17 @@
+Tomador do Serviço: CSI NORDESTE
+Dados do tomador: 06.146.986/0001-99
+Local de coleta: Fer Alvarez
+Solicitante Tel: Idervan - 71 98172-3121
+Local de entrega: Rua do Polo, 89 - Polo de Serviços, Dias Dávila - BA, 42850-000
+Produto: Chapas de aço
+Medidas unitarias: 1,14x0,43x0,2m
+Quantidade: 1
+Unitilizacao: Pallet
+Peso total: 270 KG
+Valor: R$ 3800,00
+Cubagem total: 1m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

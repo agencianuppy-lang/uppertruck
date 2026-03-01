@@ -1,0 +1,16 @@
+Tomador do Serviço: CONSÓRCIO SA AMBIENTAL
+Dados do tomador: 47.632.098/0001-63
+Local de coleta: R. Monte Castelo, 561 - Verde, Piracicaba - SP, 13424-390
+Solicitante tel: Sanny - +55 27 98847-0020
+Local de entrega: Rod. Luiz Theodoro Musso, 903 - De Carli, Aracruz - ES, 29194-004
+Produto: Sopradores
+Medidas unitarias: 2,2x1,8x1,9m
+Quantidade: 4
+Unitilizacao: Pallet
+Peso total: 6.800
+Cubagem total: 30
+Seguro: Array
+Prazo: 24-48h
+extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

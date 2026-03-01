@@ -1,0 +1,16 @@
+Tomador do Serviço: João da Silva Neto
+Dados do tomador: 438.097.088-55
+Local de coleta: Piauí
+Solicitante tel: 11 95967 4022
+Local de entrega: São Paulo
+Produto: Caixas de vidro
+Medidas unitarias: 12
+Quantidade: 15
+Unitilizacao: Rolos
+Peso total: 150kg
+Cubagem total: 15
+Seguro: Perda Total/Parcial
+Prazo: 15 dias
+extras: Munk
+Pagamento: Boleto
+Demonstracao: CT-e*

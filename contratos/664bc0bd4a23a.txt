@@ -1,0 +1,17 @@
+Tomador do Serviço: Smart Loc Service
+Dados do tomador: 54.151.801/0001-87
+Local de coleta: Av. Marco, 790 - Chácaras Marco, Barueri - SP, 06419-000
+Solicitante Tel: José - 88 98226-9028
+Local de entrega: https://maps.app.goo.gl/LTWvzQEniKSNi6Uy5?g_st=ic
+Produto: Banheiro químico desmontado
+Medidas unitarias: 1,12x1,2x2,3m
+Quantidade: 30
+Unitilizacao: Pallet
+Peso total: 2.100 KG
+Valor: R$ 6000,00
+Cubagem total: 47m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

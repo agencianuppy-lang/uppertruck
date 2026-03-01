@@ -1,0 +1,16 @@
+Tomador do Serviço: 
+Dados do tomador: 
+Local de coleta: BNrasi
+Solicitante tel: 45454
+Local de entrega: Sao Paulo
+Produto: Rio
+Medidas unitarias: 12
+Quantidade: as
+Unitilizacao: Rolos
+Peso total: 15kg
+Cubagem total: 21
+Seguro: Roubo
+Prazo: yh
+extras: Munk
+Pagamento: TED ou PIX
+Demonstracao: Recibo

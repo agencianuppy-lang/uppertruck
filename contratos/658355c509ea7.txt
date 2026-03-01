@@ -1,0 +1,17 @@
+Tomador do Serviço: CASTILHO ENGENHARIA
+Dados do tomador: 92.779.503/0001-25
+Local de coleta: Santo André - SP
+Solicitante Tel: Lucas - 67 99172-6492
+Local de entrega: Toledo - PR 
+Produto: Rolos de borracha
+Medidas unitarias: 1,0x0,9x0,9m
+Quantidade: 2
+Unitilizacao: Rolos
+Peso total: 700Kg
+Valor: R$3.600,00
+Cubagem total: 2
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 24-48h
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

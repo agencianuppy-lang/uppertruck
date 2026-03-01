@@ -1,0 +1,17 @@
+Tomador do Serviço: MATTE MATERIAIS DE CONSTRUÇÃO
+Dados do tomador: 09.650.965/0001-02
+Local de coleta: Fer-Alvarez
+Solicitante Tel: Daniel - 45 99132-9047
+Local de entrega: https://maps.app.goo.gl/Y4DJfLERT5EHb8eu7?g_st=com.google.maps.preview.copy
+Produto: Chapas de aço
+Medidas unitarias: 6,0x2,5x0,06m
+Quantidade: 2
+Unitilizacao: Granel
+Peso total: 1415 KG
+Valor: R$ 4150,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

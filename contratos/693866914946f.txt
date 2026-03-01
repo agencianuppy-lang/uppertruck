@@ -1,0 +1,17 @@
+Tomador do Serviço: PRIME LOCAÇÃO DE ESTRUTURAS E SERVIÇOS DE CONSERVAÇÃO LTDA
+Dados do tomador: 26.875.979/0001-35
+Local de coleta: Uberaba - MG
+Solicitante Tel: Guto - 63 99984-9000
+Local de entrega: Gurupi - TO
+Produto: Tanque de sucção
+Medidas unitarias: 1,5x1,5x1,7m
+Quantidade: 1
+Unitilizacao: Granel
+Peso total: 250 KG
+Valor: R$ 4000,00
+Cubagem total: 4m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

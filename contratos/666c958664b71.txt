@@ -1,0 +1,17 @@
+Tomador do Serviço: PEDRO LOCAÇÕES
+Dados do tomador: 44.946.476/0001-95
+Local de coleta: Av. da Amizade, 670 - Jardim Adelia, Americana - SP, 13469-293
+Solicitante Tel: Jacqueline - 19 98281--3333
+Local de entrega: R. Maria Duarte de Almeida, 10 - qd 32 - Ampliação, Itaboraí - RJ, 24800-001
+Produto: Containers demontados
+Medidas unitarias: Truck dedicado
+Quantidade: 10
+Unitilizacao: Granel
+Peso total: 3500 KG
+Valor: R$ 5500,00
+Cubagem total: Isento
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

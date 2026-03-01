@@ -1,0 +1,17 @@
+Tomador do Serviço: COMBER INDÚSTRIA
+Dados do tomador: 24322907000135 
+Local de coleta: Rondonópolis - MT
+Solicitante Tel: Jéssica - 64 99968-7439
+Local de entrega: Rio Verde - GO
+Produto: Portas de ferro
+Medidas unitarias: 80x40x40cm
+Quantidade: 6
+Unitilizacao: Granel
+Peso total: 990 KG
+Valor: R$ 1650,00
+Cubagem total: 2m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

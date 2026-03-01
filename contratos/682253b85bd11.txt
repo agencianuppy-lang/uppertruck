@@ -1,0 +1,17 @@
+Tomador do Serviço: Eletrofor Soluções Elétricas
+Dados do tomador: 06.878.025/0001-79
+Local de coleta: Guarulhos - SP
+Solicitante Tel: Luíza - 71 99935‑4320‬
+Local de entrega: Nuporanga - SP
+Produto: Amarrados 
+Medidas unitarias: 6,0x0,6m
+Quantidade: 5
+Unitilizacao: Granel
+Peso total: 3.300 KG
+Valor: R$ 3000,00
+Cubagem total: 11m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 1-2 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: Recibo

@@ -1,0 +1,16 @@
+Tomador do Serviço: Uppertruck Express Eireli
+Dados do tomador: 24940831000101
+Local de coleta: São Paulo
+Solicitante tel: 44997370488
+Local de entrega: João Pessoa
+Produto: Banheiros químicos 
+Medidas unitarias: 1,2x1,2x2,3
+Quantidade: 2
+Unitilizacao: Pallet
+Peso total: 140
+Cubagem total: 6
+Seguro: Avarias
+Prazo: 5
+extras: Empilhadeira
+Pagamento: TED ou PIX
+Demonstracao: Recibo

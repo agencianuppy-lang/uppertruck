@@ -1,0 +1,17 @@
+Tomador do Serviço: ATIVA LOCAÇÃO
+Dados do tomador: 02.580.316/0003-97
+Local de coleta: Barueri - SP
+Solicitante Tel: Bruno - 34 99164-0348
+Local de entrega: Uberlândia - MG
+Produto: Caixa com peças de reposição
+Medidas unitarias: 50x50x30cm
+Quantidade: 1
+Unitilizacao: Granel
+Peso total: 15 KG
+Valor: R$ 950,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 3-4 dias
+Extras: Nenhum
+Pagamento: TED ou PIX
+Demonstracao: CT-e

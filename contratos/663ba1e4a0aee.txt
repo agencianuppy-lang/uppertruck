@@ -1,0 +1,17 @@
+Tomador do Serviço: CONSTRUTORA LUIZ COSTA
+Dados do tomador: 00.779.059/0001-20
+Local de coleta: Av. Ademir Gomes de Lima, 755 - Distrito Industrial, São João da Boa Vista - SP, 13877-750
+Solicitante Tel: MAGNO - 84 98887-0697
+Local de entrega: https://maps.google.com?q=-5.2396780,-37.3331990&entry=gps&lucs=,94222043,47071704,47069508,94218635,94203013,47084304,94208458,94208447&g_st=ic
+Produto: CHAPAS DE AÇO
+Medidas unitarias: 3,0X1,25X0,01M
+Quantidade: 5
+Unitilizacao: Granel
+Peso total: 1474 KG
+Valor: R$ 4500,00
+Cubagem total: 0m³
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 5-7 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: CT-e

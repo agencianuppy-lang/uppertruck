@@ -1,0 +1,17 @@
+Tomador do Serviço: AJ INDÚSTRIA E COMÉRCIO DE METAIS
+Dados do tomador: 08.651.435/0001-08
+Local de coleta: São João da Boa Vista - SP
+Solicitante Tel: Lucas - 92 99603-1025
+Local de entrega: Manaus - AM
+Produto: Perfis de aço
+Medidas unitarias: 2,0x0,3m
+Quantidade: 9
+Unitilizacao: Granel
+Peso total: 681 KG
+Valor: R$ 6000,00
+Cubagem total: Isento
+Seguro: Perda Total/Parcial, roubo, avarias
+Prazo: 15-20 dias
+Extras: Nenhum
+Pagamento: Boleto
+Demonstracao: Recibo

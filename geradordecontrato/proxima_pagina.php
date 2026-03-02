@@ -1,6 +1,45 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) { header("Location: index.php"); exit(); }
+
+$prefill = [];
+$modoReutilizacao = false;
+$contratoBaseId = 0;
+
+if (isset($_GET['clonar'])) {
+    $contratoBaseId = (int) $_GET['clonar'];
+
+    if ($contratoBaseId > 0) {
+        include "conexao/key.php";
+
+        $stmt = $conn->prepare("SELECT
+            email, tomador_nome, tomador_doc, solicitante_tel,
+            end_coleta, end_entrega,
+            produto, medidas, unitizacao, quantidade, peso_total_kg, cubagem_m3,
+            valor_frete, pagamento_via, demonstracao_via,
+            seguro_perda_total_parcial, seguro_roubo, seguro_avarias, seguro_ambiental,
+            prazo_entrega, extras
+            FROM contratos
+            WHERE id = ?
+            LIMIT 1");
+
+        if ($stmt) {
+            $stmt->bind_param("i", $contratoBaseId);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $prefill = $result ? ($result->fetch_assoc() ?: []) : [];
+            $modoReutilizacao = !empty($prefill);
+            $stmt->close();
+        }
+
+        $conn->close();
+    }
+}
+
+$prefillJson = json_encode(
+    $prefill,
+    JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT
+);
 ?>
 
 <!DOCTYPE html>
@@ -444,6 +483,12 @@ if (!isset($_SESSION['user_id'])) { header("Location: index.php"); exit(); }
 
         <!-- STEPPER -->
         <div class="wizard">
+            <?php if ($modoReutilizacao): ?>
+                <div class="alert alert-info border-0 mb-4">
+                    Dados do contrato #<?= $contratoBaseId ?> carregados como base. Altere o que precisar e salve para gerar um novo contrato sem alterar o original.
+                </div>
+            <?php endif; ?>
+
             <div class="stepper mb-4">
                 <div class="step" data-step="1">
                     <div class="dot">1</div><label>Tomador</label>
@@ -640,6 +685,65 @@ if (!isset($_SESSION['user_id'])) { header("Location: index.php"); exit(); }
                 </div>
             </form>
         </div>
+
+        <script>
+            (function () {
+                const prefill = <?= $prefillJson ?: '{}' ?>;
+                if (!prefill || !Object.keys(prefill).length) return;
+
+                const setValue = (name, value) => {
+                    const field = document.querySelector(`[name="${name}"]`);
+                    if (!field || value === null || value === undefined) return;
+                    field.value = String(value);
+                };
+
+                const setChecked = (name, value) => {
+                    const field = document.querySelector(`[name="${name}"]`);
+                    if (!field) return;
+                    field.checked = !!Number(value);
+                };
+
+                [
+                    'tomador_nome', 'tomador_doc', 'email', 'solicitante_tel',
+                    'end_coleta', 'end_entrega',
+                    'produto', 'medidas', 'unitizacao', 'quantidade', 'peso_total_kg', 'cubagem_m3',
+                    'valor_frete', 'pagamento_via', 'demonstracao_via', 'prazo_entrega'
+                ].forEach(name => setValue(name, prefill[name]));
+
+                const docField = document.querySelector('[name="tomador_doc"]');
+                if (docField && docField.value) {
+                    const digits = docField.value.replace(/\D/g, '');
+                    if (digits.length <= 11) {
+                        if (digits.length > 9) {
+                            docField.value = digits.replace(/^(\d{3})(\d{3})(\d{3})(\d{0,2}).*/, '$1.$2.$3-$4');
+                        } else if (digits.length > 6) {
+                            docField.value = digits.replace(/^(\d{3})(\d{3})(\d{0,3}).*/, '$1.$2.$3');
+                        } else if (digits.length > 3) {
+                            docField.value = digits.replace(/^(\d{3})(\d{0,3}).*/, '$1.$2');
+                        } else {
+                            docField.value = digits;
+                        }
+                    } else {
+                        if (digits.length > 12) {
+                            docField.value = digits.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{0,2}).*/, '$1.$2.$3/$4-$5');
+                        } else if (digits.length > 8) {
+                            docField.value = digits.replace(/^(\d{2})(\d{3})(\d{3})(\d{0,4}).*/, '$1.$2.$3/$4');
+                        } else if (digits.length > 5) {
+                            docField.value = digits.replace(/^(\d{2})(\d{3})(\d{0,3}).*/, '$1.$2.$3');
+                        } else if (digits.length > 2) {
+                            docField.value = digits.replace(/^(\d{2})(\d{0,3}).*/, '$1.$2');
+                        } else {
+                            docField.value = digits;
+                        }
+                    }
+                }
+
+                setChecked('seguro_perda_total_parcial', prefill.seguro_perda_total_parcial);
+                setChecked('seguro_roubo', prefill.seguro_roubo);
+                setChecked('seguro_avarias', prefill.seguro_avarias);
+                setChecked('seguro_ambiental', prefill.seguro_ambiental);
+            })();
+        </script>
 
         <script>
             (function () {

@@ -83,6 +83,12 @@ if (!isset($_SESSION['user_id'])) {
             background: #f8f9fa
         }
 
+        .btn-clone {
+            color: #0aab04;
+            border-color: #0aab04;
+            background: #eefbf0
+        }
+
         .btn-action:hover {
             filter: brightness(.95)
         }
@@ -217,6 +223,10 @@ if (!isset($_SESSION['user_id'])) {
                             <a class="btn-action btn-view mr-2" title="Visualizar contrato"
                                href="detalhes_contrato.php?identificador='.$ident.'">
                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a class="btn-action btn-clone mr-2" title="Usar como base"
+                               href="proxima_pagina.php?clonar='.$id.'">
+                               <i class="bi bi-files"></i>
                             </a>
                             <!-- Excluir -->
                             <button type="button" class="btn-action btn-del mr-2" 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -60,7 +60,7 @@
 
 
                 <!-- Form -->
-                <section class="col-12 col-lg-12" id="form" data-aos="fade-left">
+                <section class="col-12 col-lg-12" id="form">
                     <form id="depositoForm" class="app-form" novalidate>
                         <!-- S1 -->
                         <div class="card app-card mb-3" id="s1">
@@ -552,7 +552,7 @@
                                     </div>
                                 </div>
 
-                                <input class="filepond" type="file" name="fotos" multiple accept="image/*" />
+                                <input class="filepond" type="file" name="fotos[]" multiple accept="image/*" />
                             </div>
                         </div>
 
@@ -613,7 +613,7 @@
 
         // FilePond
         FilePond.registerPlugin(FilePondPluginImagePreview);
-        FilePond.create(document.querySelector('.filepond'), {
+        const pond = FilePond.create(document.querySelector('.filepond'), {
             allowMultiple: true,
             instantUpload: false,
             labelIdle: 'Arraste as fotos aqui ou <span class="filepond--label-action">clique para selecionar</span>'
@@ -622,8 +622,13 @@
         // Toast + submit feedback (demo)
         const notyf = new Notyf({ duration: 2400, ripple: true, dismissible: true });
 
-        document.getElementById('depositoForm').addEventListener('submit', function (e) {
+        document.getElementById('depositoForm').addEventListener('submit', async function (e) {
             e.preventDefault();
+
+            if (!this.checkValidity()) {
+                this.reportValidity();
+                return;
+            }
 
             const btn = document.getElementById('btnSubmit');
             btn.disabled = true;
@@ -631,8 +636,25 @@
 
             notyf.success('Enviando cadastro...');
 
-            // Simula envio
-            setTimeout(() => {
+            try {
+                const formData = new FormData(this);
+                formData.delete('fotos');
+                formData.delete('fotos[]');
+
+                pond.getFiles().forEach((item) => {
+                    formData.append('fotos[]', item.file, item.file.name);
+                });
+
+                const response = await fetch('admin-cadastropositivo/api/salvar-cadastro.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+
+                if (!response.ok || !result.ok) {
+                    throw new Error(result.message || 'Não foi possível enviar o cadastro.');
+                }
+
                 btn.disabled = false;
                 btn.classList.remove('is-loading');
 
@@ -644,9 +666,22 @@
                 });
 
                 this.reset();
-            }, 900);
+                pond.removeFiles();
+            } catch (error) {
+                btn.disabled = false;
+                btn.classList.remove('is-loading');
+
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Erro no envio',
+                    text: error.message || 'Tente novamente em instantes.',
+                    confirmButtonText: 'Fechar'
+                });
+            }
         });
     </script>
 </body>
 
 </html>
+
+

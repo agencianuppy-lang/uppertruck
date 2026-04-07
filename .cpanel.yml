@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - /bin/mkdir -p /home/uppertru/public_html
-    - /bin/bash -c 'cd /home/uppertru/git/uppertruck/public_html && /bin/cp -a . /home/uppertru/public_html/'
+    - /bin/cp -a /home/uppertru/git/uppertruck/. /home/uppertru/public_html/

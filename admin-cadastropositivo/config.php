@@ -4,9 +4,9 @@ declare(strict_types=1);
 date_default_timezone_set('America/Sao_Paulo');
 
 const DB_HOST = 'localhost';
-const DB_NAME = 'uppertru_cadastropositivo';
-const DB_USER = 'uppertru_cadastropositivo';
-const DB_PASS = 'hkh5[2&jmzkW';
+const DB_NAME = 'ivanfe67_cadastropositivo';
+const DB_USER = 'ivanfe67_cadastropositivo';
+const DB_PASS = '@aBLLxeTCAZ%';
 
 const ADMIN_USER = 'upper';
 const ADMIN_PASS = 'amigao';

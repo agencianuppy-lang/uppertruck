@@ -151,6 +151,14 @@
       width: 80% !important;
       margin-top: 0rem;
    }
+
+   @media (min-width: 768px) {
+      .col-md-4 {
+         flex: 0 0 auto;
+         width: 33.3333333333%;
+         margin-bottom: 22px;
+      }
+   }
 </style>
 
 <body>
@@ -250,6 +258,28 @@
 
             <div class="row">
 
+
+               <div class="col-md-4">
+                  <a href="https://www.instagram.com/p/DXuQ8PUCSrv/" target="_blank" rel="noopener noreferrer">
+                     <div class="card card-custom">
+                        <img src="img/programa-mundo-empresarial.jpg" class="card-img-top"
+                           alt="Programa Mundo Empresarial">
+                        <div class="card-body">
+                           <span class="card-category">Programa Mundo Empresarial</span>
+                           <h5 class="card-title mt-3">Uppertruck no Programa Mundo Empresarial</h5>
+                           <p class="card-text text-muted">
+                              entrevista para o programa mundo empresarial
+                           </p>
+                           <div class="d-flex justify-content-between align-items-center card-meta">
+                              <div>Por: <strong>Ivan Ferreira</strong></div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+
+
                <div class="col-md-4">
                   <a href="https://uppertruck.com/Revista-Transpodata.pdf">
                      <div class="card card-custom">
@@ -333,6 +363,8 @@
                      </div>
                   </a>
                </div>
+
+
 
 
 

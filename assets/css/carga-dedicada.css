@@ -3009,7 +3009,7 @@
 /* User-directed Hero tuning */
 .dedicated-hero__chip {
     border: 1px solid rgb(15 36 73);
-    background: rgb(254 243 134);
+    background: #fbd749;
     color: #fbd749;
     box-shadow: 0 12px 28px -24px rgba(0, 0, 0, 0.72);
 }
@@ -3020,7 +3020,7 @@
     align-items: center;
     padding-top: calc(var(--header-h) + 26px);
     padding-bottom: clamp(54px, 6vw, 88px);
-    background: #fef386;
+    background: #fbd749;
 }
 
 .dedicated-hero {

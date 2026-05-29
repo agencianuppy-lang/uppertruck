@@ -705,7 +705,7 @@ p {
 }
 
 .proof-main .eyebrow {
-    color: rgb(254 243 134);
+    color: #fbd749;
     margin-bottom: 12px;
 }
 
@@ -717,7 +717,7 @@ p {
 
 .proof-main p {
     margin-top: 10px;
-    color: rgb(252 241 133);
+    color: #fbd749;
     max-width: 34ch;
 }
 
@@ -741,7 +741,7 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgb(255 244 135);
+    background: #fbd749;
     color: var(--brand-500);
 }
 
@@ -1164,7 +1164,7 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgb(255 244 135);
+    background: #fbd749;
     color: #0b1b26;
     border: 1px solid black;
 }
@@ -1616,7 +1616,7 @@ p {
     bottom: 14px;
     border-radius: 12px;
     padding: 10px 12px;
-    background: rgb(255 244 135);
+    background: #fbd749;
     border: 1px solid rgba(255, 255, 255, 0.24);
     color: rgb(11 27 38);
     font-size: 0.84rem;
@@ -1749,7 +1749,7 @@ p {
 }
 
 .workflow-head .eyebrow {
-    color: rgb(255 244 135);
+    color: #fbd749;
 }
 
 .workflow-head h2 {

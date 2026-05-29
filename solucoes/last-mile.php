@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+
+require_once dirname(__DIR__) . '/components/home/path-bootstrap.php';
 $metaTitle = 'Last Mile | Entrega Final com Controle e Previsibilidade | Uppertruck';
 $metaDescription = 'Solucao de Last Mile para empresas que precisam de entregas finais mais ageis, rotas planejadas, acompanhamento operacional e mais previsibilidade.';
 

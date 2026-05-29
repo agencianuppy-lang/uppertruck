@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/components/home/path-bootstrap.php';
 $metaTitle = 'Uppertruck | Transporte de Cargas com Inteligencia Operacional';
 $metaDescription = 'A Uppertruck e uma transportadora digital com operacao nacional, gestao de frete, seguranca da carga e tecnologia aplicada para empresas que buscam previsibilidade e eficiencia logistica.';
 $currentYear = date('Y');

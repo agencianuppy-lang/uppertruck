@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/components/home/path-bootstrap.php';
 $metaTitle = 'Sobre | Uppertruck';
 $metaDescription = 'Conheca a Uppertruck, transportadora digital com operacao nacional, inteligencia logistica e metodo para gerar previsibilidade.';
 $currentYear = date('Y');

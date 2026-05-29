@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+
+require_once dirname(__DIR__) . '/components/home/path-bootstrap.php';
 $metaTitle = 'Operacao Sob Medida | Solucoes Logisticas Personalizadas | Uppertruck';
 $metaDescription = 'Solucoes logisticas sob medida para empresas que precisam de operacoes personalizadas, rotas especificas, acompanhamento operacional e mais previsibilidade.';
 

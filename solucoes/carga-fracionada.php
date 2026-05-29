@@ -1,4 +1,5 @@
 <?php
+require_once dirname(__DIR__) . '/components/home/path-bootstrap.php';
 $metaTitle = 'Carga Fracionada | Uppertruck';
 $metaDescription = 'Carga fracionada com metodo operacional, rastreabilidade e previsibilidade para empresas com operacao nacional.';
 $currentYear = date('Y');
@@ -107,44 +108,44 @@ $operationalStats = [
                 </figure>
 
                 <div class="cf-tabbed-content reveal">
-                    <p class="eyebrow">SoluÃ§Ã£o flexÃ­vel para embarques inteligentes</p>
-                    <h2>Carga Fracionada com mais eficiÃªncia para a rotina da sua operaÃ§Ã£o</h2>
+                    <p class="eyebrow">SoluÃƒÂ§ÃƒÂ£o flexÃƒÂ­vel para embarques inteligentes</p>
+                    <h2>Carga Fracionada com mais eficiÃƒÂªncia para a rotina da sua operaÃƒÂ§ÃƒÂ£o</h2>
 
                     <div class="cf-tabbed-nav" role="tablist" aria-label="Conteudo sobre carga fracionada">
-                        <button type="button" class="is-active" role="tab" aria-selected="true" data-cf-tab-button="sobre">Sobre a soluÃ§Ã£o</button>
+                        <button type="button" class="is-active" role="tab" aria-selected="true" data-cf-tab-button="sobre">Sobre a soluÃƒÂ§ÃƒÂ£o</button>
                         <button type="button" role="tab" aria-selected="false" data-cf-tab-button="operamos">Como operamos</button>
                         <button type="button" role="tab" aria-selected="false" data-cf-tab-button="vantagens">Vantagens para sua empresa</button>
                     </div>
 
                     <div class="cf-tabbed-panels">
                         <article class="cf-tabbed-panel is-active" data-cf-tab-panel="sobre">
-                            <p>A carga fracionada Ã© ideal para empresas que precisam transportar volumes menores sem ocupar um veÃ­culo inteiro. Nesse modelo, a carga Ã© consolidada com outros embarques, permitindo melhor aproveitamento de espaÃ§o, mais economia e maior eficiÃªncia no transporte.</p>
-                            <p>Ã‰ uma soluÃ§Ã£o estratÃ©gica para operaÃ§Ãµes recorrentes, distribuiÃ§Ã£o regional e empresas que buscam equilibrar custo logÃ­stico com previsibilidade.</p>
+                            <p>A carga fracionada ÃƒÂ© ideal para empresas que precisam transportar volumes menores sem ocupar um veÃƒÂ­culo inteiro. Nesse modelo, a carga ÃƒÂ© consolidada com outros embarques, permitindo melhor aproveitamento de espaÃƒÂ§o, mais economia e maior eficiÃƒÂªncia no transporte.</p>
+                            <p>Ãƒâ€° uma soluÃƒÂ§ÃƒÂ£o estratÃƒÂ©gica para operaÃƒÂ§ÃƒÂµes recorrentes, distribuiÃƒÂ§ÃƒÂ£o regional e empresas que buscam equilibrar custo logÃƒÂ­stico com previsibilidade.</p>
                             <div class="cf-tabbed-actions">
-                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotaÃ§Ã£o</a>
+                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotaÃƒÂ§ÃƒÂ£o</a>
                                 <a class="btn cf-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                             </div>
                         </article>
 
                         <article class="cf-tabbed-panel" data-cf-tab-panel="operamos" hidden>
-                            <p>Na Uppertruck, a operaÃ§Ã£o de carga fracionada Ã© organizada para reduzir atritos desde a coleta atÃ© a entrega. Trabalhamos com planejamento de embarque, consolidaÃ§Ã£o inteligente de volumes, acompanhamento operacional e comunicaÃ§Ã£o prÃ³xima ao longo da jornada.</p>
-                            <p>O objetivo Ã© trazer mais fluidez para a rotina logÃ­stica, reduzir gargalos e dar Ã  sua empresa mais visibilidade sobre cada envio.</p>
+                            <p>Na Uppertruck, a operaÃƒÂ§ÃƒÂ£o de carga fracionada ÃƒÂ© organizada para reduzir atritos desde a coleta atÃƒÂ© a entrega. Trabalhamos com planejamento de embarque, consolidaÃƒÂ§ÃƒÂ£o inteligente de volumes, acompanhamento operacional e comunicaÃƒÂ§ÃƒÂ£o prÃƒÂ³xima ao longo da jornada.</p>
+                            <p>O objetivo ÃƒÂ© trazer mais fluidez para a rotina logÃƒÂ­stica, reduzir gargalos e dar ÃƒÂ  sua empresa mais visibilidade sobre cada envio.</p>
                             <div class="cf-tabbed-actions">
-                                <a class="btn cf-btn-secondary" href="#como-operamos">Entender a operaÃ§Ã£o</a>
-                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotaÃ§Ã£o</a>
+                                <a class="btn cf-btn-secondary" href="#como-operamos">Entender a operaÃƒÂ§ÃƒÂ£o</a>
+                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotaÃƒÂ§ÃƒÂ£o</a>
                             </div>
                         </article>
 
                         <article class="cf-tabbed-panel" data-cf-tab-panel="vantagens" hidden>
-                            <p>Com a carga fracionada, sua empresa pode reduzir custo com transporte, melhorar o aproveitamento da operaÃ§Ã£o e manter mais previsibilidade em embarques de menor volume. Ã‰ uma alternativa eficiente para quem precisa escalar a logÃ­stica sem gerar ociosidade.</p>
-                            <p>Entre os principais ganhos estÃ£o mais economia, maior flexibilidade, melhor organizaÃ§Ã£o dos embarques e mais controle sobre o fluxo logÃ­stico.</p>
+                            <p>Com a carga fracionada, sua empresa pode reduzir custo com transporte, melhorar o aproveitamento da operaÃƒÂ§ÃƒÂ£o e manter mais previsibilidade em embarques de menor volume. Ãƒâ€° uma alternativa eficiente para quem precisa escalar a logÃƒÂ­stica sem gerar ociosidade.</p>
+                            <p>Entre os principais ganhos estÃƒÂ£o mais economia, maior flexibilidade, melhor organizaÃƒÂ§ÃƒÂ£o dos embarques e mais controle sobre o fluxo logÃƒÂ­stico.</p>
                             <ul class="cf-tabbed-benefits">
                                 <li>Melhor aproveitamento de custo</li>
                                 <li>Flexibilidade para volumes menores</li>
                                 <li>Mais previsibilidade operacional</li>
                             </ul>
                             <div class="cf-tabbed-actions">
-                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotaÃ§Ã£o</a>
+                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotaÃƒÂ§ÃƒÂ£o</a>
                                 <a class="btn cf-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                             </div>
                         </article>
@@ -222,7 +223,7 @@ $operationalStats = [
         <section class="section-shell cf-insight">
             <div class="container cf-insight-grid">
                 <figure class="cf-insight-media reveal">
-                    <img src="/uppertruck/img/2151994456.jpg" alt="Operador logÃ­stico em armazem com carga fracionada" loading="lazy" decoding="async">
+                    <img src="/uppertruck/img/2151994456.jpg" alt="Operador logÃƒÂ­stico em armazem com carga fracionada" loading="lazy" decoding="async">
                 </figure>
                 <div class="cf-insight-copy reveal" style="--delay: 80ms">
                     <p class="eyebrow">Leitura estrategica</p>

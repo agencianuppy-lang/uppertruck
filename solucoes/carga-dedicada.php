@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+
+require_once dirname(__DIR__) . '/components/home/path-bootstrap.php';
 $metaTitle = 'Carga Dedicada | Transporte Exclusivo para Empresas | Uppertruck';
 $metaDescription = 'Carga dedicada para empresas que precisam de transporte exclusivo, rotas recorrentes, capacidade reservada, SLA monitorado e maior previsibilidade operacional.';
 $currentYear = date('Y');

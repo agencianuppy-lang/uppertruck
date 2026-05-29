@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+
+require_once dirname(__DIR__) . '/components/home/path-bootstrap.php';
 $metaTitle = 'Consolidacao de Cargas | Uppertruck';
 $metaDescription = 'Consolidacao de cargas com metodo operacional para reduzir custo, melhorar aproveitamento de transporte e aumentar previsibilidade.';
 $currentYear = date('Y');

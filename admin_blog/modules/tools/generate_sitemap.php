@@ -2,7 +2,8 @@
 session_start();
 if (!isset($_SESSION['usuario'])) {
   http_response_code(302);
-  header('Location: /admin_blog/auth/login.php');
+  require_once __DIR__ . '/../../../components/home/path-bootstrap.php';
+  header('Location: ' . UPPERTRUCK_URL_PREFIX . '/admin_blog/auth/login.php');
   exit;
 }
 

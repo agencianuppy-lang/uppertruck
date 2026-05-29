@@ -1,14 +1,17 @@
 <?php
 session_start();
 
-require_once '../config/config.php';
-require_once '../config/db.php';
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../config/db.php';
+require_once __DIR__ . '/../../components/home/path-bootstrap.php';
+
+$loginUrl = UPPERTRUCK_URL_PREFIX . '/sistema';
 
 $email = $_POST['email'] ?? '';
 $senha = $_POST['senha'] ?? '';
 
 if (empty($email) || empty($senha)) {
-    header('Location: login.php?erro=1');
+    header('Location: ' . $loginUrl . '?erro=1');
     exit;
 }
 
@@ -24,9 +27,9 @@ if ($usuario && password_verify($senha, $usuario['password'])) {
         'email' => $usuario['email'],
         'role'  => $usuario['role']
     ];
-    header('Location: /admin_blog/dashboard.php');
+    header('Location: ' . UPPERTRUCK_URL_PREFIX . '/admin_blog/dashboard.php');
     exit;
 } else {
-    header('Location: login.php?erro=1');
+    header('Location: ' . $loginUrl . '?erro=1');
     exit;
 }

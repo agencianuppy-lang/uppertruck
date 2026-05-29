@@ -1,6 +1,8 @@
 <?php
-require_once '../config/config.php';
-require_once '../config/db.php';
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../../components/home/path-bootstrap.php';
+
+$loginAction = UPPERTRUCK_URL_PREFIX . '/admin_blog/auth/validate.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -42,7 +44,7 @@ require_once '../config/db.php';
 
 	<div class="login-box">
 		<h4 class="mb-4 text-center">Acesso ao Painel</h4>
-		<form action="validate.php" method="POST">
+		<form action="<?= htmlspecialchars($loginAction, ENT_QUOTES, 'UTF-8') ?>" method="POST">
 			<div class="mb-3">
 				<label for="email" class="form-label">E-mail</label>
 				<input type="email" name="email" id="email" class="form-control" required autocomplete="email">

@@ -1,4 +1,21 @@
-<?php require_once __DIR__ . '/../config/config.php'; ?>
+<?php
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../../components/home/path-bootstrap.php';
+
+if (!defined('UPPERTRUCK_ADMIN_URL_BUFFER_STARTED')) {
+    define('UPPERTRUCK_ADMIN_URL_BUFFER_STARTED', true);
+
+    ob_start(static function (string $html): string {
+        $adminBase = UPPERTRUCK_URL_PREFIX . '/sistema/';
+
+        return str_replace(
+            ['/admin_blog/', 'href="modules/', "href='modules/", 'src="assets/', "src='assets/", 'data-img="assets/', "data-img='assets/"],
+            [$adminBase, 'href="' . $adminBase . 'modules/', "href='" . $adminBase . 'modules/', 'src="' . $adminBase . 'assets/', "src='" . $adminBase . 'assets/', 'data-img="' . $adminBase . 'assets/', "data-img='" . $adminBase . 'assets/'],
+            $html
+        );
+    });
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

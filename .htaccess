@@ -23,8 +23,19 @@ DirectoryIndex index.php index.html
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^blog/([^/]+)$ detalhe-newblog.php?slug=$1 [L,QSA]
 
+    # Sistema/admin por URL publica unica
+    RewriteRule ^sistema/assets/(.*)$ admin_blog/assets/$1 [L,QSA]
+    RewriteRule ^sistema/modules/(.*)$ admin_blog/modules/$1 [L,QSA]
+    RewriteRule ^sistema/calendar/(.*)$ admin_blog/calendar/$1 [L,QSA]
+    RewriteRule ^sistema/auth/(.*)$ admin_blog/auth/$1 [L,QSA]
+    RewriteRule ^sistema/api/(.*)$ admin_blog/api/$1 [L,QSA]
+    RewriteRule ^sistema/scheduler/(.*)$ admin_blog/scheduler/$1 [L,QSA]
+    RewriteRule ^sistema/uploads/(.*)$ admin_blog/uploads/$1 [L,QSA]
+    RewriteRule ^sistema/vendor/(.*)$ admin_blog/vendor/$1 [L,QSA]
+
     # Sistema
     RewriteRule ^sistema$ sistema/index.php [L,QSA]
+    RewriteRule ^sistema/$ sistema/index.php [L,QSA]
 </IfModule>
 
 <FilesMatch "^(\.env|\.git|composer\.json|composer\.lock|package\.json|README\.md)$">

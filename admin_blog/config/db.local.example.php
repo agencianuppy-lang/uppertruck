@@ -1,8 +1,8 @@
 <?php
 return [
     'host' => 'localhost',
-    'database' => 'cpanelprefix_database',
-    'username' => 'cpanelprefix_user',
+    'database' => 'uppertru_newblog',
+    'username' => 'uppertru_newblog',
     'password' => 'senha-do-banco',
     'charset' => 'utf8mb4',
 ];

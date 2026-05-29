@@ -1,8 +1,8 @@
 <?php
 $dbConfig = [
     'host' => 'localhost',
-    'database' => 'ivanfe67_newblog',
-    'username' => 'ivanfe67_newblog',
+    'database' => 'uppertru_newblog',
+    'username' => 'uppertru_newblog',
     'password' => 'VU9f2vg)*AD?',
     'charset' => 'utf8mb4',
 ];
@@ -41,6 +41,15 @@ try {
 } catch (PDOException $e) {
     $isDebug = isset($debug) && $debug === true;
     $message = 'Erro ao conectar ao banco de dados.';
+    $logDir = dirname(__DIR__) . '/logs';
+
+    if (is_dir($logDir) && is_writable($logDir)) {
+        error_log(
+            '[' . date('Y-m-d H:i:s') . '] ' . $e->getMessage() . PHP_EOL,
+            3,
+            $logDir . '/db-error.log'
+        );
+    }
 
     if ($isDebug) {
         $message .= ' ' . $e->getMessage();

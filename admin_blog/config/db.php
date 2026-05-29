@@ -1,8 +1,8 @@
 <?php
 $dbConfig = [
     'host' => 'localhost',
-    'database' => 'uppertru_newblog',
-    'username' => 'uppertru_newblog',
+    'database' => 'ivanfe67_newblog',
+    'username' => 'ivanfe67_newblog',
     'password' => 'VU9f2vg)*AD?',
     'charset' => 'utf8mb4',
 ];

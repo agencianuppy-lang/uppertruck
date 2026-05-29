@@ -147,7 +147,7 @@
     max-width: 38ch;
     font-size: clamp(1.9rem, 2.2vw, 2.85rem);
     line-height: 1.02;
-    color: #fff487;
+    color: #fbd749;
 }
 
 .about-culture-card {
@@ -198,7 +198,7 @@
 
 .about-principles {
     padding-top: clamp(70px, 9vw, 112px);
-    background: #fff487;
+    background: #fbd749;
 }
 
 .about-principles .section-head {
@@ -214,7 +214,7 @@
 .about-principle-card {
     border-radius: 18px;
     border: 1px solid rgb(7 33 86);
-    background: #fff487;
+    background: #fbd749;
     padding: 18px;
     box-shadow: 0 20px 32px -28px rgba(7, 33, 86, 0.42);
 }

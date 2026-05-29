@@ -209,7 +209,7 @@
 
 .cf-tabbed-nav button.is-active {
     border-color: rgba(7, 33, 86, 0.25);
-    background: #fff487;
+    background: #fbd749;
     color: #03122f;
     box-shadow: 0 12px 22px -20px rgba(7, 33, 86, 0.5);
 }
@@ -395,12 +395,12 @@
     max-width: 20ch;
     font-size: clamp(1.65rem, 3.2vw, 3.2rem);
     line-height: 1.15;
-    color: #fff487;
+    color: #fbd749;
 }
 
 .cf-operations-copy p {
     max-width: 50ch;
-    color: #fff487;
+    color: #fbd749;
 }
 
 .cf-operations-copy ul {
@@ -473,7 +473,7 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: #fff487;
+    color: #fbd749;
 }
 
 .cf-stats-eyebrow i {
@@ -493,7 +493,7 @@
     position: relative;
     border-radius: 18px;
     border: 1px solid rgb(11 27 38);
-    background: #fff487;
+    background: #fbd749;
     padding: 14px 14px 16px;
     box-shadow: 0 18px 34px -30px rgba(7, 33, 86, 0.48);
     overflow: hidden;
@@ -535,7 +535,7 @@
     align-items: center;
     justify-content: center;
     background: #03122f;
-    color: #fff487;
+    color: #fbd749;
     position: relative;
 }
 
@@ -677,12 +677,12 @@
 }
 
 .cf-insight-copy .eyebrow {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .cf-insight-copy h2,
 .cf-insight-copy p {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .cf-insight-copy h2 {

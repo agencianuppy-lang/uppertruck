@@ -1291,7 +1291,7 @@
     grid-row: auto;
     border-radius: 24px;
     border: 1px solid rgba(6, 36, 92, 0.18);
-    background: linear-gradient(160deg, #fff8d4 0%, #fff2bd 100%);
+    background: linear-gradient(160deg, #fbd749 0%, #fbd749 100%);
     box-shadow: var(--dedicated-shadow-soft);
     padding: clamp(20px, 2.8vw, 28px);
 }
@@ -1761,7 +1761,7 @@
 }
 
 .dedicated-dashboard-progress-head strong {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-dashboard-progress-track {
@@ -1777,7 +1777,7 @@
     display: block;
     height: 100%;
     border-radius: inherit;
-    background: linear-gradient(90deg, #ffd45f 0%, #fff487 100%);
+    background: linear-gradient(90deg, #fbd749 0%, #fbd749 100%);
     transition: width 420ms var(--ease-out);
 }
 
@@ -1849,7 +1849,7 @@
 
 .dedicated-results-value {
     margin: 10px 0 8px;
-    color: #fff487;
+    color: #fbd749;
     font-family: 'Manrope', sans-serif;
     font-size: clamp(1.82rem, 3vw, 2.4rem);
     line-height: 1;
@@ -2167,7 +2167,7 @@
 }
 
 .dedicated-kicker {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-kicker::before {
@@ -2176,18 +2176,18 @@
 
 .dedicated-btn-primary {
     background: #03122f;
-    color: #fff487;
-    border: 1px solid #fff487;
+    color: #fbd749;
+    border: 1px solid #fbd749;
     box-shadow: 0 18px 30px -24px rgba(3, 18, 47, 0.76);
 }
 
 .dedicated-btn-primary:hover {
     background: #44403b;
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-btn-secondary {
-    background: #fff487;
+    background: #fbd749;
     color: #03122f;
     border: 1px solid #03122f;
 }
@@ -2247,13 +2247,13 @@
 .dedicated-hero__chip {
     border: 1px solid rgba(255, 244, 135, 0.34);
     background: rgba(4, 8, 16, 0.62);
-    color: #fff487;
+    color: #fbd749;
     box-shadow: 0 12px 28px -24px rgba(0, 0, 0, 0.72);
 }
 
 .dedicated-mini-trust i,
 .dedicated-mini-trust svg {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-hero-media {
@@ -2274,7 +2274,7 @@
 
 .dedicated-status-pill {
     background: rgba(255, 244, 135, 0.2);
-    color: #fff487;
+    color: #fbd749;
     border: 1px solid rgba(255, 244, 135, 0.36);
 }
 
@@ -2285,12 +2285,12 @@
 }
 
 .dedicated-badge strong {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-badge i,
 .dedicated-badge svg {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-care {
@@ -2360,7 +2360,7 @@
 }
 
 .dedicated-comparison-table th {
-    color: #fff487;
+    color: #fbd749;
     background: rgba(4, 8, 16, 0.84);
     border-bottom-color: rgba(255, 244, 135, 0.2);
 }
@@ -2382,12 +2382,12 @@
 .dedicated-comparison-media figcaption {
     background: rgba(4, 8, 16, 0.74);
     border: 1px solid rgba(255, 244, 135, 0.3);
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-comparison-media figcaption i,
 .dedicated-comparison-media figcaption svg {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-when {
@@ -2421,13 +2421,13 @@
 
 .dedicated-icon-wrap i,
 .dedicated-icon-wrap svg {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-model-badge {
     border-color: rgba(255, 244, 135, 0.36);
     background: rgba(255, 244, 135, 0.12);
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-when-card h3 {
@@ -2439,7 +2439,7 @@
 }
 
 .dedicated-model-best {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-process {
@@ -2456,7 +2456,7 @@
 .dedicated-process-image figcaption {
     background: rgba(3, 18, 47, 0.78);
     border: 1px solid rgba(255, 244, 135, 0.35);
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-timeline-track::before {
@@ -2470,7 +2470,7 @@
 
 .dedicated-timeline-number {
     background: #03122f;
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-timeline-icon {
@@ -2497,11 +2497,11 @@
 
 .dedicated-dark-pillar-grid h3 i,
 .dedicated-dark-pillar-grid h3 svg {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-dashboard {
-    background: linear-gradient(180deg, #fff487 0%, #fff9c5 100%);
+    background: linear-gradient(180deg, #fbd749 0%, #fbd749 100%);
 }
 
 .dedicated-dashboard .dedicated-head h2,
@@ -2524,7 +2524,7 @@
 }
 
 .dedicated-dashboard-tabs button.is-active {
-    background: #fff487;
+    background: #fbd749;
     color: #03122f;
 }
 
@@ -2548,11 +2548,11 @@
 }
 
 .dedicated-dashboard-progress-track span {
-    background: linear-gradient(90deg, #ffd55f 0%, #fff487 100%);
+    background: linear-gradient(90deg, #fbd749 0%, #fbd749 100%);
 }
 
 .dedicated-dashboard-steps h3 {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-dashboard-steps p {
@@ -2601,7 +2601,7 @@
 }
 
 .dedicated-results-value {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-final-cta {
@@ -2622,12 +2622,12 @@
 .dedicated-final-trust li {
     border: 1px solid rgba(255, 244, 135, 0.28);
     background: rgba(255, 244, 135, 0.09);
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-final-trust i,
 .dedicated-final-trust svg {
-    color: #fff487;
+    color: #fbd749;
 }
 
 @media (max-width: 1080px) {
@@ -2734,7 +2734,7 @@
 }
 
 .dedicated-hero h1.dedicated-hero__title span {
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-hero p.dedicated-hero__text {
@@ -2759,9 +2759,9 @@
 }
 
 .dedicated-btn-primary {
-    background: #fff487;
+    background: #fbd749;
     color: #03122f;
-    border: 1px solid #fff487;
+    border: 1px solid #fbd749;
     box-shadow: 4px 3px #03122f;
 }
 
@@ -2773,15 +2773,15 @@
 
 .dedicated-btn-secondary {
     background: rgba(4, 8, 16, 0.74);
-    color: #fff487;
+    color: #fbd749;
     border: 1px solid rgba(255, 244, 135, 0.76);
     box-shadow: 0 14px 24px -24px rgba(0, 0, 0, 0.72);
 }
 
 .dedicated-btn-secondary:hover {
     background: #03122f;
-    color: #fff487;
-    border-color: #fff487;
+    color: #fbd749;
+    border-color: #fbd749;
 }
 
 .dedicated-hero p.dedicated-benefits-microcopy {
@@ -2804,7 +2804,7 @@
 .dedicated-hero p.dedicated-benefits-microcopy svg {
     width: 14px;
     height: 14px;
-    color: #fff487;
+    color: #fbd749;
     flex-shrink: 0;
 }
 
@@ -3010,7 +3010,7 @@
 .dedicated-hero__chip {
     border: 1px solid rgb(15 36 73);
     background: rgb(254 243 134);
-    color: #fff487;
+    color: #fbd749;
     box-shadow: 0 12px 28px -24px rgba(0, 0, 0, 0.72);
 }
 
@@ -3027,7 +3027,7 @@
     min-height: clamp(700px, 88vh, 900px);
     padding-top: calc(var(--header-h) + 30px);
     padding-bottom: clamp(58px, 7vw, 92px);
-    background: #fff487;
+    background: #fbd749;
 }
 
 .dedicated-hero-copy h1,
@@ -3074,7 +3074,7 @@
 }
 
 .dedicated-btn-primary {
-    background: #fff487;
+    background: #fbd749;
     color: #03122f;
     border: 1px solid #45452f;
     box-shadow: 4px 3px #03122f;
@@ -3180,7 +3180,7 @@
     border-radius: 999px;
     border: 1px solid rgba(255, 244, 135, 0.56);
     background: rgba(255, 244, 135, 0.12);
-    color: #fff487;
+    color: #fbd749;
     padding: 5px 10px;
     margin-bottom: 12px;
     font-size: 0.72rem;
@@ -3205,7 +3205,7 @@
     justify-content: center;
     border: 1px solid rgba(255, 244, 135, 0.32);
     background: rgba(255, 244, 135, 0.1);
-    color: #fff487;
+    color: #fbd749;
     flex-shrink: 0;
 }
 
@@ -3250,7 +3250,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #fff487;
+    background: #fbd749;
 }
 
 .dedicated-comparison-vs {
@@ -3261,7 +3261,7 @@
     border-radius: 999px;
     border: 1px solid rgba(255, 244, 135, 0.72);
     background: rgba(255, 244, 135, 0.1);
-    color: #fff487;
+    color: #fbd749;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 0.8rem;
     font-weight: 700;
@@ -3297,7 +3297,7 @@
 
 .dedicated-comparison-decision-copy h3 {
     margin: 0 0 8px;
-    color: #fff487;
+    color: #fbd749;
     font-size: clamp(1.15rem, 1.45vw, 1.34rem);
 }
 
@@ -3337,7 +3337,7 @@
 .dedicated-decision-grid svg {
     width: 16px;
     height: 16px;
-    color: #fff487;
+    color: #fbd749;
 }
 
 .dedicated-decision-grid span {
@@ -3523,7 +3523,7 @@
 
 .dedicated-showcase__content h3 {
     margin: 0 0 10px;
-    color: #fff487;
+    color: #fbd749;
     font-size: clamp(1.2rem, 1.5vw, 1.45rem);
 }
 
@@ -3730,7 +3730,7 @@
 
 .dedicated-tabbed-nav button.is-active {
     border-color: rgba(6, 36, 92, 0.25);
-    background: #fff487;
+    background: #fbd749;
     color: var(--dedicated-blue-900);
     box-shadow: 0 12px 22px -20px rgba(6, 36, 92, 0.5);
 }

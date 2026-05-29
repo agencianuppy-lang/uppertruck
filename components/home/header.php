@@ -74,3 +74,66 @@
         </nav>
     </div>
 </header>
+
+<style>
+    .whatsapp-floating {
+        position: fixed;
+        right: clamp(16px, 2.6vw, 30px);
+        bottom: clamp(16px, 2.6vw, 30px);
+        z-index: 220;
+        min-height: 52px;
+        padding: 10px 16px 10px 12px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        background: #25d366;
+        color: #06191d;
+        font-size: 0.94rem;
+        font-weight: 800;
+        box-shadow: 0 18px 38px rgba(4, 18, 28, 0.28);
+        transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+    }
+
+    .whatsapp-floating:hover {
+        transform: translateY(-2px);
+        background: #36df74;
+        box-shadow: 0 22px 44px rgba(4, 18, 28, 0.34);
+    }
+
+    .whatsapp-floating:focus-visible {
+        outline: 3px solid #fff487;
+        outline-offset: 3px;
+    }
+
+    .whatsapp-floating img {
+        width: 24px;
+        height: 24px;
+        flex: 0 0 24px;
+    }
+
+    @media (max-width: 700px) {
+        .whatsapp-floating {
+            right: 14px;
+            bottom: 14px;
+            width: 54px;
+            min-height: 54px;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .whatsapp-floating span {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+        }
+    }
+</style>
+
+<a class="whatsapp-floating" href="https://www.uppertruck.com/atendimento.php" aria-label="Atendimento pelo WhatsApp">
+    <img src="/uppertruck/whatsapp-icone.png" alt="" width="24" height="24" aria-hidden="true">
+    <span>Atendimento</span>
+</a>

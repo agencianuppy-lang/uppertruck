@@ -16,7 +16,7 @@ $menuItems = [
     ]],
     ['label' => 'Para Empresas', 'href' => '/uppertruck/para-empresas.php'],
     ['label' => 'Para Transportadores', 'href' => '/uppertruck/para-transportadores.php'],
-    ['label' => 'Blog', 'href' => '/uppertruck/blog.php'],
+    ['label' => 'Blog', 'href' => '/uppertruck/blog'],
     ['label' => 'Cotacao', 'href' => '/uppertruck/cotacao-contato.php'],
 ];
 
@@ -71,9 +71,9 @@ $segments = [
 ];
 
 $insights = [
-    ['image' => '/uppertruck/img/upper4.png', 'title' => 'Como estruturar uma operacao de frete previsivel em cenario de variacao de demanda', 'excerpt' => 'Praticas para reduzir instabilidade no transporte e proteger indicadores de abastecimento.', 'href' => '/uppertruck/blog.php'],
-    ['image' => '/uppertruck/img/upper5.png', 'title' => 'Risco logistico: pontos criticos para elevar seguranca da carga e da operacao', 'excerpt' => 'Uma leitura pratica sobre monitoramento, avaliacao de rota e governanca operacional.', 'href' => '/uppertruck/blog.php'],
-    ['image' => '/uppertruck/img/upper6.png', 'title' => 'Consolidacao de cargas: eficiencia de malha e impacto direto no custo de frete', 'excerpt' => 'Quando consolidar, como planejar e quais ganhos operacionais buscar no medio prazo.', 'href' => '/uppertruck/blog.php'],
+    ['image' => '/uppertruck/img/upper4.png', 'title' => 'Como estruturar uma operacao de frete previsivel em cenario de variacao de demanda', 'excerpt' => 'Praticas para reduzir instabilidade no transporte e proteger indicadores de abastecimento.', 'href' => '/uppertruck/blog'],
+    ['image' => '/uppertruck/img/upper5.png', 'title' => 'Risco logistico: pontos criticos para elevar seguranca da carga e da operacao', 'excerpt' => 'Uma leitura pratica sobre monitoramento, avaliacao de rota e governanca operacional.', 'href' => '/uppertruck/blog'],
+    ['image' => '/uppertruck/img/upper6.png', 'title' => 'Consolidacao de cargas: eficiencia de malha e impacto direto no custo de frete', 'excerpt' => 'Quando consolidar, como planejar e quais ganhos operacionais buscar no medio prazo.', 'href' => '/uppertruck/blog'],
 ];
 ?>
 <!doctype html>

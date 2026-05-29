@@ -1,5 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteBase /
 
     # 1. Forcar HTTPS no dominio principal
     RewriteCond %{HTTP_HOST} ^(www\.)?uppertruck\.com$ [NC]
@@ -14,11 +15,16 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.+)/$ $1 [R=301,L]
 
-    # 4. Caso alguem acesse /admin_blog/blog, encaminha para o blog publico
-    RewriteRule ^blog$ ../new-blog.php [L,QSA]
+    # 4. Rota para listagem do blog
+    RewriteRule ^blog$ new-blog.php [L,QSA]
+
+    # 5. Rota amigavel para posts individuais
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^blog/([^/]+)$ ../detalhe-newblog.php?slug=$1 [L,QSA]
+    RewriteRule ^blog/([^/]+)$ detalhe-newblog.php?slug=$1 [L,QSA]
+
+    # 6. Rota do sistema
+    RewriteRule ^sistema$ sistema/index.php [L,QSA]
 </IfModule>
 
 # Proteger arquivos sensiveis

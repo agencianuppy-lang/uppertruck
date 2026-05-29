@@ -12,7 +12,7 @@
             <a href="/uppertruck/index.php">Home</a>
             <a href="/uppertruck/sobre.php">Sobre</a>
             <a href="/uppertruck/tecnologia.php">Tecnologia</a>
-            <a href="/uppertruck/blog.php">Blog</a>
+            <a href="/uppertruck/blog">Blog</a>
         </div>
 
         <div class="footer-col">
@@ -33,6 +33,6 @@
     </div>
 
     <div class="container footer-bottom">
-        <p>Â© <?php echo htmlspecialchars((string) $currentYear, ENT_QUOTES, 'UTF-8'); ?> Uppertruck. Todos os direitos reservados.</p>
+        <p>Ã‚Â© <?php echo htmlspecialchars((string) $currentYear, ENT_QUOTES, 'UTF-8'); ?> Uppertruck. Todos os direitos reservados.</p>
     </div>
 </footer>

@@ -16,7 +16,7 @@ $menuItems = [
     ]],
     ['label' => 'Para Empresas', 'href' => '/uppertruck/para-empresas.php'],
     ['label' => 'Para Transportadores', 'href' => '/uppertruck/para-transportadores.php'],
-    ['label' => 'Blog', 'href' => '/uppertruck/blog.php'],
+    ['label' => 'Blog', 'href' => '/uppertruck/blog'],
     ['label' => 'Cotacao', 'href' => '/uppertruck/cotacao-contato.php'],
 ];
 

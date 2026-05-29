@@ -14,7 +14,9 @@ date_default_timezone_set('America/Sao_Paulo');
 setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'portuguese');
 
 // Controle de debug
-$debug = true;
+$host = strtolower((string) ($_SERVER['HTTP_HOST'] ?? ''));
+$host = preg_replace('/:\d+$/', '', $host);
+$debug = in_array($host, ['localhost', '127.0.0.1', '::1'], true);
 
 if ($debug) {
     error_reporting(E_ALL);

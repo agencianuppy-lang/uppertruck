@@ -21,6 +21,7 @@ newsite/wp-content/
 # logs
 *.log
 error_log
+admin_blog/config/db.local.php
 
 # node
 node_modules/

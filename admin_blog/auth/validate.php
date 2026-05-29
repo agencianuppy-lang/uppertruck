@@ -27,7 +27,7 @@ if ($usuario && password_verify($senha, $usuario['password'])) {
         'email' => $usuario['email'],
         'role'  => $usuario['role']
     ];
-    header('Location: ' . UPPERTRUCK_URL_PREFIX . '/admin_blog/dashboard.php');
+    header('Location: ' . UPPERTRUCK_URL_PREFIX . '/sistema/dashboard.php');
     exit;
 } else {
     header('Location: ' . $loginUrl . '?erro=1');

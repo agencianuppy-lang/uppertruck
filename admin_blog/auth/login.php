@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../../components/home/path-bootstrap.php';
 
-$loginAction = UPPERTRUCK_URL_PREFIX . '/admin_blog/auth/validate.php';
+$loginAction = UPPERTRUCK_URL_PREFIX . '/sistema/';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

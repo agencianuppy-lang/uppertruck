@@ -24,3 +24,14 @@ if ($debug) {
 } else {
     ini_set('display_errors', 0);
 }
+
+if (!function_exists('adminBlogImageExists')) {
+    function adminBlogImageExists(?string $image): bool
+    {
+        if (!$image || str_contains($image, '..')) {
+            return false;
+        }
+
+        return is_file(__DIR__ . '/../' . ltrim($image, '/'));
+    }
+}

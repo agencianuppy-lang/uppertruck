@@ -44,7 +44,7 @@ $nome_usuario = $_SESSION['usuario']['nome'] ?? 'Usuário';
 					<li>
 						<a href="/admin_blog/modules/posts/edit.php?id=<?= $p['id'] ?>"
 							class="dropdown-item d-flex align-items-center gap-2">
-							<?php if (!empty($p['image'])): ?>
+							<?php if (adminBlogImageExists($p['image'] ?? null)): ?>
 							<img src="/admin_blog/<?= $p['image'] ?>" alt="thumb"
 								style="width: 32px; height: 32px; object-fit: cover; border-radius: 4px;">
 							<?php else: ?>

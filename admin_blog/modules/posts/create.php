@@ -184,7 +184,7 @@ $categorias = $stmt->fetchAll();
 							<?php foreach ($ultimos as $p): ?>
 							<li class="list-group-item d-flex justify-content-between align-items-center">
 								<div class="d-flex align-items-center gap-2">
-									<?php if (!empty($p['image'])): ?>
+									<?php if (adminBlogImageExists($p['image'] ?? null)): ?>
 									<img src="/admin_blog/<?= $p['image'] ?>" alt="thumb"
 										style="width: 40px; height: 40px; object-fit: cover; border-radius: 4px;">
 									<?php else: ?>

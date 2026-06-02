@@ -163,7 +163,7 @@ $tags_string = implode(', ', $tags_associadas);
 						<!-- Imagem -->
 						<div class="col-12 mb-3">
 							<label for="image" class="form-label">Imagem destacada</label>
-							<?php if ($post['image']): ?>
+							<?php if (adminBlogImageExists($post['image'] ?? null)): ?>
 							<div class="mb-2">
 								<img src="/admin_blog/<?= $post['image'] ?>" alt="Imagem" style="max-width: 100px;">
 							</div>
@@ -254,7 +254,7 @@ $tags_string = implode(', ', $tags_associadas);
 							<?php foreach ($ultimos as $p): ?>
 							<li class="list-group-item d-flex justify-content-between align-items-center">
 								<div class="d-flex align-items-center gap-2">
-									<?php if (!empty($p['image'])): ?>
+									<?php if (adminBlogImageExists($p['image'] ?? null)): ?>
 									<img src="/admin_blog/<?= $p['image'] ?>" alt="thumb"
 										style="width: 40px; height: 40px; object-fit: cover; border-radius: 4px;">
 									<?php else: ?>

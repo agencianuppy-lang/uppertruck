@@ -22,13 +22,14 @@ $author_id        = $_SESSION['usuario']['id'];
 $salvar           = $_POST['salvar'] ?? 'rascunho';
 
 $image_path = null;
+$upload_directory = __DIR__ . '/../../assets/uploads/';
 
 // Se veio imagem gerada por IA (via input hidden)
 if (!empty($_POST['image_url'])) {
     $url = $_POST['image_url'];
     $ext = 'jpg'; // default
     $nome_arquivo = time() . '_' . uniqid() . '.' . $ext;
-    $destino = '../../assets/uploads/' . $nome_arquivo;
+    $destino = $upload_directory . $nome_arquivo;
 
     // Baixa e salva no servidor
     $conteudo = @file_get_contents($url);
@@ -41,7 +42,7 @@ if (!empty($_POST['image_url'])) {
 if (!$image_path && isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
     $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
     $nome_arquivo = time() . '_' . uniqid() . '.' . $ext;
-    $destino = '../../assets/uploads/' . $nome_arquivo;
+    $destino = $upload_directory . $nome_arquivo;
 
     if (move_uploaded_file($_FILES['image']['tmp_name'], $destino)) {
         $image_path = 'assets/uploads/' . $nome_arquivo;

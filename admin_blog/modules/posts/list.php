@@ -37,7 +37,7 @@ $posts = $stmt->fetchAll();
 				<?php foreach ($posts as $post): ?>
 				<tr>
 					<td>
-						<?php if (!empty($post['image'])): ?>
+						<?php if (adminBlogImageExists($post['image'] ?? null)): ?>
 						<img src="/admin_blog/<?= $post['image'] ?>" alt="thumb"
 							style="width: 60px; border-radius: 6px;">
 						<?php else: ?>

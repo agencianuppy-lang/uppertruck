@@ -31,6 +31,7 @@ if (!$id) {
 
 // Define imagem atual (começa nula)
 $image_path = null;
+$upload_directory = __DIR__ . '/../../assets/uploads/';
 
 // Geração com IA
 // Substitui se houve geração com IA (baixar e salvar localmente)
@@ -38,12 +39,11 @@ if (!empty($_POST['image_url'])) {
     $url = $_POST['image_url'];
     $ext = '.png';
     $nome_arquivo = time() . '_' . uniqid() . $ext;
-    $caminho_absoluto = __DIR__ . '/../../assets/uploads/' . $nome_arquivo;
+    $caminho_absoluto = $upload_directory . $nome_arquivo;
     $caminho_relat = 'assets/uploads/' . $nome_arquivo;
 
     $img_data = file_get_contents($url);
-    if ($img_data) {
-        file_put_contents($caminho_absoluto, $img_data);
+    if ($img_data && file_put_contents($caminho_absoluto, $img_data) !== false) {
         $image_path = $caminho_relat;
     }
 }
@@ -53,7 +53,7 @@ if (!empty($_POST['image_url'])) {
 if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
     $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
     $nome_arquivo = time() . '_' . uniqid() . '.' . $ext;
-    $destino = '../../assets/uploads/' . $nome_arquivo;
+    $destino = $upload_directory . $nome_arquivo;
     if (move_uploaded_file($_FILES['image']['tmp_name'], $destino)) {
         $image_path = 'assets/uploads/' . $nome_arquivo;
     }

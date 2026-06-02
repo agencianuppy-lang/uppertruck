@@ -260,6 +260,28 @@
 
 
                <div class="col-md-4">
+                  <a href="https://www.linkedin.com/embed/feed/update/urn:li:share:7465352747660357632?collapsed=1"
+                     target="_blank" rel="noopener noreferrer">
+                     <div class="card card-custom">
+                        <img src="img/inteligencia-integracao.jpg" class="card-img-top"
+                           alt="Inteligência, integração e eficiência em movimento">
+                        <div class="card-body">
+                           <span class="card-category">LinkedIn</span>
+                           <h5 class="card-title mt-3">Inteligência, integração<br>
+                              e eficiência em movimento</h5>
+                           <p class="card-text text-muted">
+                              Inteligência, integração e eficiência em movimento.
+                           </p>
+                           <div class="d-flex justify-content-between align-items-center card-meta">
+                              <div>Por: <strong>Ivan Ferreira</strong></div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+
+               <div class="col-md-4">
                   <a href="https://www.transportecarretero.com.uy/sociales/empresariales/uppertruck-inteligencia-logistica-brasilena-para-optimizar-el-transporte-y-conectar-mercados.html"
                      target="_blank" rel="noopener noreferrer">
                      <div class="card card-custom">

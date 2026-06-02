@@ -747,7 +747,7 @@ p {
     align-items: center;
     justify-content: center;
     background: #fbd749;
-    color: var(--brand-500);
+    color: #0b1b26;
 }
 
 .proof-icon i {
@@ -757,7 +757,7 @@ p {
 
 .proof-tile h3 {
     margin-top: 12px;
-    color: var(--brand-900);
+    color: #0b1b26;
     font-size: clamp(1.4rem, 2.3vw, 2.1rem);
     line-height: 1;
 }
@@ -985,8 +985,8 @@ p {
 }
 
 .about-benefit-icon {
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -1275,8 +1275,8 @@ p {
 }
 
 .companies-bullet {
-    width: 30px;
-    height: 30px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     border: 1px solid rgba(7, 33, 86, 0.24);
     display: inline-flex;

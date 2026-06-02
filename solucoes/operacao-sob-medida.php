@@ -1,25 +1,24 @@
 <?php
 declare(strict_types=1);
-
-
 require_once dirname(__DIR__) . '/components/home/path-bootstrap.php';
-$metaTitle = 'Operacao Sob Medida | Solucoes Logisticas Personalizadas | Uppertruck';
-$metaDescription = 'Solucoes logisticas sob medida para empresas que precisam de operacoes personalizadas, rotas especificas, acompanhamento operacional e mais previsibilidade.';
+
+$metaTitle = 'Operação Sob Medida | Soluções Logísticas Personalizadas | Uppertruck';
+$metaDescription = 'Soluções logísticas sob medida para empresas que precisam de operações personalizadas, rotas específicas, acompanhamento operacional e mais previsibilidade.';
 
 $menuItems = [
     ['label' => 'Home', 'href' => '/uppertruck/index.php'],
     ['label' => 'Sobre', 'href' => '/uppertruck/sobre.php'],
-    ['label' => 'Solucoes', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
+    ['label' => 'Soluções', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
         ['label' => 'Carga Fracionada', 'href' => '/uppertruck/solucoes/carga-fracionada.php'],
         ['label' => 'Carga Dedicada', 'href' => '/uppertruck/solucoes/carga-dedicada.php'],
-        ['label' => 'Consolidacao de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
+        ['label' => 'Consolidação de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
         ['label' => 'Last Mile', 'href' => '/uppertruck/solucoes/last-mile.php'],
-        ['label' => 'Operacoes Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
+        ['label' => 'Operações Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
     ]],
     ['label' => 'Para Empresas', 'href' => '/uppertruck/para-empresas.php'],
     ['label' => 'Para Transportadores', 'href' => '/uppertruck/para-transportadores.php'],
     ['label' => 'Blog', 'href' => '/uppertruck/blog'],
-    ['label' => 'Cotacao', 'href' => '/uppertruck/cotacao-contato.php'],
+    ['label' => 'Cotação', 'href' => '/uppertruck/cotacao-contato.php'],
 ];
 
 function sobMedidaImage(string $basename, string $fallback): string
@@ -48,57 +47,57 @@ $images = [
 ];
 
 $heroCards = [
-    ['title' => 'Diagnostico operacional', 'text' => 'Analise da rotina, gargalos e prioridades.', 'icon' => 'search-check'],
-    ['title' => 'Modelo personalizado', 'text' => 'Solucao desenhada conforme a sua demanda.', 'icon' => 'drafting-compass'],
-    ['title' => 'Acompanhamento ativo', 'text' => 'Gestao proxima para ajustar e evoluir a operacao.', 'icon' => 'radar'],
+    ['title' => 'Diagnóstico operacional', 'text' => 'Análise da rotina, gargalos e prioridades.', 'icon' => 'search-check'],
+    ['title' => 'Modelo personalizado', 'text' => 'Solução desenhada conforme a sua demanda.', 'icon' => 'drafting-compass'],
+    ['title' => 'Acompanhamento ativo', 'text' => 'Gestão próxima para ajustar e evoluir a operação.', 'icon' => 'radar'],
 ];
 
 $whenCards = [
-    ['title' => 'Rotas especificas', 'text' => 'Quando origem, destino e frequencia exigem planejamento proprio.', 'icon' => 'route'],
-    ['title' => 'Prazos criticos', 'text' => 'Quando atrasos afetam producao, entrega ou atendimento.', 'icon' => 'alarm-clock-check'],
-    ['title' => 'Multiplos pontos', 'text' => 'Quando a operacao envolve coletas, entregas ou unidades diferentes.', 'icon' => 'map-pinned'],
+    ['title' => 'Rotas específicas', 'text' => 'Quando origem, destino e frequência exigem planejamento proprio.', 'icon' => 'route'],
+    ['title' => 'Prazos críticos', 'text' => 'Quando atrasos afetam produção, entrega ou atendimento.', 'icon' => 'alarm-clock-check'],
+    ['title' => 'Múltiplos pontos', 'text' => 'Quando a operação envolve coletas, entregas ou unidades diferentes.', 'icon' => 'map-pinned'],
     ['title' => 'Carga com particularidades', 'text' => 'Quando o tipo de produto exige cuidado, prioridade ou fluxo especial.', 'icon' => 'package-check'],
     ['title' => 'Demanda variavel', 'text' => 'Quando o volume muda por campanha, sazonalidade ou crescimento.', 'icon' => 'trending-up'],
-    ['title' => 'Gargalos recorrentes', 'text' => 'Quando a logistica atual gera retrabalho, atraso ou perda de controle.', 'icon' => 'triangle-alert'],
+    ['title' => 'Gargalos recorrentes', 'text' => 'Quando a logística atual gera retrabalho, atraso ou perda de controle.', 'icon' => 'triangle-alert'],
 ];
 
 $diagnosticAnalyze = [
     'Origem e destino',
-    'Frequencia de embarques',
+    'Frequência de embarques',
     'Tipo de carga',
-    'Volume medio',
+    'Volume médio',
     'Janelas de coleta e entrega',
-    'Pontos criticos',
-    'Nivel de acompanhamento',
-    'Necessidade de contingencia',
+    'Pontos críticos',
+    'Nível de acompanhamento',
+    'Necessidade de contingência',
 ];
 
 $diagnosticIdentify = [
-    'Gargalos da operacao',
+    'Gargalos da operação',
     'Riscos de atraso',
-    'Oportunidades de consolidacao',
+    'Oportunidades de consolidação',
     'Melhor modelo de transporte',
     'Necessidade de rota dedicada',
     'Pontos de controle',
-    'Ajustes de comunicacao',
+    'Ajustes de comunicação',
     'Indicadores de acompanhamento',
 ];
 
 $solutionFlow = [
-    ['title' => 'Diagnostico', 'text' => 'Entendimento da operacao, objetivos e pontos criticos.', 'icon' => 'scan-search'],
-    ['title' => 'Desenho do fluxo', 'text' => 'Definicao de rotas, frequencia, capacidade e prioridades.', 'icon' => 'waypoints'],
-    ['title' => 'Estruturacao', 'text' => 'Planejamento de recursos, comunicacao, prazos e contingencias.', 'icon' => 'settings-2'],
-    ['title' => 'Execucao', 'text' => 'Operacao em andamento com acompanhamento proximo.', 'icon' => 'truck'],
-    ['title' => 'Otimizacao', 'text' => 'Ajustes continuos conforme performance, demanda e evolucao do cliente.', 'icon' => 'chart-line'],
+    ['title' => 'Diagnóstico', 'text' => 'Entendimento da operação, objetivos e pontos críticos.', 'icon' => 'scan-search'],
+    ['title' => 'Desenho do fluxo', 'text' => 'Definição de rotas, frequência, capacidade e prioridades.', 'icon' => 'waypoints'],
+    ['title' => 'Estruturação', 'text' => 'Planejamento de recursos, comunicação, prazos e contingências.', 'icon' => 'settings-2'],
+    ['title' => 'Execução', 'text' => 'Operação em andamento com acompanhamento próximo.', 'icon' => 'truck'],
+    ['title' => 'Otimizacao', 'text' => 'Ajustes contínuos conforme performance, demanda e evolução do cliente.', 'icon' => 'chart-line'],
 ];
 
 $demandCards = [
-    ['badge' => 'Industria', 'title' => 'Operacoes industriais', 'text' => 'Fluxos entre fabricas, fornecedores, CDs e clientes estrategicos.', 'icon' => 'factory', 'size' => 'wide'],
-    ['badge' => 'Especial', 'title' => 'Projetos especiais', 'text' => 'Demandas fora do padrao, com planejamento e acompanhamento especifico.', 'icon' => 'rocket', 'size' => 'small'],
-    ['badge' => 'Recorrente', 'title' => 'Distribuicao recorrente', 'text' => 'Rotinas de entrega com frequencia, prioridade e previsibilidade.', 'icon' => 'repeat', 'size' => 'small'],
+    ['badge' => 'Indústria', 'title' => 'Operações industriais', 'text' => 'Fluxos entre fábricas, fornecedores, CDs e clientes estratégicos.', 'icon' => 'factory', 'size' => 'wide'],
+    ['badge' => 'Especial', 'title' => 'Projetos especiais', 'text' => 'Demandas fora do padrão, com planejamento e acompanhamento específico.', 'icon' => 'rocket', 'size' => 'small'],
+    ['badge' => 'Recorrente', 'title' => 'Distribuição recorrente', 'text' => 'Rotinas de entrega com frequência, prioridade e previsibilidade.', 'icon' => 'repeat', 'size' => 'small'],
     ['badge' => 'Sazonal', 'title' => 'Sazonalidade e picos', 'text' => 'Reforco operacional para campanhas e aumento de volume.', 'icon' => 'calendar-range', 'size' => 'wide'],
-    ['badge' => 'Sensivel', 'title' => 'Cargas sensiveis', 'text' => 'Operacoes que exigem menor manuseio, cuidado ou rota controlada.', 'icon' => 'shield-alert', 'size' => 'small'],
-    ['badge' => 'Expansao', 'title' => 'Expansao de operacao', 'text' => 'Apoio logistico para novas regioes, unidades ou modelos de distribuicao.', 'icon' => 'map', 'size' => 'small'],
+    ['badge' => 'Sensível', 'title' => 'Cargas sensíveis', 'text' => 'Operações que exigem menor manuseio, cuidado ou rota controlada.', 'icon' => 'shield-alert', 'size' => 'small'],
+    ['badge' => 'Expansão', 'title' => 'Expansão de operação', 'text' => 'Apoio logístico para novas regiões, unidades ou modelos de distribuição.', 'icon' => 'map', 'size' => 'small'],
 ];
 
 ?>
@@ -119,7 +118,7 @@ $demandCards = [
 </head>
 
 <body class="osm-page">
-    <a class="skip-link" href="#conteudo-principal">Pular para o conteudo principal</a>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
     <?php include __DIR__ . '/../components/home/header.php'; ?>
 
@@ -127,21 +126,21 @@ $demandCards = [
         <section class="osm-section osm-hero">
             <div class="container osm-hero__grid">
                 <div class="osm-hero__content reveal">
-                    <p class="osm-kicker">Solucao Uppertruck</p>
-                    <h1>Operacao <span>Sob Medida</span> para logisticas que nao cabem em modelos prontos</h1>
+                    <p class="osm-kicker">Solução Uppertruck</p>
+                    <h1>Operação <span>Sob Medida</span> para logísticas que não cabem em modelos prontos</h1>
                     <p class="osm-hero__lead">
-                        Desenhamos solucoes logisticas personalizadas a partir da realidade da sua empresa, considerando rotas, volumes, prazos, pontos criticos e nivel de acompanhamento necessario.
+                        Desenhamos soluções logísticas personalizadas a partir da realidade da sua empresa, considerando rotas, volumes, prazos, pontos críticos e nível de acompanhamento necessário.
                     </p>
                     <div class="osm-hero__actions">
-                        <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar analise da operacao</a>
+                        <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar análise da operação</a>
                         <a class="btn osm-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                     </div>
-                    <p class="osm-hero__microcopy">Ideal para demandas especificas, projetos especiais, fluxos complexos e operacoes com necessidades proprias.</p>
+                    <p class="osm-hero__microcopy">Ideal para demandas específicas, projetos especiais, fluxos complexos e operações com necessidades próprias.</p>
                 </div>
 
                 <div class="osm-hero__visual reveal" style="--delay:80ms;">
                     <figure class="osm-hero__media">
-                        <img src="<?php echo htmlspecialchars($images['hero'], ENT_QUOTES, 'UTF-8'); ?>" alt="Planejamento de operacao logistica personalizada" loading="eager" decoding="async">
+                        <img src="<?php echo htmlspecialchars($images['hero'], ENT_QUOTES, 'UTF-8'); ?>" alt="Planejamento de operação logística personalizada" loading="eager" decoding="async">
                         <div class="osm-hero__overlay" aria-hidden="true"></div>
                     </figure>
                     <div class="osm-hero__cards">
@@ -160,13 +159,13 @@ $demandCards = [
         <section class="osm-section osm-intro">
             <div class="container osm-intro__grid">
                 <figure class="osm-intro__media reveal">
-                    <img src="<?php echo htmlspecialchars($images['intro'], ENT_QUOTES, 'UTF-8'); ?>" alt="Equipe analisando fluxo logistico e mapa de operacao" loading="lazy" decoding="async">
+                    <img src="<?php echo htmlspecialchars($images['intro'], ENT_QUOTES, 'UTF-8'); ?>" alt="Equipe analisando fluxo logístico e mapa de operação" loading="lazy" decoding="async">
                 </figure>
                 <div class="osm-intro__content reveal" style="--delay:70ms;">
-                    <p class="osm-kicker">Solucao personalizada para cenarios reais</p>
-                    <h2>Sua operacao tem particularidades. Sua logistica tambem deve ter.</h2>
-                    <p>Nem toda empresa se encaixa em uma operacao logistica padrao. Quando ha rotas especificas, prazos criticos, diferentes pontos de coleta ou exigencias operacionais, e preciso desenhar um modelo que acompanhe a realidade do negocio.</p>
-                    <p>Na Uppertruck, a solucao e construida a partir de diagnostico, planejamento e acompanhamento operacional.</p>
+                    <p class="osm-kicker">Solução personalizada para cenários reais</p>
+                    <h2>Sua operação tem particularidades. Sua logística também deve ter.</h2>
+                    <p>Nem toda empresa se encaixa em uma operação logística padrão. Quando há rotas específicas, prazos críticos, diferentes pontos de coleta ou exigências operacionais, é preciso desenhar um modelo que acompanhe a realidade do negócio.</p>
+                    <p>Na Uppertruck, a solução e construida a partir de diagnóstico, planejamento e acompanhamento operacional.</p>
                     <a class="btn btn-primary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Entender como funciona</a>
                 </div>
             </div>
@@ -175,8 +174,8 @@ $demandCards = [
         <section class="osm-section osm-when">
             <div class="container">
                 <div class="osm-head reveal">
-                    <h2>Quando uma solucao pronta deixa de ser suficiente?</h2>
-                    <p>Algumas operacoes exigem mais do que transporte. Elas precisam de leitura, desenho e adaptacao.</p>
+                    <h2>Quando uma solução pronta deixa de ser suficiente?</h2>
+                    <p>Algumas operações exigem mais do que transporte. Elas precisam de leitura, desenho e adaptação.</p>
                 </div>
                 <div class="osm-when__grid">
                     <?php foreach ($whenCards as $index => $item): ?>
@@ -193,8 +192,8 @@ $demandCards = [
         <section class="osm-section osm-diagnostic">
             <div class="container">
                 <div class="osm-head reveal">
-                    <h2>Antes da solucao, entendemos a operacao.</h2>
-                    <p>A operacao sob medida comeca com uma leitura clara da rotina logistica, dos pontos criticos e das prioridades do cliente.</p>
+                    <h2>Antes da solução, entendemos a operação.</h2>
+                    <p>A operação sob medida começa com uma leitura clara da rotina logística, dos pontos críticos e das prioridades do cliente.</p>
                 </div>
                 <div class="osm-diagnostic__grid reveal" style="--delay:80ms;">
                     <article class="osm-diagnostic__block">
@@ -220,7 +219,7 @@ $demandCards = [
         <section class="osm-section osm-flow">
             <div class="container">
                 <div class="osm-head reveal">
-                    <h2>Da analise ao modelo operacional: como a solucao e construida</h2>
+                    <h2>Da análise ao modelo operacional: como a solução e construida</h2>
                 </div>
                 <div class="osm-flow__timeline">
                     <?php foreach ($solutionFlow as $index => $item): ?>
@@ -238,7 +237,7 @@ $demandCards = [
         <section class="osm-section osm-demands">
             <div class="container">
                 <div class="osm-head reveal">
-                    <h2>Projetos logisticos para diferentes realidades operacionais</h2>
+                    <h2>Projetos logísticos para diferentes realidades operacionais</h2>
                 </div>
                 <div class="osm-demands__mosaic">
                     <?php foreach ($demandCards as $index => $item): ?>
@@ -256,22 +255,22 @@ $demandCards = [
         <section class="osm-section osm-panel">
             <div class="container">
                 <div class="osm-head reveal">
-                    <h2>Uma operacao desenhada para ser acompanhada, ajustada e evoluida.</h2>
-                    <p>Alem de estruturar o modelo, a Uppertruck acompanha a operacao para identificar ajustes, reduzir ruidos e manter a logistica alinhada ao ritmo da empresa.</p>
+                    <h2>Uma operação desenhada para ser acompanhada, ajustada e evoluida.</h2>
+                    <p>Além de estruturar o modelo, a Uppertruck acompanha a operação para identificar ajustes, reduzir ruídos e manter a logística alinhada ao ritmo da empresa.</p>
                 </div>
 
                 <div class="osm-panel__shell reveal" style="--delay:85ms;">
-                    <div class="osm-panel__tabs" role="tablist" aria-label="Etapas da operacao personalizada">
-                        <button type="button" class="is-active" data-osm-tab="diagnostico" aria-selected="true">Diagnostico</button>
+                    <div class="osm-panel__tabs" role="tablist" aria-label="Etapas da operação personalizada">
+                        <button type="button" class="is-active" data-osm-tab="diagnostico" aria-selected="true">Diagnóstico</button>
                         <button type="button" data-osm-tab="planejamento" aria-selected="false">Planejamento</button>
-                        <button type="button" data-osm-tab="operacao" aria-selected="false">Operacao ativa</button>
+                        <button type="button" data-osm-tab="operacao" aria-selected="false">Operação ativa</button>
                     </div>
 
                     <div class="osm-panel__grid">
                         <div class="osm-panel__summary">
                             <p class="osm-panel__chip">Modelo operacional: Personalizado</p>
-                            <h3 id="osm-tab-title">Operacao em analise</h3>
-                            <p id="osm-tab-text">Mapeamento de rotas, volumes, pontos criticos e prioridades.</p>
+                            <h3 id="osm-tab-title">Operação em análise</h3>
+                            <p id="osm-tab-text">Mapeamento de rotas, volumes, pontos críticos e prioridades.</p>
 
                             <div class="osm-progress">
                                 <div class="osm-progress__meta">
@@ -287,9 +286,9 @@ $demandCards = [
                         <div class="osm-panel__status">
                             <ul>
                                 <li><span>Rota</span><strong id="osm-route">Sob planejamento</strong></li>
-                                <li><span>Frequencia</span><strong id="osm-frequency">Em definicao</strong></li>
-                                <li><span>Pontos criticos</span><strong id="osm-critical">Mapeamento inicial</strong></li>
-                                <li><span>Contingencia</span><strong id="osm-contingency">Em estudo</strong></li>
+                                <li><span>Frequência</span><strong id="osm-frequency">Em definição</strong></li>
+                                <li><span>Pontos críticos</span><strong id="osm-crítical">Mapeamento inicial</strong></li>
+                                <li><span>Contingência</span><strong id="osm-contingency">Em estudo</strong></li>
                                 <li><span>Acompanhamento</span><strong id="osm-follow">Ativo</strong></li>
                             </ul>
                         </div>
@@ -297,10 +296,10 @@ $demandCards = [
                         <div class="osm-panel__metrics">
                             <article><span>Pontos de coleta</span><strong id="osm-m1">4</strong></article>
                             <article><span>Destinos recorrentes</span><strong id="osm-m2">8</strong></article>
-                            <article><span>Janelas criticas</span><strong id="osm-m3">3</strong></article>
+                            <article><span>Janelas críticas</span><strong id="osm-m3">3</strong></article>
                             <article><span>SLA</span><strong id="osm-m4">Em acompanhamento</strong></article>
                             <article><span>Ajustes sugeridos</span><strong id="osm-m5">2</strong></article>
-                            <article><span>Plano de contingencia</span><strong id="osm-m6">1</strong></article>
+                            <article><span>Plano de contingência</span><strong id="osm-m6">1</strong></article>
                         </div>
                     </div>
                 </div>
@@ -324,8 +323,8 @@ $demandCards = [
                 </div>
                 <aside class="osm-faq__aside reveal" style="--delay:70ms;">
                     <p class="osm-kicker">FAQ</p>
-                    <h2>Conheca nossa FAQ</h2>
-                    <p>Principais duvidas sobre Operacao Sob Medida e solucoes logisticas personalizadas.</p>
+                    <h2>Conheça nossa FAQ</h2>
+                    <p>Principais dúvidas sobre Operação Sob Medida e soluções logísticas personalizadas.</p>
                 </aside>
             </div>
         </section>
@@ -333,10 +332,10 @@ $demandCards = [
         <section class="osm-section osm-cta">
             <div class="container">
                 <div class="osm-cta__box reveal">
-                    <h2>Vamos desenhar uma operacao logistica para a sua realidade?</h2>
-                    <p>A Uppertruck avalia rotas, volumes, frequencia, janelas, pontos criticos e objetivos da sua empresa para construir uma solucao sob medida, com mais controle e previsibilidade.</p>
+                    <h2>Vamos desenhar uma operação logística para a sua realidade?</h2>
+                    <p>A Uppertruck avalia rotas, volumes, frequência, janelas, pontos críticos e objetivos da sua empresa para construir uma solução sob medida, com mais controle e previsibilidade.</p>
                     <div class="osm-cta__actions">
-                        <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar analise da operacao</a>
+                        <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar análise da operação</a>
                         <a class="btn osm-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                     </div>
                     <p class="osm-cta__label">Avaliamos:</p>

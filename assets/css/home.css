@@ -1466,7 +1466,7 @@ p {
 .segment-hub-head p {
     max-width: 64ch;
     margin-inline: auto;
-    color: rgba(255, 244, 135, 0.9);
+    color: rgb(251 215 73);
 }
 
 .segment-hub-cta {
@@ -1654,7 +1654,7 @@ p {
     font-size: 0.7rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(255, 244, 135, 0.82);
+    color: rgb(251 215 73);
 }
 
 .segment-highlight-number {
@@ -1669,7 +1669,7 @@ p {
 
 .segment-highlight-copy {
     margin-top: 12px;
-    color: rgba(255, 244, 135, 0.9);
+    color: rgb(255 255 255);
     line-height: 1.52;
     font-size: 1.05rem;
 }

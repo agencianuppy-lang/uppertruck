@@ -6,13 +6,13 @@
 
     <div class="container final-cta-content reveal">
         <div class="final-cta-copy">
-            <p class="eyebrow">Cotacao / Contato</p>
-            <h2>Estruture sua proxima operacao com um especialista em logistica aplicada</h2>
+            <p class="eyebrow">Cotação / Contato</p>
+            <h2>Estruture sua próxima operação com um especialista em logística aplicada</h2>
             <p>
-                Avaliamos contexto, volume e criticidade para indicar o modelo de transporte mais aderente ao seu negocio.
+                Avaliamos contexto, volume e criticidade para indicar o modelo de transporte mais aderente ao seu negócio.
             </p>
             <div class="final-actions">
-                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotacao</a>
+                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                 <a class="btn btn-ghost" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
             </div>
         </div>

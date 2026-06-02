@@ -1,35 +1,35 @@
 <?php
 require_once __DIR__ . '/components/home/path-bootstrap.php';
 $metaTitle = 'Sobre | Uppertruck';
-$metaDescription = 'Conheca a Uppertruck, transportadora digital com operacao nacional, inteligencia logistica e metodo para gerar previsibilidade.';
+$metaDescription = 'Conheça a Uppertruck, transportadora digital com operação nacional, inteligência logística e método para gerar previsibilidade.';
 $currentYear = date('Y');
 
 $menuItems = [
     ['label' => 'Home', 'href' => '/uppertruck/index.php'],
     ['label' => 'Sobre', 'href' => '/uppertruck/sobre.php'],
-    ['label' => 'Solucoes', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
+    ['label' => 'Soluções', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
         ['label' => 'Carga Fracionada', 'href' => '/uppertruck/solucoes/carga-fracionada.php'],
         ['label' => 'Carga Dedicada', 'href' => '/uppertruck/solucoes/carga-dedicada.php'],
-        ['label' => 'Consolidacao de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
+        ['label' => 'Consolidação de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
         ['label' => 'Last Mile', 'href' => '/uppertruck/solucoes/last-mile.php'],
-        ['label' => 'Operacoes Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
+        ['label' => 'Operações Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
     ]],
     ['label' => 'Para Empresas', 'href' => '/uppertruck/para-empresas.php'],
     ['label' => 'Para Transportadores', 'href' => '/uppertruck/para-transportadores.php'],
     ['label' => 'Blog', 'href' => '/uppertruck/blog'],
-    ['label' => 'Cotacao', 'href' => '/uppertruck/cotacao-contato.php'],
+    ['label' => 'Cotação', 'href' => '/uppertruck/cotacao-contato.php'],
 ];
 
 $cultureItems = [
     [
         'icon' => 'crown',
         'title' => 'Excelencia operacional',
-        'description' => 'Trabalhamos com metodo, padrao tecnico e compromisso de entrega em cada etapa do transporte.',
+        'description' => 'Trabalhamos com método, padrão técnico e compromisso de entrega em cada etapa do transporte.',
     ],
     [
         'icon' => 'star',
         'title' => 'Criacao de valor',
-        'description' => 'Cada operacao e desenhada para reduzir atrito, simplificar rotinas e dar previsibilidade ao cliente.',
+        'description' => 'Cada operação é desenhada para reduzir atrito, simplificar rotinas e dar previsibilidade ao cliente.',
     ],
 ];
 
@@ -37,17 +37,17 @@ $principles = [
     [
         'icon' => 'shield-check',
         'title' => 'Confianca em primeiro plano',
-        'description' => 'Processos formais, responsabilidade tecnica e acompanhamento ativo da carga.',
+        'description' => 'Processos formais, responsabilidade técnica e acompanhamento ativo da carga.',
     ],
     [
         'icon' => 'map',
-        'title' => 'Leitura real de operacao',
-        'description' => 'Analise de rota, contexto regional e malha para decisao mais inteligente.',
+        'title' => 'Leitura real de operação',
+        'description' => 'Análise de rota, contexto regional e malha para decisão mais inteligente.',
     ],
     [
         'icon' => 'users',
-        'title' => 'Time proximo da rotina',
-        'description' => 'Atendimento consultivo com foco em agilidade e resposta rapida a desvios.',
+        'title' => 'Time próximo da rotina',
+        'description' => 'Atendimento consultivo com foco em agilidade e resposta rápida a desvios.',
     ],
 ];
 ?>
@@ -70,36 +70,36 @@ $principles = [
 </head>
 
 <body class="about-page">
-    <a class="skip-link" href="#conteudo-principal">Pular para o conteudo principal</a>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
     <?php include __DIR__ . '/components/home/header.php'; ?>
 
     <main id="conteudo-principal">
         <section class="about-hero">
             <div class="about-hero-media">
-                <img src="/uppertruck/img/banner-quemsomos.jpg" alt="Equipe Uppertruck em operacao de transporte" fetchpriority="high">
+                <img src="/uppertruck/img/banner-quemsomos.jpg" alt="Equipe Uppertruck em operação de transporte" fetchpriority="high">
             </div>
             <div class="about-hero-overlay" aria-hidden="true"></div>
             <div class="container about-hero-content reveal">
                 <p class="eyebrow">Sobre a Uppertruck</p>
-                <h1>Operacao real para empresas que exigem clareza, metodo e previsibilidade.</h1>
+                <h1>Operação real para empresas que exigem clareza, método e previsibilidade.</h1>
                 <p class="about-hero-lead">
-                    Somos uma transportadora digital com presenca nacional, unindo inteligencia logistica, governanca e atendimento proximo para reduzir complexidade operacional.
+                    Somos uma transportadora digital com presença nacional, unindo inteligência logística, governança e atendimento próximo para reduzir complexidade operacional.
                 </p>
             </div>
         </section>
 
         <section class="section-shell about-editorial">
             <div class="container">
-                <p class="about-kicker reveal">Uppertruck para todo tipo de operacao</p>
+                <p class="about-kicker reveal">Uppertruck para todo tipo de operação</p>
                 <div class="about-editorial-head">
-                    <h2 class="reveal">Uma jornada de trabalho mais clara para sua operacao logistica.</h2>
+                    <h2 class="reveal">Uma jornada de trabalho mais clara para sua operação logística.</h2>
                     <p class="reveal" style="--delay: 80ms">
-                        Simplificamos a gestao de coleta, transito e entrega em um unico fluxo operacional, com criterio tecnico e visibilidade ponta a ponta.
+                        Simplificamos a gestão de coleta, trânsito e entrega em um único fluxo operacional, com critério técnico e visibilidade ponta a ponta.
                     </p>
                 </div>
                 <figure class="about-editorial-image reveal" style="--delay: 120ms">
-                    <img src="/uppertruck/img/upper4.png" alt="Equipe acompanhando operacao em centro logistico" loading="lazy" decoding="async">
+                    <img src="/uppertruck/img/upper4.png" alt="Equipe acompanhando operação em centro logístico" loading="lazy" decoding="async">
                 </figure>
             </div>
         </section>
@@ -114,10 +114,10 @@ $principles = [
                 </div>
 
                 <div class="about-culture-right reveal" style="--delay: 80ms">
-                    <h2>Saiba como nossos valores determinam solucoes mais inteligentes para o dia a dia logistico.</h2>
+                    <h2>Saiba como nossos valores determinam soluções mais inteligentes para o dia a dia logístico.</h2>
                     <article class="about-culture-card">
                         <p class="about-culture-step">01</p>
-                        <h3>Agimos com foco no cliente e leitura de operacao.</h3>
+                        <h3>Agimos com foco no cliente e leitura de operação.</h3>
                         <div class="about-culture-points">
                             <?php foreach ($cultureItems as $item): ?>
                                 <div class="about-culture-point">
@@ -136,7 +136,7 @@ $principles = [
             <div class="container">
                 <div class="section-head reveal">
                     <p class="eyebrow">Nossa base operacional</p>
-                    <h2>Uma estrutura solida para suportar crescimento com seguranca e eficiencia.</h2>
+                    <h2>Uma estrutura solida para suportar crescimento com segurança e eficiência.</h2>
                 </div>
                 <div class="about-principles-grid">
                     <?php foreach ($principles as $index => $item): ?>

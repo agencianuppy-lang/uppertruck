@@ -15,7 +15,7 @@
 .cf-hero {
     padding: calc(var(--header-h) + 34px) 0 clamp(72px, 10vw, 118px);
     background:
-        radial-gradient(circle at 8% 6%, rgb(243 216 61 / 51%), #fff9a5 32%),
+        radial-gradient(circle at 8% 6%, rgb(243 216 61 / 51%), #fbd749 32%),
         radial-gradient(circle at 84% 8%, rgb(38 145 255), #ffffff00 38%),
         #ffffff;
 }
@@ -51,7 +51,7 @@
 .cf-btn-secondary {
     border-color: rgb(7 33 86);
     color: #072156;
-    background: #fff9a5;
+    background: #fbd749;
 }
 
 .cf-btn-secondary:hover {
@@ -113,7 +113,7 @@
     bottom: 14px;
     padding: 10px;
     border-radius: 14px;
-    background: rgb(255 244 135);
+    background: rgb(251 215 73);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #072156;
     display: flex;
@@ -415,7 +415,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: rgb(255 244 135);
+    color: rgb(251 215 73);
     font-weight: 500;
 }
 
@@ -560,7 +560,7 @@
     color: rgb(3 18 47);
     font-weight: 700;
     border: 1px solid rgba(7, 33, 86, 0.2);
-    background: rgb(255 244 135);
+    background: rgb(251 215 73);
     border-radius: 999px;
     padding: 4px 9px;
 }
@@ -692,7 +692,7 @@
 
 .cf-insight-copy p {
     max-width: 52ch;
-    color: rgb(255 244 135);
+    color: rgb(251 215 73);
     margin-bottom: 18px;
 }
 

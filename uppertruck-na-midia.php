@@ -260,6 +260,27 @@
 
 
                <div class="col-md-4">
+                  <a href="https://www.transportecarretero.com.uy/sociales/empresariales/uppertruck-inteligencia-logistica-brasilena-para-optimizar-el-transporte-y-conectar-mercados.html"
+                     target="_blank" rel="noopener noreferrer">
+                     <div class="card card-custom">
+                        <img src="img/inteligencia-logistica-brasileira.jpg" class="card-img-top"
+                           alt="Inteligência logística brasileira">
+                        <div class="card-body">
+                           <span class="card-category">Transporte Carretero</span>
+                           <h5 class="card-title mt-3">Inteligência logística brasileira</h5>
+                           <p class="card-text text-muted">
+                              Uppertruck otimiza o transporte e conecta mercados com inteligência logística brasileira.
+                           </p>
+                           <div class="d-flex justify-content-between align-items-center card-meta">
+                              <div>Por: <strong>Ivan Ferreira</strong></div>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+
+
+               <div class="col-md-4">
                   <a href="https://www.instagram.com/p/DXuQ8PUCSrv/" target="_blank" rel="noopener noreferrer">
                      <div class="card card-custom">
                         <img src="img/programa-mundo-empresarial.jpg" class="card-img-top"

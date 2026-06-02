@@ -1,8 +1,8 @@
 <section class="section-shell segments" id="segmentos">
     <div class="container segments-layout">
         <div class="segments-intro reveal">
-            <p class="eyebrow">Operacoes Atendidas</p>
-            <h2>Amplitude para diferentes segmentos e ciclos de distribuicao</h2>
+            <p class="eyebrow">Operações Atendidas</p>
+            <h2>Amplitude para diferentes segmentos e ciclos de distribuição</h2>
             <p>
                 Estruturamos cada projeto conforme volume, recorrencia e criticidade do abastecimento da sua cadeia.
             </p>

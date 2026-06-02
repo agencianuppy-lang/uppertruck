@@ -1,23 +1,23 @@
 <?php
 require_once dirname(__DIR__) . '/components/home/path-bootstrap.php';
 $metaTitle = 'Carga Fracionada | Uppertruck';
-$metaDescription = 'Carga fracionada com metodo operacional, rastreabilidade e previsibilidade para empresas com operacao nacional.';
+$metaDescription = 'Carga fracionada com método operacional, rastreabilidade e previsibilidade para empresas com operação nacional.';
 $currentYear = date('Y');
 
 $menuItems = [
     ['label' => 'Home', 'href' => '/uppertruck/index.php'],
     ['label' => 'Sobre', 'href' => '/uppertruck/sobre.php'],
-    ['label' => 'Solucoes', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
+    ['label' => 'Soluções', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
         ['label' => 'Carga Fracionada', 'href' => '/uppertruck/solucoes/carga-fracionada.php'],
         ['label' => 'Carga Dedicada', 'href' => '/uppertruck/solucoes/carga-dedicada.php'],
-        ['label' => 'Consolidacao de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
+        ['label' => 'Consolidação de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
         ['label' => 'Last Mile', 'href' => '/uppertruck/solucoes/last-mile.php'],
-        ['label' => 'Operacoes Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
+        ['label' => 'Operações Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
     ]],
     ['label' => 'Para Empresas', 'href' => '/uppertruck/para-empresas.php'],
     ['label' => 'Para Transportadores', 'href' => '/uppertruck/para-transportadores.php'],
     ['label' => 'Blog', 'href' => '/uppertruck/blog'],
-    ['label' => 'Cotacao', 'href' => '/uppertruck/cotacao-contato.php'],
+    ['label' => 'Cotação', 'href' => '/uppertruck/cotacao-contato.php'],
 ];
 
 $serviceModules = [
@@ -25,27 +25,27 @@ $serviceModules = [
         'image' => '/uppertruck/img/ilus-1.png',
         'title' => 'Coleta Programada',
         'description' => 'Rotas recorrentes com janelas definidas para reduzir gargalos no embarque.',
-        'bullet' => 'Roteirizacao por densidade e prioridade de atendimento.',
+        'bullet' => 'Roteirização por densidade e prioridade de atendimento.',
     ],
     [
         'image' => '/uppertruck/img/ilus-2.png',
-        'title' => 'Consolidacao Inteligente',
-        'description' => 'Combinacao de volumes para melhorar ocupacao de frota e eficiencia de custo.',
-        'bullet' => 'Balanceamento por regiao, cubagem e criticidade de entrega.',
+        'title' => 'Consolidação Inteligente',
+        'description' => 'Combinação de volumes para melhorar ocupação de frota e eficiência de custo.',
+        'bullet' => 'Balanceamento por região, cubagem e criticidade de entrega.',
     ],
     [
         'image' => '/uppertruck/img/ilus-3.png',
         'title' => 'Entrega Rastreada',
         'description' => 'Acompanhamento ativo da carga com leitura operacional em tempo real.',
-        'bullet' => 'Comunicacao proxima com status e tratativa rapida de ocorrencias.',
+        'bullet' => 'Comunicação próxima com status e tratativa rápida de ocorrências.',
     ],
 ];
 
 $operationalStats = [
     ['value' => '+3.5K', 'label' => 'cidades atendidas com malha nacional', 'icon' => 'map-pinned', 'tag' => 'Cobertura'],
     ['value' => '97%', 'label' => 'entregas dentro da janela planejada', 'icon' => 'target', 'tag' => 'SLA'],
-    ['value' => '24h', 'label' => 'tempo medio de resposta operacional', 'icon' => 'clock-3', 'tag' => 'Resposta'],
-    ['value' => '0', 'label' => 'sinistros em operacoes monitoradas', 'icon' => 'shield-check', 'tag' => 'Risco'],
+    ['value' => '24h', 'label' => 'tempo médio de resposta operacional', 'icon' => 'clock-3', 'tag' => 'Resposta'],
+    ['value' => '0', 'label' => 'sinistros em operações monitoradas', 'icon' => 'shield-check', 'tag' => 'Risco'],
 ];
 ?>
 <!doctype html>
@@ -67,7 +67,7 @@ $operationalStats = [
 </head>
 
 <body class="cf-page">
-    <a class="skip-link" href="#conteudo-principal">Pular para o conteudo principal</a>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
     <?php include __DIR__ . '/../components/home/header.php'; ?>
 
@@ -75,26 +75,26 @@ $operationalStats = [
         <section class="cf-hero">
             <div class="container cf-hero-grid">
                 <div class="cf-hero-copy reveal">
-                    <p class="eyebrow">Solucao Uppertruck</p>
+                    <p class="eyebrow">Solução Uppertruck</p>
                     <h1>Carga Fracionada com previsibilidade, controle e escala nacional.</h1>
                     <p class="cf-hero-lead">
-                        Estruturamos a operacao para embarques de menor volume com metodo, rastreabilidade e atendimento proximo do primeiro contato ate a entrega.
+                        Estruturamos a operação para embarques de menor volume com método, rastreabilidade e atendimento próximo do primeiro contato até a entrega.
                     </p>
                     <div class="cf-hero-actions">
-                        <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotacao</a>
+                        <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                         <a class="btn cf-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                     </div>
                     <div class="cf-hero-kpis">
                         <div><strong>+1K</strong><span>clientes ativos</span></div>
-                        <div><strong>20%</strong><span>ganho medio de eficiencia</span></div>
+                        <div><strong>20%</strong><span>ganho médio de eficiência</span></div>
                         <div><strong>100%</strong><span>visibilidade operacional</span></div>
                     </div>
                 </div>
 
                 <figure class="cf-hero-media reveal" style="--delay: 80ms">
-                    <img src="/uppertruck/img/upper5.png" alt="Equipe Uppertruck em operacao de carga fracionada" loading="eager" decoding="async">
+                    <img src="/uppertruck/img/upper5.png" alt="Equipe Uppertruck em operação de carga fracionada" loading="eager" decoding="async">
                     <figcaption>
-                        <span><i data-lucide="activity"></i> Operacao monitorada</span>
+                        <span><i data-lucide="activity"></i> Operação monitorada</span>
                         <span><i data-lucide="shield-check"></i> Protocolos de risco ativos</span>
                     </figcaption>
                 </figure>
@@ -104,48 +104,48 @@ $operationalStats = [
         <section class="section-shell cf-tabbed-solution">
             <div class="container cf-tabbed-solution-grid">
                 <figure class="cf-tabbed-media reveal" style="--delay: 80ms">
-                    <img src="/uppertruck/img/distribuicao.png" alt="Operacao logistica de carga fracionada com distribuicao organizada" loading="lazy" decoding="async">
+                    <img src="/uppertruck/img/distribuicao.png" alt="Operação logística de carga fracionada com distribuição organizada" loading="lazy" decoding="async">
                 </figure>
 
                 <div class="cf-tabbed-content reveal">
-                    <p class="eyebrow">SoluÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o flexÃƒÆ’Ã‚Â­vel para embarques inteligentes</p>
-                    <h2>Carga Fracionada com mais eficiÃƒÆ’Ã‚Âªncia para a rotina da sua operaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o</h2>
+                    <p class="eyebrow">Solução flexível para embarques inteligentes</p>
+                    <h2>Carga Fracionada com mais eficiência para a rotina da sua operação</h2>
 
                     <div class="cf-tabbed-nav" role="tablist" aria-label="Conteudo sobre carga fracionada">
-                        <button type="button" class="is-active" role="tab" aria-selected="true" data-cf-tab-button="sobre">Sobre a soluÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o</button>
+                        <button type="button" class="is-active" role="tab" aria-selected="true" data-cf-tab-button="sobre">Sobre a solução</button>
                         <button type="button" role="tab" aria-selected="false" data-cf-tab-button="operamos">Como operamos</button>
                         <button type="button" role="tab" aria-selected="false" data-cf-tab-button="vantagens">Vantagens para sua empresa</button>
                     </div>
 
                     <div class="cf-tabbed-panels">
                         <article class="cf-tabbed-panel is-active" data-cf-tab-panel="sobre">
-                            <p>A carga fracionada ÃƒÆ’Ã‚Â© ideal para empresas que precisam transportar volumes menores sem ocupar um veÃƒÆ’Ã‚Â­culo inteiro. Nesse modelo, a carga ÃƒÆ’Ã‚Â© consolidada com outros embarques, permitindo melhor aproveitamento de espaÃƒÆ’Ã‚Â§o, mais economia e maior eficiÃƒÆ’Ã‚Âªncia no transporte.</p>
-                            <p>ÃƒÆ’Ã¢â‚¬Â° uma soluÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o estratÃƒÆ’Ã‚Â©gica para operaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Âµes recorrentes, distribuiÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o regional e empresas que buscam equilibrar custo logÃƒÆ’Ã‚Â­stico com previsibilidade.</p>
+                            <p>A carga fracionada é ideal para empresas que precisam transportar volumes menores sem ocupar um veículo inteiro. Nesse modelo, a carga é consolidada com outros embarques, permitindo melhor aproveitamento de espaço, mais economia e maior eficiência no transporte.</p>
+                            <p>É uma solução estratégica para operações recorrentes, distribuição regional e empresas que buscam equilibrar custo logístico com previsibilidade.</p>
                             <div class="cf-tabbed-actions">
-                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o</a>
+                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                                 <a class="btn cf-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                             </div>
                         </article>
 
                         <article class="cf-tabbed-panel" data-cf-tab-panel="operamos" hidden>
-                            <p>Na Uppertruck, a operaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o de carga fracionada ÃƒÆ’Ã‚Â© organizada para reduzir atritos desde a coleta atÃƒÆ’Ã‚Â© a entrega. Trabalhamos com planejamento de embarque, consolidaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o inteligente de volumes, acompanhamento operacional e comunicaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o prÃƒÆ’Ã‚Â³xima ao longo da jornada.</p>
-                            <p>O objetivo ÃƒÆ’Ã‚Â© trazer mais fluidez para a rotina logÃƒÆ’Ã‚Â­stica, reduzir gargalos e dar ÃƒÆ’Ã‚Â  sua empresa mais visibilidade sobre cada envio.</p>
+                            <p>Na Uppertruck, a operação de carga fracionada é organizada para reduzir atritos desde a coleta até a entrega. Trabalhamos com planejamento de embarque, consolidação inteligente de volumes, acompanhamento operacional e comunicação próxima ao longo da jornada.</p>
+                            <p>O objetivo é trazer mais fluidez para a rotina logística, reduzir gargalos e dar à sua empresa mais visibilidade sobre cada envio.</p>
                             <div class="cf-tabbed-actions">
-                                <a class="btn cf-btn-secondary" href="#como-operamos">Entender a operaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o</a>
-                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o</a>
+                                <a class="btn cf-btn-secondary" href="#como-operamos">Entender a operação</a>
+                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                             </div>
                         </article>
 
                         <article class="cf-tabbed-panel" data-cf-tab-panel="vantagens" hidden>
-                            <p>Com a carga fracionada, sua empresa pode reduzir custo com transporte, melhorar o aproveitamento da operaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o e manter mais previsibilidade em embarques de menor volume. ÃƒÆ’Ã¢â‚¬Â° uma alternativa eficiente para quem precisa escalar a logÃƒÆ’Ã‚Â­stica sem gerar ociosidade.</p>
-                            <p>Entre os principais ganhos estÃƒÆ’Ã‚Â£o mais economia, maior flexibilidade, melhor organizaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o dos embarques e mais controle sobre o fluxo logÃƒÆ’Ã‚Â­stico.</p>
+                            <p>Com a carga fracionada, sua empresa pode reduzir custo com transporte, melhorar o aproveitamento da operação e manter mais previsibilidade em embarques de menor volume. É uma alternativa eficiente para quem precisa escalar a logística sem gerar ociosidade.</p>
+                            <p>Entre os principais ganhos estão mais economia, maior flexibilidade, melhor organização dos embarques e mais controle sobre o fluxo logístico.</p>
                             <ul class="cf-tabbed-benefits">
                                 <li>Melhor aproveitamento de custo</li>
                                 <li>Flexibilidade para volumes menores</li>
                                 <li>Mais previsibilidade operacional</li>
                             </ul>
                             <div class="cf-tabbed-actions">
-                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotaÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o</a>
+                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                                 <a class="btn cf-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                             </div>
                         </article>
@@ -180,18 +180,18 @@ $operationalStats = [
         <section class="section-shell cf-operations">
             <div class="container cf-operations-grid">
                 <figure class="cf-operations-media reveal">
-                    <img src="/uppertruck/img/consolidacao-de-cargas-2.jpg" alt="Gestao operacional de consolidacao de cargas" loading="lazy" decoding="async">
+                    <img src="/uppertruck/img/consolidacao-de-cargas-2.jpg" alt="Gestão operacional de consolidação de cargas" loading="lazy" decoding="async">
                 </figure>
                 <div class="cf-operations-copy reveal" style="--delay: 90ms">
-                    <p class="eyebrow">Gestao aplicada</p>
-                    <h2>Coleta, consolidacao e entrega com visibilidade continua.</h2>
+                    <p class="eyebrow">Gestão aplicada</p>
+                    <h2>Coleta, consolidação e entrega com visibilidade contínua.</h2>
                     <p>
-                        Atuamos com protocolos de monitoramento, comunicacao operacional e controle de SLA para manter consistencia da malha mesmo em cenarios de variacao de demanda.
+                        Atuamos com protocolos de monitoramento, comunicação operacional e controle de SLA para manter consistência da malha mesmo em cenários de variação de demanda.
                     </p>
                     <ul>
                         <li><i data-lucide="radar"></i> Visibilidade de status em cada etapa da jornada</li>
                         <li><i data-lucide="route"></i> Ajuste de rota por prioridade e janela de atendimento</li>
-                        <li><i data-lucide="headset"></i> Atendimento proximo com tratativa ativa de ocorrencias</li>
+                        <li><i data-lucide="headset"></i> Atendimento próximo com tratativa ativa de ocorrências</li>
                     </ul>
                 </div>
             </div>
@@ -200,8 +200,8 @@ $operationalStats = [
         <section class="section-shell cf-stats">
             <div class="container">
                 <div class="section-head cf-head-center reveal">
-                    <p class="eyebrow cf-stats-eyebrow"><i data-lucide="sparkles"></i> Resultados de operacao</p>
-                    <h2>Indicadores que sustentam decisoes mais seguras no transporte fracionado.</h2>
+                    <p class="eyebrow cf-stats-eyebrow"><i data-lucide="sparkles"></i> Resultados de operação</p>
+                    <h2>Indicadores que sustentam decisões mais seguras no transporte fracionado.</h2>
                 </div>
                 <div class="cf-stats-grid">
                     <?php foreach ($operationalStats as $index => $item): ?>
@@ -223,15 +223,15 @@ $operationalStats = [
         <section class="section-shell cf-insight">
             <div class="container cf-insight-grid">
                 <figure class="cf-insight-media reveal">
-                    <img src="/uppertruck/img/2151994456.jpg" alt="Operador logÃƒÆ’Ã‚Â­stico em armazem com carga fracionada" loading="lazy" decoding="async">
+                    <img src="/uppertruck/img/2151994456.jpg" alt="Operador logístico em armazém com carga fracionada" loading="lazy" decoding="async">
                 </figure>
                 <div class="cf-insight-copy reveal" style="--delay: 80ms">
-                    <p class="eyebrow">Leitura estrategica</p>
-                    <h2>Transporte fracionado deixa de ser uma dor quando existe metodo operacional real.</h2>
+                    <p class="eyebrow">Leitura estratégica</p>
+                    <h2>Transporte fracionado deixa de ser uma dor quando existe método operacional real.</h2>
                     <p>
-                        Com governanca, tecnologia e acompanhamento ativo, sua equipe ganha previsibilidade para planejar abastecimento, reduzir desgaste interno e crescer com mais consistencia.
+                        Com governança, tecnologia e acompanhamento ativo, sua equipe ganha previsibilidade para planejar abastecimento, reduzir desgaste interno e crescer com mais consistência.
                     </p>
-                    <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Quero estruturar minha operacao</a>
+                    <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Quero estruturar minha operação</a>
                 </div>
             </div>
         </section>

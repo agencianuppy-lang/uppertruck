@@ -1,8 +1,7 @@
 <?php
 declare(strict_types=1);
-
-
 require_once dirname(__DIR__) . '/components/home/path-bootstrap.php';
+
 $metaTitle = 'Carga Dedicada | Transporte Exclusivo para Empresas | Uppertruck';
 $metaDescription = 'Carga dedicada para empresas que precisam de transporte exclusivo, rotas recorrentes, capacidade reservada, SLA monitorado e maior previsibilidade operacional.';
 $currentYear = date('Y');
@@ -10,17 +9,17 @@ $currentYear = date('Y');
 $menuItems = [
     ['label' => 'Home', 'href' => '/uppertruck/index.php'],
     ['label' => 'Sobre', 'href' => '/uppertruck/sobre.php'],
-    ['label' => 'Solucoes', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
+    ['label' => 'Soluções', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
         ['label' => 'Carga Fracionada', 'href' => '/uppertruck/solucoes/carga-fracionada.php'],
         ['label' => 'Carga Dedicada', 'href' => '/uppertruck/solucoes/carga-dedicada.php'],
-        ['label' => 'Consolidacao de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
+        ['label' => 'Consolidação de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
         ['label' => 'Last Mile', 'href' => '/uppertruck/solucoes/last-mile.php'],
-        ['label' => 'Operacoes Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
+        ['label' => 'Operações Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
     ]],
     ['label' => 'Para Empresas', 'href' => '/uppertruck/para-empresas.php'],
     ['label' => 'Para Transportadores', 'href' => '/uppertruck/para-transportadores.php'],
     ['label' => 'Blog', 'href' => '/uppertruck/blog'],
-    ['label' => 'Cotacao', 'href' => '/uppertruck/cotacao-contato.php'],
+    ['label' => 'Cotação', 'href' => '/uppertruck/cotacao-contato.php'],
 ];
 
 function dedicatedImage(string $basename, string $fallback): string
@@ -52,9 +51,9 @@ $images = [
 ];
 
 $heroFloatingCards = [
-    ['title' => 'Capacidade reservada', 'text' => 'Veiculo e operacao planejados conforme sua demanda.'],
+    ['title' => 'Capacidade reservada', 'text' => 'Veículo e operação planejados conforme sua demanda.'],
     ['title' => 'Rota com prioridade', 'text' => 'Menos desvios, menos paradas e maior previsibilidade.'],
-    ['title' => 'Gestao proxima', 'text' => 'Acompanhamento ativo antes, durante e depois da entrega.'],
+    ['title' => 'Gestão próxima', 'text' => 'Acompanhamento ativo antes, durante e depois da entrega.'],
 ];
 
 $heroSignals = [
@@ -66,44 +65,44 @@ $heroSignals = [
 $dedicatedShowcaseSlides = [
     [
         'image' => $images['hero'],
-        'alt' => 'Caminhao dedicado em operacao de rota planejada',
+        'alt' => 'Caminhao dedicado em operação de rota planejada',
         'subtitle' => 'Capacidade reservada para sua demanda',
-        'text' => 'A Carga Dedicada permite estruturar veiculos e recursos conforme a rotina da sua empresa, reduzindo a dependencia de disponibilidade em cima da hora e trazendo mais previsibilidade para rotas recorrentes.',
-        'ctaLabel' => 'Solicitar operacao dedicada',
+        'text' => 'A Carga Dedicada permite estruturar veículos e recursos conforme a rotina da sua empresa, reduzindo a dependencia de disponibilidade em cima da hora e trazendo mais previsibilidade para rotas recorrentes.',
+        'ctaLabel' => 'Solicitar operação dedicada',
         'ctaHref' => '/uppertruck/cotacao-contato/solicitar-cotacao.php',
     ],
     [
         'image' => $images['comparison'],
-        'alt' => 'Operacao dedicada com carregamento planejado em doca',
+        'alt' => 'Operação dedicada com carregamento planejado em doca',
         'subtitle' => 'Rotas planejadas, menos improviso',
-        'text' => 'A operacao e desenhada considerando origem, destino, frequencia, volume, janela de coleta e criticidade da entrega. Assim, sua empresa ganha uma rotina logistica mais estavel e menos vulneravel a falhas operacionais.',
+        'text' => 'A operação é desenhada considerando origem, destino, frequência, volume, janela de coleta e criticidade da entrega. Assim, sua empresa ganha uma rotina logística mais estável e menos vulneravel a falhas operacionais.',
         'ctaLabel' => 'Falar com especialista',
         'ctaHref' => '/uppertruck/cotacao-contato/falar-com-especialista.php',
     ],
     [
         'image' => $images['timeline'],
-        'alt' => 'Equipe acompanhando indicadores de operacao dedicada',
-        'subtitle' => 'Acompanhamento proximo do inicio ao fim',
-        'text' => 'Com gestao ativa da operacao, comunicacao de status e leitura de performance, a Uppertruck ajuda sua empresa a manter mais controle sobre prazos, SLA, ocorrencias e continuidade logistica.',
-        'ctaLabel' => 'Entender a solucao',
+        'alt' => 'Equipe acompanhando indicadores de operação dedicada',
+        'subtitle' => 'Acompanhamento próximo do início ao fim',
+        'text' => 'Com gestão ativa da operação, comunicação de status e leitura de performance, a Uppertruck ajuda sua empresa a manter mais controle sobre prazos, SLA, ocorrências e continuidade logística.',
+        'ctaLabel' => 'Entender a solução',
         'ctaHref' => '/uppertruck/solucoes/carga-dedicada.php',
     ],
 ];
 
 $diagnosticQuestions = [
     'Sua empresa possui rotas recorrentes?',
-    'Voce precisa reservar capacidade com antecedencia?',
-    'O atraso de uma entrega compromete producao ou atendimento?',
+    'Você precisa reservar capacidade com antecedencia?',
+    'O atraso de uma entrega compromete produção ou atendimento?',
     'A carga exige cuidado, prioridade ou menor manuseio?',
-    'Voce quer reduzir dependencia de fretes spot?',
-    'Sua operacao precisa de SLA, janela e acompanhamento proximo?',
+    'Você quer reduzir dependencia de fretes spot?',
+    'Sua operação precisa de SLA, janela e acompanhamento próximo?',
 ];
 
 $comparisonRows = [
     [
         'aspect' => 'Investimento inicial',
         'ownFleet' => 'Exige compra, locacao ou imobilizacao de capital.',
-        'dedicated' => 'Operacao estruturada sem necessidade de frota propria.',
+        'dedicated' => 'Operação estruturada sem necessidade de frota própria.',
     ],
     [
         'aspect' => 'Contratacao de motoristas',
@@ -111,19 +110,19 @@ $comparisonRows = [
         'dedicated' => 'Equipe e parceiros alinhados a sua demanda.',
     ],
     [
-        'aspect' => 'Manutencao e disponibilidade',
+        'aspect' => 'Manutenção e disponibilidade',
         'ownFleet' => 'Indisponibilidade pode afetar diretamente a rotina.',
         'dedicated' => 'Planejamento para reduzir rupturas e manter continuidade.',
     ],
     [
         'aspect' => 'Escala e substituicao',
-        'ownFleet' => 'Gestao interna de folgas, cobertura e contingencia.',
-        'dedicated' => 'Operacao coordenada com plano de cobertura.',
+        'ownFleet' => 'Gestão interna de folgas, cobertura e contingência.',
+        'dedicated' => 'Operação coordenada com plano de cobertura.',
     ],
     [
         'aspect' => 'Monitoramento operacional',
         'ownFleet' => 'Depende de sistema e processo interno maduro.',
-        'dedicated' => 'Acompanhamento ativo com comunicacao operacional.',
+        'dedicated' => 'Acompanhamento ativo com comunicação operacional.',
     ],
     [
         'aspect' => 'Flexibilidade de demanda',
@@ -131,9 +130,9 @@ $comparisonRows = [
         'dedicated' => 'Modelo ajustavel por periodo, rota e criticidade.',
     ],
     [
-        'aspect' => 'Gestao de SLA',
+        'aspect' => 'Gestão de SLA',
         'ownFleet' => 'Controle depende da disciplina operacional interna.',
-        'dedicated' => 'Janela, prioridade e SLA acompanhados continuamente.',
+        'dedicated' => 'Janela, prioridade e SLA acompanhados contínuamente.',
     ],
     [
         'aspect' => 'Responsabilidade operacional',
@@ -146,29 +145,29 @@ $operationModels = [
     [
         'badge' => 'Recorrencia',
         'title' => 'Rota Fixa Recorrente',
-        'description' => 'Para empresas com coletas e entregas frequentes entre pontos definidos, como industria para CD, CD para filial ou fornecedor para planta.',
-        'bestFor' => 'Melhor indicado para operacoes com fluxo semanal estavel.',
+        'description' => 'Para empresas com coletas e entregas frequentes entre pontos definidos, como indústria para CD, CD para filial ou fornecedor para planta.',
+        'bestFor' => 'Melhor indicado para operações com fluxo semanal estável.',
         'icon' => 'route',
     ],
     [
         'badge' => 'Capacidade',
-        'title' => 'Veiculo Exclusivo por Periodo',
-        'description' => 'Quando a operacao precisa de disponibilidade dedicada por dia, semana, campanha ou contrato com reforco de distribuicao.',
-        'bestFor' => 'Melhor indicado para sazonalidade e expansao temporaria.',
+        'title' => 'Veículo Exclusivo por Periodo',
+        'description' => 'Quando a operação precisa de disponibilidade dedicada por dia, semana, campanha ou contrato com reforco de distribuição.',
+        'bestFor' => 'Melhor indicado para sazonalidade e expansão temporaria.',
         'icon' => 'truck',
     ],
     [
         'badge' => 'SLA',
-        'title' => 'Operacao com Janela Critica',
-        'description' => 'Entregas que precisam acontecer dentro de horarios especificos para abastecimento de loja, linha de producao e cliente estrategico.',
+        'title' => 'Operação com Janela Crítica',
+        'description' => 'Entregas que precisam acontecer dentro de horarios específicos para abastecimento de loja, linha de produção e cliente estratégico.',
         'bestFor' => 'Melhor indicado para embarques com horario de recebimento definido.',
         'icon' => 'timer',
     ],
     [
         'badge' => 'Projeto',
         'title' => 'Projeto Especial Dedicado',
-        'description' => 'Cargas sensiveis, rotas fora do padrao, maquinas, equipamentos e materiais de alto valor com planejamento sob medida.',
-        'bestFor' => 'Melhor indicado para demandas fora da rotina padrao.',
+        'description' => 'Cargas sensíveis, rotas fora do padrão, maquinas, equipamentos e materiais de alto valor com planejamento sob medida.',
+        'bestFor' => 'Melhor indicado para demandas fora da rotina padrão.',
         'icon' => 'settings-2',
     ],
 ];
@@ -176,27 +175,27 @@ $operationModels = [
 $timelinePhases = [
     [
         'title' => 'Mapeamento da demanda',
-        'description' => 'Entendimento de origem, destino, frequencia, volume, tipo de carga e criticidade operacional.',
+        'description' => 'Entendimento de origem, destino, frequência, volume, tipo de carga e criticidade operacional.',
         'icon' => 'search',
     ],
     [
-        'title' => 'Desenho da solucao',
-        'description' => 'Definicao do modelo dedicado: rota fixa, veiculo reservado, janela critica ou projeto especial.',
+        'title' => 'Desenho da solução',
+        'description' => 'Definição do modelo dedicado: rota fixa, veículo reservado, janela crítica ou projeto especial.',
         'icon' => 'drafting-compass',
     ],
     [
         'title' => 'Planejamento de recursos',
-        'description' => 'Alocacao de veiculo, perfil operacional, parceiros, horarios e plano de contingencia.',
+        'description' => 'Alocacao de veículo, perfil operacional, parceiros, horarios e plano de contingência.',
         'icon' => 'layers-3',
     ],
     [
-        'title' => 'Operacao monitorada',
-        'description' => 'Acompanhamento ativo da carga, status de rota e tratativa rapida de ocorrencias.',
+        'title' => 'Operação monitorada',
+        'description' => 'Acompanhamento ativo da carga, status de rota e tratativa rápida de ocorrências.',
         'icon' => 'radar',
     ],
     [
         'title' => 'Leitura de performance',
-        'description' => 'Avaliacao de SLA, pontualidade, ocorrencias e oportunidades de melhoria continua.',
+        'description' => 'Avaliação de SLA, pontualidade, ocorrências e oportunidades de melhoria contínua.',
         'icon' => 'line-chart',
     ],
 ];
@@ -204,7 +203,7 @@ $timelinePhases = [
 $painReducers = [
     [
         'title' => 'Menos atraso por indisponibilidade',
-        'description' => 'Capacidade planejada reduz dependencia de encontrar veiculo em cima da hora.',
+        'description' => 'Capacidade planejada reduz dependencia de encontrar veículo em cima da hora.',
         'icon' => 'clock',
     ],
     [
@@ -218,25 +217,25 @@ $painReducers = [
         'icon' => 'refresh-cw',
     ],
     [
-        'title' => 'Menos variacao de custo',
+        'title' => 'Menos variação de custo',
         'description' => 'Rotas recorrentes trazem previsibilidade e reduzem oscilacoes de frete spot.',
         'icon' => 'badge-dollar-sign',
     ],
     [
-        'title' => 'Menos ruido de comunicacao',
-        'description' => 'Acompanhamento proximo evita perda de informacao entre coleta, transito e entrega.',
+        'title' => 'Menos ruido de comunicação',
+        'description' => 'Acompanhamento próximo evita perda de informacao entre coleta, trânsito e entrega.',
         'icon' => 'messages-square',
     ],
     [
         'title' => 'Menos ruptura operacional',
-        'description' => 'Planejamento dedicado reduz falhas que impactam producao, estoque e atendimento.',
+        'description' => 'Planejamento dedicado reduz falhas que impactam produção, estoque e atendimento.',
         'icon' => 'siren',
     ],
 ];
 
 $segmentCards = [
     [
-        'title' => 'Industrias',
+        'title' => 'Indústrias',
         'description' => 'Abastecimento de plantas, transferencia entre unidades e envios recorrentes para CDs.',
         'icon' => 'factory',
         'class' => 'dedicated-app-card-1',
@@ -254,8 +253,8 @@ $segmentCards = [
         'class' => 'dedicated-app-card-3',
     ],
     [
-        'title' => 'Operacoes B2B criticas',
-        'description' => 'Clientes estrategicos, materiais sensiveis e rotas com prioridade operacional.',
+        'title' => 'Operações B2B críticas',
+        'description' => 'Clientes estratégicos, materiais sensíveis e rotas com prioridade operacional.',
         'icon' => 'briefcase-business',
         'class' => 'dedicated-app-card-4',
     ],
@@ -267,7 +266,7 @@ $segmentCards = [
     ],
     [
         'title' => 'Projetos especiais',
-        'description' => 'Expansao de operacao, reforco logistico em picos e demandas temporarias.',
+        'description' => 'Expansão de operação, reforco logístico em picos e demandas temporarias.',
         'icon' => 'rocket',
         'class' => 'dedicated-app-card-6',
     ],
@@ -278,66 +277,66 @@ $resultCards = [
         'label' => 'Resposta operacional',
         'value' => 24,
         'suffix' => 'h',
-        'description' => 'Retorno rapido para iniciar o desenho da operacao dedicada.',
+        'description' => 'Retorno rapido para iniciar o desenho da operação dedicada.',
     ],
     [
         'label' => 'Planejamento por demanda',
         'value' => 100,
         'suffix' => '%',
-        'description' => 'Rotas e recursos estruturados conforme frequencia e criticidade.',
+        'description' => 'Rotas e recursos estruturados conforme frequência e criticidade.',
     ],
     [
         'label' => 'SLA monitorado',
         'value' => 100,
         'suffix' => '%',
-        'description' => 'Acompanhamento de janela, prioridade e status durante a execucao.',
+        'description' => 'Acompanhamento de janela, prioridade e status durante a execução.',
     ],
     [
         'label' => 'Capacidade reservada',
         'value' => 1,
         'prefix' => '1:',
         'suffix' => '',
-        'description' => 'Operacao dedicada para quem nao pode depender do improviso.',
+        'description' => 'Operação dedicada para quem não pode depender do improviso.',
     ],
 ];
 
 $ctaChecklist = [
     'Origem e destino',
-    'Frequencia de embarque',
+    'Frequência de embarque',
     'Tipo de carga',
-    'Volume medio',
+    'Volume médio',
     'Janela de coleta e entrega',
-    'Pontos criticos da operacao',
+    'Pontos críticos da operação',
 ];
 
 $faqItems = [
     [
         'question' => 'O que e Carga Dedicada?',
-        'answer' => 'Carga Dedicada e uma solucao em que a operacao de transporte e planejada conforme a demanda da empresa, com veiculo, rota, frequencia e acompanhamento definidos para atender uma necessidade especifica. E indicada para operacoes que precisam de mais controle, previsibilidade e prioridade.',
+        'answer' => 'Carga Dedicada é uma solução em que a operação de transporte é planejada conforme a demanda da empresa, com veículo, rota, frequência e acompanhamento definidos para atender uma necessidade específica. É indicada para operações que precisam de mais controle, previsibilidade e prioridade.',
     ],
     [
         'question' => 'Qual a diferenca entre Carga Dedicada e Carga Fracionada?',
-        'answer' => 'Na Carga Fracionada, diferentes embarques podem compartilhar a mesma operacao para otimizar espaco e custo. Na Carga Dedicada, a estrutura e desenhada para uma demanda especifica, com maior controle sobre rota, janela, capacidade e acompanhamento operacional.',
+        'answer' => 'Na Carga Fracionada, diferentes embarques podem compartilhar a mesma operação para otimizar espaco e custo. Na Carga Dedicada, a estrutura é desenhada para uma demanda específica, com maior controle sobre rota, janela, capacidade e acompanhamento operacional.',
     ],
     [
         'question' => 'Quando vale a pena contratar Carga Dedicada?',
-        'answer' => 'A Carga Dedicada faz sentido quando sua empresa possui rotas recorrentes, alto volume, prazos criticos, janelas definidas ou quando atrasos e indisponibilidade de transporte afetam producao, estoque, abastecimento ou atendimento ao cliente.',
+        'answer' => 'A Carga Dedicada faz sentido quando sua empresa possui rotas recorrentes, alto volume, prazos críticos, janelas definidas ou quando atrasos e indisponibilidade de transporte afetam produção, estoque, abastecimento ou atendimento ao cliente.',
     ],
     [
-        'question' => 'Preciso ter uma frota propria para usar Carga Dedicada?',
-        'answer' => 'Nao. A proposta da Carga Dedicada e justamente oferecer uma operacao planejada sem que sua empresa precise assumir toda a complexidade de comprar veiculos, contratar motoristas, cuidar de manutencao, escala e gestao de disponibilidade.',
+        'question' => 'Preciso ter uma frota própria para usar Carga Dedicada?',
+        'answer' => 'Não. A proposta da Carga Dedicada e justamente oferecer uma operação planejada sem que sua empresa precise assumir toda a complexidade de comprar veículos, contratar motoristas, cuidar de manutenção, escala e gestão de disponibilidade.',
     ],
     [
-        'question' => 'A operacao pode ser personalizada para minha empresa?',
-        'answer' => 'Sim. A Uppertruck pode estruturar a operacao conforme origem, destino, frequencia, volume, tipo de carga, janela de coleta e entrega, criticidade da operacao e necessidade de acompanhamento.',
+        'question' => 'A operação pode ser personalizada para minha empresa?',
+        'answer' => 'Sim. A Uppertruck pode estruturar a operação conforme origem, destino, frequência, volume, tipo de carga, janela de coleta e entrega, criticidade da operação e necessidade de acompanhamento.',
     ],
     [
         'question' => 'A Carga Dedicada ajuda no cumprimento de SLA?',
-        'answer' => 'Sim. Como a operacao e planejada com foco em rotina, prioridade e acompanhamento, a Carga Dedicada ajuda a trazer mais previsibilidade e controle para empresas que precisam cumprir prazos e manter indicadores logisticos mais estaveis.',
+        'answer' => 'Sim. Como a operação é planejada com foco em rotina, prioridade e acompanhamento, a Carga Dedicada ajuda a trazer mais previsibilidade e controle para empresas que precisam cumprir prazos e manter indicadores logísticos mais estaveis.',
     ],
     [
-        'question' => 'Como solicitar uma analise de Carga Dedicada?',
-        'answer' => 'Voce pode solicitar uma analise com a equipe da Uppertruck. A partir das informacoes sobre rota, volume, frequencia, tipo de carga e janela de atendimento, e possivel desenhar uma solucao mais adequada para sua operacao.',
+        'question' => 'Como solicitar uma análise de Carga Dedicada?',
+        'answer' => 'Você pode solicitar uma análise com a equipe da Uppertruck. A partir das informações sobre rota, volume, frequência, tipo de carga e janela de atendimento, é possível desenhar uma solução mais adequada para sua operação.',
     ],
 ];
 ?>
@@ -359,7 +358,7 @@ $faqItems = [
 </head>
 
 <body class="dedicated-page">
-    <a class="skip-link" href="#conteudo-principal">Pular para o conteudo principal</a>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
     <?php include __DIR__ . '/../components/home/header.php'; ?>
 
@@ -368,17 +367,17 @@ $faqItems = [
             <div class="dedicated-hero__container">
                 <div class="dedicated-hero__grid">
                     <div class="dedicated-hero__content reveal" data-aos="fade-up">
-                        <p class="dedicated-kicker dedicated-hero__eyebrow">Solucao Uppertruck</p>
+                        <p class="dedicated-kicker dedicated-hero__eyebrow">Solução Uppertruck</p>
                         <h1 class="dedicated-hero__title">
-                            Carga Dedicada para operacoes que exigem
+                            Carga Dedicada para operações que exigem
                             <span>controle, previsibilidade e prioridade.</span>
                         </h1>
                         <p class="dedicated-hero__text">
-                            Estruturamos veiculos, rotas e acompanhamento operacional para empresas que precisam de uma solucao exclusiva, recorrente e alinhada ao ritmo da propria operacao.
+                            Estruturamos veículos, rotas e acompanhamento operacional para empresas que precisam de uma solução exclusiva, recorrente e alinhada ao ritmo da própria operação.
                         </p>
                         <div class="dedicated-hero__actions">
                             <a class="dedicated-btn dedicated-btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">
-                                Solicitar operacao dedicada
+                                Solicitar operação dedicada
                                 <i data-lucide="arrow-right"></i>
                             </a>
                             <a class="dedicated-btn dedicated-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">
@@ -398,7 +397,7 @@ $faqItems = [
                     <div class="dedicated-hero-visual reveal" data-aos="fade-left" data-aos-delay="120">
                         <div class="dedicated-hero-stage">
                             <figure class="dedicated-hero-media">
-                                <img src="<?php echo htmlspecialchars($images['hero'], ENT_QUOTES, 'UTF-8'); ?>" alt="Operacao de carga dedicada em andamento" loading="eager" decoding="async">
+                                <img src="<?php echo htmlspecialchars($images['hero'], ENT_QUOTES, 'UTF-8'); ?>" alt="Operação de carga dedicada em andamento" loading="eager" decoding="async">
                                 <div class="dedicated-media-overlay" aria-hidden="true"></div>
                             </figure>
 
@@ -407,7 +406,7 @@ $faqItems = [
                                     <p class="dedicated-status-title">Painel operacional</p>
                                 </div>
                                 <ul>
-                                    <li><i data-lucide="truck"></i> Veiculo alocado</li>
+                                    <li><i data-lucide="truck"></i> Veículo alocado</li>
                                     <li><i data-lucide="route"></i> Rota dedicada ativa</li>
                                     <li><i data-lucide="target"></i> SLA monitorado</li>
                                     <li><i data-lucide="calendar-check-2"></i> Janela prevista</li>
@@ -415,7 +414,7 @@ $faqItems = [
                             </aside>
                         </div>
 
-                        <div class="dedicated-hero-badges dedicated-hero__floating-stack" aria-label="Diferenciais da operacao dedicada">
+                        <div class="dedicated-hero-badges dedicated-hero__floating-stack" aria-label="Diferenciais da operação dedicada">
                             <?php foreach ($heroFloatingCards as $index => $card): ?>
                                 <div class="dedicated-badge reveal" style="--delay: <?php echo htmlspecialchars((string) (110 + ($index * 70)), ENT_QUOTES, 'UTF-8'); ?>ms;" data-aos="fade-up" data-aos-delay="<?php echo htmlspecialchars((string) (140 + ($index * 80)), ENT_QUOTES, 'UTF-8'); ?>">
                                     <i data-lucide="sparkles"></i>
@@ -432,21 +431,21 @@ $faqItems = [
             <div class="container dedicated-predictability__grid">
                 <figure class="dedicated-predictability__media reveal" data-aos="fade-right">
                     <span class="dedicated-predictability__media-depth" aria-hidden="true"></span>
-                    <img src="<?php echo htmlspecialchars($images['comparison'], ENT_QUOTES, 'UTF-8'); ?>" alt="Operacao dedicada com planejamento logistico e controle de transporte" loading="lazy" decoding="async">
+                    <img src="<?php echo htmlspecialchars($images['comparison'], ENT_QUOTES, 'UTF-8'); ?>" alt="Operação dedicada com planejamento logístico e controle de transporte" loading="lazy" decoding="async">
                 </figure>
 
                 <div class="dedicated-predictability__content reveal" data-aos="fade-left" data-aos-delay="90">
-                    <p class="dedicated-kicker">Operacao dedicada para empresas que precisam de previsibilidade</p>
-                    <h2>Mais controle para a sua logistica, sem depender do improviso</h2>
+                    <p class="dedicated-kicker">Operação dedicada para empresas que precisam de previsibilidade</p>
+                    <h2>Mais controle para a sua logística, sem depender do improviso</h2>
                     <p>
-                        A Carga Dedicada da Uppertruck e ideal para empresas que precisam de capacidade reservada, rotas recorrentes e acompanhamento proximo da operacao. Com uma estrutura planejada, sua empresa ganha mais previsibilidade no transporte, mais estabilidade para cumprir prazos e mais seguranca para sustentar a rotina logistica com menos ruido operacional.
+                        A Carga Dedicada da Uppertruck é ideal para empresas que precisam de capacidade reservada, rotas recorrentes e acompanhamento próximo da operação. Com uma estrutura planejada, sua empresa ganha mais previsibilidade no transporte, mais estabilidade para cumprir prazos e mais segurança para sustentar a rotina logística com menos ruido operacional.
                     </p>
                     <p>
-                        Em vez de depender de solucoes pontuais, sua operacao passa a contar com uma dinamica dedicada, desenhada conforme frequencia, volume, criticidade e janela de atendimento.
+                        Em vez de depender de soluções pontuais, sua operação passa a contar com uma dinâmica dedicada, desenhada conforme frequência, volume, criticidade e janela de atendimento.
                     </p>
                     <div class="dedicated-predictability__actions">
                         <a class="dedicated-btn dedicated-btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">
-                            Solicitar operacao dedicada
+                            Solicitar operação dedicada
                             <i data-lucide="arrow-right"></i>
                         </a>
                         <a class="dedicated-btn dedicated-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">
@@ -460,48 +459,48 @@ $faqItems = [
         <section class="dedicated-section dedicated-tabbed-solution">
             <div class="container dedicated-tabbed-solution__grid">
                 <figure class="dedicated-tabbed-solution__media reveal" data-aos="fade-right">
-                    <img src="<?php echo htmlspecialchars($images['comparison'], ENT_QUOTES, 'UTF-8'); ?>" alt="Operacao de carga dedicada com planejamento logistico e controle de rota" loading="lazy" decoding="async">
+                    <img src="<?php echo htmlspecialchars($images['comparison'], ENT_QUOTES, 'UTF-8'); ?>" alt="Operação de carga dedicada com planejamento logístico e controle de rota" loading="lazy" decoding="async">
                 </figure>
 
                 <div class="dedicated-tabbed-solution__content reveal" data-aos="fade-left" data-aos-delay="90">
-                    <p class="dedicated-kicker">Solucao exclusiva para operacoes criticas</p>
-                    <h2>Carga Dedicada com mais controle para a rotina da sua operacao</h2>
+                    <p class="dedicated-kicker">Solução exclusiva para operações críticas</p>
+                    <h2>Carga Dedicada com mais controle para a rotina da sua operação</h2>
 
                     <div class="dedicated-tabbed-nav" role="tablist" aria-label="Conteudo sobre carga dedicada">
-                        <button type="button" class="is-active" role="tab" aria-selected="true" data-dedicated-tab-button="sobre">Sobre a solucao</button>
+                        <button type="button" class="is-active" role="tab" aria-selected="true" data-dedicated-tab-button="sobre">Sobre a solução</button>
                         <button type="button" role="tab" aria-selected="false" data-dedicated-tab-button="operamos">Como operamos</button>
                         <button type="button" role="tab" aria-selected="false" data-dedicated-tab-button="vantagens">Vantagens para sua empresa</button>
                     </div>
 
                     <div class="dedicated-tabbed-panels">
                         <article class="dedicated-tabbed-panel is-active" data-dedicated-tab-panel="sobre">
-                            <p>A carga dedicada e ideal para empresas que precisam de capacidade reservada, prioridade de coleta e entrega e menor variacao na rotina logistica. Nesse modelo, o transporte e planejado para a sua demanda, com mais previsibilidade e controle operacional.</p>
-                            <p>E uma solucao estrategica para operacoes recorrentes, janelas criticas e fluxos em que atraso impacta producao, abastecimento ou atendimento.</p>
+                            <p>A carga dedicada é ideal para empresas que precisam de capacidade reservada, prioridade de coleta e entrega e menor variação na rotina logística. Nesse modelo, o transporte e planejado para a sua demanda, com mais previsibilidade e controle operacional.</p>
+                            <p>É uma solução estratégica para operações recorrentes, janelas críticas e fluxos em que atraso impacta produção, abastecimento ou atendimento.</p>
                             <div class="dedicated-tabbed-actions">
-                                <a class="dedicated-btn dedicated-btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotacao</a>
+                                <a class="dedicated-btn dedicated-btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                                 <a class="dedicated-btn dedicated-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                             </div>
                         </article>
 
                         <article class="dedicated-tabbed-panel" data-dedicated-tab-panel="operamos" hidden>
-                            <p>Na Uppertruck, a operacao dedicada comeca com diagnostico de rota, frequencia, janela e criticidade. Em seguida, estruturamos veiculo, equipe e plano de contingencia para manter continuidade e nivel de servico ao longo de toda a jornada.</p>
-                            <p>O objetivo e transformar uma operacao suscetivel a urgencias em uma rotina com governanca, comunicacao ativa e execucao consistente.</p>
+                            <p>Na Uppertruck, a operação dedicada começa com diagnóstico de rota, frequência, janela e criticidade. Em seguida, estruturamos veículo, equipe e plano de contingência para manter continuidade e nível de serviço ao longo de toda a jornada.</p>
+                            <p>O objetivo e transformar uma operação suscetivel a urgencias em uma rotina com governança, comunicação ativa e execução consistente.</p>
                             <div class="dedicated-tabbed-actions">
-                                <a class="dedicated-btn dedicated-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Entender a operacao</a>
-                                <a class="dedicated-btn dedicated-btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotacao</a>
+                                <a class="dedicated-btn dedicated-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Entender a operação</a>
+                                <a class="dedicated-btn dedicated-btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                             </div>
                         </article>
 
                         <article class="dedicated-tabbed-panel" data-dedicated-tab-panel="vantagens" hidden>
-                            <p>Com a carga dedicada, sua empresa reduz dependencia de frete spot, ganha previsibilidade para cumprir SLA e melhora o controle de ponta a ponta sobre embarques estrategicos. E uma alternativa eficiente para crescer sem absorver toda a complexidade de uma frota propria.</p>
-                            <p>Entre os principais ganhos estao mais estabilidade operacional, resposta rapida a desvios e melhor alinhamento entre transporte e estrategia do negocio.</p>
+                            <p>Com a carga dedicada, sua empresa reduz dependencia de frete spot, ganha previsibilidade para cumprir SLA e melhora o controle de ponta a ponta sobre embarques estratégicos. E uma alternativa eficiente para crescer sem absorver toda a complexidade de uma frota própria.</p>
+                            <p>Entre os principais ganhos estao mais estabilidade operacional, resposta rápida a desvios e melhor alinhamento entre transporte e estrategia do negócio.</p>
                             <ul class="dedicated-tabbed-benefits">
                                 <li>Capacidade reservada para rotas recorrentes</li>
-                                <li>Mais consistencia no cumprimento de SLA</li>
+                                <li>Mais consistência no cumprimento de SLA</li>
                                 <li>Maior controle com acompanhamento ativo</li>
                             </ul>
                             <div class="dedicated-tabbed-actions">
-                                <a class="dedicated-btn dedicated-btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotacao</a>
+                                <a class="dedicated-btn dedicated-btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                                 <a class="dedicated-btn dedicated-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                             </div>
                         </article>
@@ -538,7 +537,7 @@ $faqItems = [
 
                 <div class="dedicated-showcase__right reveal" data-aos="fade-left" data-aos-delay="90">
                     <p class="dedicated-kicker">Por que a Uppertruck</p>
-                    <h2>Carga Dedicada para operacoes que precisam de controle real</h2>
+                    <h2>Carga Dedicada para operações que precisam de controle real</h2>
 
                     <div class="dedicated-showcase__content-wrap">
                         <?php foreach ($dedicatedShowcaseSlides as $index => $slide): ?>
@@ -575,13 +574,13 @@ $faqItems = [
                 </div>
 
                 <aside class="dedicated-faq-premium__aside reveal" data-aos="fade-left" data-aos-delay="80" aria-label="Introducao FAQ">
-                    <p class="dedicated-kicker">Duvidas frequentes</p>
+                    <p class="dedicated-kicker">Dúvidas frequentes</p>
                     <h2>FAQ</h2>
                     <p>
-                        Respostas rapidas sobre Carga Dedicada, operacao exclusiva e planejamento logistico com a Uppertruck.
+                        Respostas rápidas sobre Carga Dedicada, operação exclusiva e planejamento logístico com a Uppertruck.
                     </p>
                     <a class="dedicated-inline-link" href="/uppertruck/cotacao-contato/falar-com-especialista.php">
-                        Ainda tem duvidas? Falar com especialista
+                        Ainda tem dúvidas? Falar com especialista
                         <i data-lucide="arrow-up-right"></i>
                     </a>
                 </aside>

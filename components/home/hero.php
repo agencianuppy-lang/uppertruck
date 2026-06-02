@@ -7,9 +7,9 @@
     <div class="container hero-frame hero-frame-simple reveal">
         <div class="hero-main">
             <p class="eyebrow">Uppertruck Digital Freight Network</p>
-            <h1>Transporte de cargas com metodo, visibilidade e inteligencia operacional</h1>
+            <h1>Transporte de cargas com método, visibilidade e inteligência operacional</h1>
             <p class="hero-description hero-description-mini">
-                Operacao nacional com seguranca, previsibilidade e atendimento profissional.
+                Operação nacional com segurança, previsibilidade e atendimento profissional.
             </p>
         </div>
     </div>

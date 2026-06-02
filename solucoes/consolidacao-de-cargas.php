@@ -1,26 +1,25 @@
 <?php
 declare(strict_types=1);
-
-
 require_once dirname(__DIR__) . '/components/home/path-bootstrap.php';
-$metaTitle = 'Consolidacao de Cargas | Uppertruck';
-$metaDescription = 'Consolidacao de cargas com metodo operacional para reduzir custo, melhorar aproveitamento de transporte e aumentar previsibilidade.';
+
+$metaTitle = 'Consolidação de Cargas | Uppertruck';
+$metaDescription = 'Consolidação de cargas com método operacional para reduzir custo, melhorar aproveitamento de transporte e aumentar previsibilidade.';
 $currentYear = date('Y');
 
 $menuItems = [
     ['label' => 'Home', 'href' => '/uppertruck/index.php'],
     ['label' => 'Sobre', 'href' => '/uppertruck/sobre.php'],
-    ['label' => 'Solucoes', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
+    ['label' => 'Soluções', 'href' => '/uppertruck/solucoes.php', 'dropdown' => [
         ['label' => 'Carga Fracionada', 'href' => '/uppertruck/solucoes/carga-fracionada.php'],
         ['label' => 'Carga Dedicada', 'href' => '/uppertruck/solucoes/carga-dedicada.php'],
-        ['label' => 'Consolidacao de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
+        ['label' => 'Consolidação de Cargas', 'href' => '/uppertruck/solucoes/consolidacao-de-cargas.php'],
         ['label' => 'Last Mile', 'href' => '/uppertruck/solucoes/last-mile.php'],
-        ['label' => 'Operacoes Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
+        ['label' => 'Operações Sob Medida', 'href' => '/uppertruck/solucoes/operacoes-sob-medida.php'],
     ]],
     ['label' => 'Para Empresas', 'href' => '/uppertruck/para-empresas.php'],
     ['label' => 'Para Transportadores', 'href' => '/uppertruck/para-transportadores.php'],
     ['label' => 'Blog', 'href' => '/uppertruck/blog'],
-    ['label' => 'Cotacao', 'href' => '/uppertruck/cotacao-contato.php'],
+    ['label' => 'Cotação', 'href' => '/uppertruck/cotacao-contato.php'],
 ];
 
 function consolidacaoImage(string $basename, string $fallback): string
@@ -58,21 +57,21 @@ $serviceModules = [
     ],
     [
         'image' => consolidacaoImage('hub-consolidacao-cargas', '/uppertruck/img/ilus-2.png'),
-        'title' => 'Consolidacao por Estrategia',
-        'description' => 'Agrupamos cargas compativeis para elevar ocupacao e melhorar eficiencia de transporte.',
-        'bullet' => 'Composicao por cubagem, regiao e criticidade de embarque.',
+        'title' => 'Consolidação por Estrategia',
+        'description' => 'Agrupamos cargas compatíveis para elevar ocupação e melhorar eficiência de transporte.',
+        'bullet' => 'Composicao por cubagem, região e criticidade de embarque.',
     ],
     [
         'image' => consolidacaoImage('gestao-malha-consolidada', '/uppertruck/img/ilus-3.png'),
-        'title' => 'Distribuicao Monitorada',
-        'description' => 'Acompanhamos expedicao, transito e entrega com leitura ativa de status e ocorrencias.',
-        'bullet' => 'Controle de SLA com comunicacao operacional continua.',
+        'title' => 'Distribuição Monitorada',
+        'description' => 'Acompanhamos expedição, trânsito e entrega com leitura ativa de status e ocorrências.',
+        'bullet' => 'Controle de SLA com comunicação operacional contínua.',
     ],
 ];
 
 $operationalStats = [
-    ['value' => '+22%', 'label' => 'ganho medio no aproveitamento de carga', 'icon' => 'bar-chart-3', 'tag' => 'Eficiencia'],
-    ['value' => '-18%', 'label' => 'reducao media em custo por envio', 'icon' => 'badge-dollar-sign', 'tag' => 'Custo'],
+    ['value' => '+22%', 'label' => 'ganho médio no aproveitamento de carga', 'icon' => 'bar-chart-3', 'tag' => 'Eficiência'],
+    ['value' => '-18%', 'label' => 'redução media em custo por envio', 'icon' => 'badge-dollar-sign', 'tag' => 'Custo'],
     ['value' => '96%', 'label' => 'embarques dentro da janela planejada', 'icon' => 'target', 'tag' => 'SLA'],
     ['value' => '100%', 'label' => 'visibilidade operacional da jornada', 'icon' => 'radar', 'tag' => 'Controle'],
 ];
@@ -96,7 +95,7 @@ $operationalStats = [
 </head>
 
 <body class="cf-page">
-    <a class="skip-link" href="#conteudo-principal">Pular para o conteudo principal</a>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
     <?php include __DIR__ . '/../components/home/header.php'; ?>
 
@@ -104,24 +103,24 @@ $operationalStats = [
         <section class="cf-hero">
             <div class="container cf-hero-grid">
                 <div class="cf-hero-copy reveal">
-                    <p class="eyebrow">Solucao Uppertruck</p>
-                    <h1>Consolidacao de Cargas com mais economia, metodo e previsibilidade.</h1>
+                    <p class="eyebrow">Solução Uppertruck</p>
+                    <h1>Consolidação de Cargas com mais economia, método e previsibilidade.</h1>
                     <p class="cf-hero-lead">
-                        Organizamos embarques por rota, destino e prioridade para reduzir fretes soltos e transformar a operacao em um fluxo mais eficiente.
+                        Organizamos embarques por rota, destino e prioridade para reduzir fretes soltos e transformar a operação em um fluxo mais eficiente.
                     </p>
                     <div class="cf-hero-actions">
-                        <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotacao</a>
+                        <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                         <a class="btn cf-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                     </div>
                     <div class="cf-hero-kpis">
-                        <div><strong>+20%</strong><span>melhor ocupacao de carga</span></div>
-                        <div><strong>-18%</strong><span>custo medio por envio</span></div>
+                        <div><strong>+20%</strong><span>melhor ocupação de carga</span></div>
+                        <div><strong>-18%</strong><span>custo médio por envio</span></div>
                         <div><strong>100%</strong><span>monitoramento operacional</span></div>
                     </div>
                 </div>
 
                 <figure class="cf-hero-media reveal" style="--delay: 80ms">
-                    <img src="<?php echo htmlspecialchars($images['hero'], ENT_QUOTES, 'UTF-8'); ?>" alt="Operacao de consolidacao de cargas em andamento" loading="eager" decoding="async">
+                    <img src="<?php echo htmlspecialchars($images['hero'], ENT_QUOTES, 'UTF-8'); ?>" alt="Operação de consolidação de cargas em andamento" loading="eager" decoding="async">
                     <figcaption>
                         <span><i data-lucide="layers-3"></i> Volumes agrupados</span>
                         <span><i data-lucide="route"></i> Rotas planejadas</span>
@@ -133,48 +132,48 @@ $operationalStats = [
         <section class="section-shell cf-tabbed-solution">
             <div class="container cf-tabbed-solution-grid">
                 <figure class="cf-tabbed-media reveal" style="--delay: 80ms">
-                    <img src="<?php echo htmlspecialchars($images['tabbed'], ENT_QUOTES, 'UTF-8'); ?>" alt="Planejamento logistico para consolidacao de cargas" loading="lazy" decoding="async">
+                    <img src="<?php echo htmlspecialchars($images['tabbed'], ENT_QUOTES, 'UTF-8'); ?>" alt="Planejamento logístico para consolidação de cargas" loading="lazy" decoding="async">
                 </figure>
 
                 <div class="cf-tabbed-content reveal">
-                    <p class="eyebrow">Solucao inteligente para cargas recorrentes</p>
-                    <h2>Consolidacao de Cargas com mais controle para sua rotina</h2>
+                    <p class="eyebrow">Solução inteligente para cargas recorrentes</p>
+                    <h2>Consolidação de Cargas com mais controle para sua rotina</h2>
 
                     <div class="cf-tabbed-nav" role="tablist" aria-label="Conteudo sobre consolidacao de cargas">
-                        <button type="button" class="is-active" role="tab" aria-selected="true" data-cf-tab-button="sobre">Sobre a solucao</button>
+                        <button type="button" class="is-active" role="tab" aria-selected="true" data-cf-tab-button="sobre">Sobre a solução</button>
                         <button type="button" role="tab" aria-selected="false" data-cf-tab-button="operamos">Como operamos</button>
                         <button type="button" role="tab" aria-selected="false" data-cf-tab-button="vantagens">Vantagens para sua empresa</button>
                     </div>
 
                     <div class="cf-tabbed-panels">
                         <article class="cf-tabbed-panel is-active" data-cf-tab-panel="sobre">
-                            <p>A consolidacao de cargas e ideal para empresas com embarques recorrentes, multiplos destinos e volumes que saem de forma pulverizada. Em vez de varios fretes separados, estruturamos uma operacao mais inteligente.</p>
-                            <p>Com isso, sua empresa ganha melhor aproveitamento do transporte, mais previsibilidade e menos variacao de custo logistico.</p>
+                            <p>A consolidação de cargas é ideal para empresas com embarques recorrentes, múltiplos destinos e volumes que saem de forma pulverizada. Em vez de vários fretes separados, estruturamos uma operação mais inteligente.</p>
+                            <p>Com isso, sua empresa ganha melhor aproveitamento do transporte, mais previsibilidade e menos variação de custo logístico.</p>
                             <div class="cf-tabbed-actions">
-                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotacao</a>
+                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                                 <a class="btn cf-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                             </div>
                         </article>
 
                         <article class="cf-tabbed-panel" data-cf-tab-panel="operamos" hidden>
-                            <p>Na Uppertruck, o processo comeca com coleta e triagem dos volumes. Depois, consolidamos por estrategia de rota e expedimos com acompanhamento ativo da operacao.</p>
-                            <p>Isso reduz improviso, melhora o fluxo da malha e ajuda sua equipe a operar com mais consistencia no dia a dia.</p>
+                            <p>Na Uppertruck, o processo comeca com coleta e triagem dos volumes. Depois, consolidamos por estrategia de rota e expedimos com acompanhamento ativo da operação.</p>
+                            <p>Isso reduz improviso, melhora o fluxo da malha e ajuda sua equipe a operar com mais consistência no dia a dia.</p>
                             <div class="cf-tabbed-actions">
-                                <a class="btn cf-btn-secondary" href="#como-operamos">Entender a operacao</a>
-                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotacao</a>
+                                <a class="btn cf-btn-secondary" href="#como-operamos">Entender a operação</a>
+                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                             </div>
                         </article>
 
                         <article class="cf-tabbed-panel" data-cf-tab-panel="vantagens" hidden>
-                            <p>Consolidar cargas ajuda sua empresa a reduzir fretes soltos, melhorar ocupacao de veiculo e organizar embarques por prioridade e janela de entrega.</p>
-                            <p>Na pratica, o resultado e uma operacao mais previsivel, mais economica e com melhor governanca operacional.</p>
+                            <p>Consolidar cargas ajuda sua empresa a reduzir fretes soltos, melhorar ocupação de veículo e organizar embarques por prioridade e janela de entrega.</p>
+                            <p>Na prática, o resultado e uma operação mais previsível, mais econômica e com melhor governança operacional.</p>
                             <ul class="cf-tabbed-benefits">
-                                <li>Mais eficiencia no transporte</li>
+                                <li>Mais eficiência no transporte</li>
                                 <li>Menos dispersao de embarques</li>
                                 <li>Maior previsibilidade de prazos</li>
                             </ul>
                             <div class="cf-tabbed-actions">
-                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotacao</a>
+                                <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar cotação</a>
                                 <a class="btn cf-btn-secondary" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista</a>
                             </div>
                         </article>
@@ -187,7 +186,7 @@ $operationalStats = [
             <div class="container">
                 <div class="section-head cf-head-center reveal">
                     <p class="eyebrow">Como operamos</p>
-                    <h2>Do volume disperso para uma malha consolidada com metodo.</h2>
+                    <h2>Do volume disperso para uma malha consolidada com método.</h2>
                 </div>
                 <div class="cf-module-grid">
                     <?php foreach ($serviceModules as $index => $item): ?>
@@ -209,18 +208,18 @@ $operationalStats = [
         <section class="section-shell cf-operations">
             <div class="container cf-operations-grid">
                 <figure class="cf-operations-media reveal">
-                    <img src="<?php echo htmlspecialchars($images['operations'], ENT_QUOTES, 'UTF-8'); ?>" alt="Gestao operacional de consolidacao de cargas" loading="lazy" decoding="async">
+                    <img src="<?php echo htmlspecialchars($images['operations'], ENT_QUOTES, 'UTF-8'); ?>" alt="Gestão operacional de consolidação de cargas" loading="lazy" decoding="async">
                 </figure>
                 <div class="cf-operations-copy reveal" style="--delay: 90ms">
-                    <p class="eyebrow">Gestao aplicada</p>
-                    <h2>Consolidacao com planejamento, acompanhamento e leitura de performance.</h2>
+                    <p class="eyebrow">Gestão aplicada</p>
+                    <h2>Consolidação com planejamento, acompanhamento e leitura de performance.</h2>
                     <p>
-                        Trabalhamos com processos claros de agrupamento, controle de rota e visibilidade de status para manter a operacao estavel mesmo com variacao de demanda.
+                        Trabalhamos com processos claros de agrupamento, controle de rota e visibilidade de status para manter a operação estavel mesmo com variação de demanda.
                     </p>
                     <ul>
                         <li><i data-lucide="radar"></i> Monitoramento ativo da jornada</li>
                         <li><i data-lucide="clock-3"></i> Controle de janelas e prioridade</li>
-                        <li><i data-lucide="headset"></i> Comunicacao proxima em ocorrencias</li>
+                        <li><i data-lucide="headset"></i> Comunicação próxima em ocorrências</li>
                     </ul>
                 </div>
             </div>
@@ -229,8 +228,8 @@ $operationalStats = [
         <section class="section-shell cf-stats">
             <div class="container">
                 <div class="section-head cf-head-center reveal">
-                    <p class="eyebrow cf-stats-eyebrow"><i data-lucide="sparkles"></i> Resultados de operacao</p>
-                    <h2>Indicadores que reforcam a eficiencia da consolidacao na pratica.</h2>
+                    <p class="eyebrow cf-stats-eyebrow"><i data-lucide="sparkles"></i> Resultados de operação</p>
+                    <h2>Indicadores que reforcam a eficiência da consolidação na prática.</h2>
                 </div>
                 <div class="cf-stats-grid">
                     <?php foreach ($operationalStats as $index => $item): ?>
@@ -252,15 +251,15 @@ $operationalStats = [
         <section class="section-shell cf-insight">
             <div class="container cf-insight-grid">
                 <figure class="cf-insight-media reveal">
-                    <img src="<?php echo htmlspecialchars($images['insight'], ENT_QUOTES, 'UTF-8'); ?>" alt="Equipe acompanhando operacao consolidada em centro logistico" loading="lazy" decoding="async">
+                    <img src="<?php echo htmlspecialchars($images['insight'], ENT_QUOTES, 'UTF-8'); ?>" alt="Equipe acompanhando operação consolidada em centro logístico" loading="lazy" decoding="async">
                 </figure>
                 <div class="cf-insight-copy reveal" style="--delay: 80ms">
-                    <p class="eyebrow">Leitura estrategica</p>
-                    <h2>Consolidar cargas deixa de ser opcional quando a meta e escalar com eficiencia.</h2>
+                    <p class="eyebrow">Leitura estratégica</p>
+                    <h2>Consolidar cargas deixa de ser opcional quando a meta e escalar com eficiência.</h2>
                     <p>
-                        Com metodologia operacional, sua empresa reduz desgaste interno, organiza melhor os fluxos e ganha base para crescer com menos desperdicio logistico.
+                        Com métodologia operacional, sua empresa reduz desgaste interno, organiza melhor os fluxos e ganha base para crescer com menos desperdicio logístico.
                     </p>
-                    <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Quero estruturar minha operacao</a>
+                    <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Quero estruturar minha operação</a>
                 </div>
             </div>
         </section>

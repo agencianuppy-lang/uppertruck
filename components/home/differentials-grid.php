@@ -1,10 +1,10 @@
 <section class="section-shell differentials" id="diferenciais">
     <div class="container differentials-layout">
         <div class="differentials-intro reveal">
-            <p class="eyebrow">Diferenciais e Seguranca</p>
-            <h2>Governanca para operar frete com seguranca juridica e tecnica</h2>
+            <p class="eyebrow">Diferenciais e Segurança</p>
+            <h2>Governança para operar frete com segurança jurídica e técnica</h2>
             <p>
-                Processo estruturado para proteger carga, empresa e operacao com criterio de risco, compliance e controle continuo.
+                Processo estruturado para proteger carga, empresa e operação com critério de risco, compliance e controle contínuo.
             </p>
             <a class="text-link" href="/uppertruck/cotacao-contato/falar-com-especialista.php">Falar com especialista <i data-lucide="arrow-right"></i></a>
         </div>

@@ -1,1 +1,10 @@
 DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Keep /sistema as the public admin URL while serving the legacy admin files.
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)$ ../admin_blog/$1 [L,QSA]
+</IfModule>

@@ -1020,7 +1020,7 @@ p {
 }
 
 .about-cta {
-    background: var(--brand-900);
+    background: #0b1b26;
     color: #fff;
     border-color: rgba(7, 33, 86, 0.32);
     box-shadow: 0 16px 24px -22px rgba(7, 33, 86, 0.52);
@@ -1753,7 +1753,7 @@ p {
 }
 
 .workflow-head h2 {
-    color: var(--brand-900);
+    color: #0b1b26;
     font-size: clamp(1.82rem, 2.95vw, 2.68rem);
     line-height: 1.09;
     max-width: 18.8ch;

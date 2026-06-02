@@ -105,6 +105,7 @@ a {
     border-radius: 1rem;
     color: #fbd749;
     background: #0b1b26;
+    border: 1px solid #fbd749;
     line-height: 2;
     width: fit-content;
     padding: 0rem 1rem;
@@ -169,7 +170,7 @@ p {
 }
 
 .btn-primary {
-    background: #03122f;
+    background: #0b1b26;
     color: #fbd749;
     box-shadow: 4px 3px black;
     border: 1px solid #fbd749;
@@ -485,9 +486,13 @@ p {
 }
 
 .whatsapp-floating img {
-    width: 24px;
-    height: 24px;
-    flex: 0 0 24px;
+    width: 26px;
+    height: 26px;
+    display: block;
+    flex: 0 0 auto;
+    background: #0b1b26;
+    border-radius: 1rem;
+    padding: 0;
 }
 
 .hero {
@@ -1040,7 +1045,7 @@ p {
     padding: 10px 18px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--brand-700);
+    color: #0b1b26;
     background: rgba(255, 255, 255, 0.66);
     transition: border-color var(--timing-fast) var(--ease-out), background-color var(--timing-fast) var(--ease-out), color var(--timing-fast) var(--ease-out), transform var(--timing-fast) var(--ease-out);
 }

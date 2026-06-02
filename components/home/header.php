@@ -78,7 +78,7 @@
 <style>
 .whatsapp-floating { position: fixed; right: 22px; bottom: 22px; min-height: 58px; padding: 13px 18px; border-radius: 999px; background: #fbd749; color: #061427; display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-family: 'Sora', sans-serif; font-size: 0.9rem; font-weight: 800; line-height: 1; text-decoration: none; box-shadow: 0 16px 36px rgba(7,33,86,.28); z-index: 999; transition: transform .2s ease, box-shadow .2s ease; }
 .whatsapp-floating:hover { transform: translateY(-3px); box-shadow: 0 20px 44px rgba(7,33,86,.34); color: #061427; }
-.whatsapp-floating img { width: 26px; height: 26px; display: block; flex: 0 0 auto; }
+.whatsapp-floating img { width: 26px; height: 26px; display: block; flex: 0 0 auto; background: #0b1b26; border-radius: 1rem; padding: 0; }
 .whatsapp-floating span { white-space: nowrap; }
 @media (max-width: 640px) { .whatsapp-floating { right: 16px; bottom: 16px; min-height: 54px; padding: 12px 15px; font-size: 0.78rem; } .whatsapp-floating img { width: 24px; height: 24px; } }
 </style>

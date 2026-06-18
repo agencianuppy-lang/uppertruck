@@ -76,7 +76,11 @@ $operationalStats = [
             <div class="container cf-hero-grid">
                 <div class="cf-hero-copy reveal">
                     <p class="eyebrow">Solução Uppertruck</p>
-                    <h1>Carga Fracionada com previsibilidade, controle e escala nacional.</h1>
+                    <h1>
+                        <span>Carga Fracionada</span>
+                        <span>Consolida&ccedil;&atilde;o de Cargas</span>
+                        <span>Distribui&ccedil;&atilde;o Programada</span>
+                    </h1>
                     <p class="cf-hero-lead">
                         Estruturamos a operação para embarques de menor volume com método, rastreabilidade e atendimento próximo do primeiro contato até a entrega.
                     </p>
@@ -92,7 +96,7 @@ $operationalStats = [
                 </div>
 
                 <figure class="cf-hero-media reveal" style="--delay: 80ms">
-                    <img src="/uppertruck/img/upper5.png" alt="Equipe Uppertruck em operação de carga fracionada" loading="eager" decoding="async">
+                    <img src="/uppertruck/img/2151994456.jpg" alt="Equipe Uppertruck em operação de carga fracionada" loading="eager" decoding="async">
                     <figcaption>
                         <span><i data-lucide="activity"></i> Operação monitorada</span>
                         <span><i data-lucide="shield-check"></i> Protocolos de risco ativos</span>

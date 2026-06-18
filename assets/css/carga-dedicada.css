@@ -7,7 +7,7 @@
     --dedicated-blue-100: #eaf1fa;
     --dedicated-gray-100: #f4f7fb;
     --dedicated-gray-200: #edf2f9;
-    --dedicated-text-900: #0f2449;
+    --dedicated-text-900: #0b1b26;
     --dedicated-text-700: #344a69;
     --dedicated-text-600: #53627a;
     --dedicated-white: #ffffff;
@@ -3081,7 +3081,7 @@
 }
 
 .dedicated-hero h1.dedicated-hero__title span {
-    color: #0f2449;
+    color: #0b1b26;
 }
 
 .dedicated-hero-media::after {
@@ -3993,5 +3993,145 @@
     .dedicated-faq-premium .dedicated-faq-item[open] .dedicated-faq-answer {
         padding-left: 18px;
         padding-right: 18px;
+    }
+}
+
+/* Hero visual polish */
+.dedicated-hero .dedicated-hero-visual {
+    align-self: center;
+}
+
+.dedicated-hero .dedicated-hero-stage {
+    padding: 0;
+}
+
+.dedicated-hero .dedicated-hero-media {
+    overflow: hidden;
+    border-radius: 22px;
+    border: 1px solid rgba(11, 27, 38, 0.22);
+    background: #ffffff;
+    box-shadow: 0 28px 46px -34px rgba(11, 27, 38, 0.7);
+}
+
+.dedicated-hero .dedicated-hero-media::after {
+    display: none;
+}
+
+.dedicated-hero .dedicated-hero-media img {
+    min-height: clamp(390px, 35vw, 500px);
+    filter: saturate(1.02) contrast(0.98);
+}
+
+.dedicated-hero .dedicated-media-overlay {
+    display: none;
+}
+
+.dedicated-hero .dedicated-status-card {
+    left: 18px;
+    top: 18px;
+    bottom: auto;
+    width: min(270px, calc(100% - 36px));
+    border: 1px solid rgba(11, 27, 38, 0.12);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.88);
+    color: #0b1b26;
+    box-shadow: 0 20px 36px -28px rgba(11, 27, 38, 0.64);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 14px;
+}
+
+.dedicated-hero .dedicated-status-title {
+    color: #0b1b26;
+    font-size: 0.9rem;
+    letter-spacing: 0;
+}
+
+.dedicated-hero .dedicated-status-card ul {
+    gap: 8px;
+}
+
+.dedicated-hero .dedicated-status-card li {
+    color: rgba(11, 27, 38, 0.82);
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.dedicated-hero .dedicated-status-card li i,
+.dedicated-hero .dedicated-status-card li svg {
+    width: 16px;
+    height: 16px;
+    color: #0b1b26;
+    background: #fbd749;
+    border-radius: 999px;
+    padding: 3px;
+    box-sizing: content-box;
+}
+
+.dedicated-hero .dedicated-hero-badges {
+    position: static;
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    max-width: none;
+}
+
+.dedicated-hero .dedicated-hero__floating-stack .dedicated-badge:nth-child(1),
+.dedicated-hero .dedicated-hero__floating-stack .dedicated-badge:nth-child(2),
+.dedicated-hero .dedicated-hero__floating-stack .dedicated-badge:nth-child(3),
+.dedicated-hero .dedicated-badge {
+    width: 100%;
+    max-width: none;
+}
+
+.dedicated-hero .dedicated-badge {
+    min-height: 96px;
+    align-items: flex-start;
+    border-radius: 14px;
+    border: 1px solid rgba(11, 27, 38, 0.16);
+    background: rgba(255, 255, 255, 0.86);
+    color: #0b1b26;
+    box-shadow: 0 18px 28px -26px rgba(11, 27, 38, 0.62);
+    padding: 14px;
+    gap: 10px;
+    font-size: 0.86rem;
+    line-height: 1.35;
+}
+
+.dedicated-hero .dedicated-badge strong {
+    display: block;
+    margin-bottom: 2px;
+    color: #0b1b26;
+}
+
+.dedicated-hero .dedicated-badge i,
+.dedicated-hero .dedicated-badge svg {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+    color: #0b1b26;
+    margin-top: 1px;
+}
+
+@media (max-width: 900px) {
+    .dedicated-hero .dedicated-hero-badges {
+        grid-template-columns: 1fr;
+    }
+
+    .dedicated-hero .dedicated-badge {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .dedicated-hero .dedicated-status-card {
+        position: static;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .dedicated-hero .dedicated-hero-media img {
+        min-height: 300px;
     }
 }

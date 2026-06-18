@@ -184,16 +184,16 @@ $operationTypes = [
             </div>
         </section>
 
-        <section class="lm-section lm-crítical">
+        <section class="lm-section lm-critical">
             <div class="container">
                 <div class="lm-head reveal">
                     <h2>Por que a última etapa exige tanta atenção?</h2>
                     <p>No Last Mile, pequenos atrasos, falhas de comunicação ou rotas mal planejadas podem comprometer
                         toda a percepcao da entrega.</p>
                 </div>
-                <div class="lm-crítical__grid">
+                <div class="lm-critical__grid">
                     <?php foreach ($críticalItems as $index => $item): ?>
-                    <article class="lm-crítical__card reveal"
+                    <article class="lm-critical__card reveal"
                         style="--delay: <?php echo htmlspecialchars((string) (50 + ($index * 70)), ENT_QUOTES, 'UTF-8'); ?>ms;">
                         <i data-lucide="<?php echo htmlspecialchars($item['icon'], ENT_QUOTES, 'UTF-8'); ?>"></i>
                         <h3>
@@ -205,7 +205,7 @@ $operationTypes = [
                     </article>
                     <?php endforeach; ?>
                 </div>
-                <p class="lm-crítical__quote reveal">A entrega final não pode ser o ponto fraco da sua operação.</p>
+                <p class="lm-critical__quote reveal">A entrega final não pode ser o ponto fraco da sua operação.</p>
             </div>
         </section>
 

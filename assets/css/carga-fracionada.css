@@ -761,3 +761,751 @@
         animation: none;
     }
 }
+
+/* Editorial split hero inspired by freight service panels */
+.cf-hero {
+    padding: calc(var(--header-h) + 34px) 0 clamp(54px, 7vw, 86px);
+    background: #0b1b26;
+}
+
+.cf-hero-grid {
+    gap: 0;
+    grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+    align-items: stretch;
+    min-height: clamp(520px, 70vh, 680px);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #eef0f2;
+    box-shadow: 0 36px 70px -46px rgba(0, 0, 0, 0.78);
+}
+
+.cf-hero-copy {
+    position: relative;
+    min-height: 100%;
+    padding: clamp(26px, 4vw, 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f3f4f5;
+    color: #0b1b26;
+}
+
+.cf-hero-copy::before,
+.cf-hero-copy::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    width: 34px;
+    height: 92px;
+    background: #f3f4f5;
+    z-index: 3;
+}
+
+.cf-hero-copy::before {
+    top: 0;
+    border-bottom-right-radius: 12px;
+}
+
+.cf-hero-copy::after {
+    top: 92px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.cf-hero-copy .eyebrow {
+    position: absolute;
+    top: 22px;
+    left: clamp(26px, 4vw, 50px);
+    margin: 0;
+    color: rgba(11, 27, 38, 0.58);
+    font-size: 0.72rem;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.cf-hero-copy h1 {
+    max-width: 13ch;
+    margin: 0;
+    color: #101820;
+    font-size: clamp(2.05rem, 4.1vw, 4.6rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+}
+
+.cf-hero-lead {
+    max-width: 31ch;
+    margin: 18px 0 0;
+    color: rgba(11, 27, 38, 0.62);
+    font-size: clamp(1rem, 1.25vw, 1.18rem);
+    line-height: 1.52;
+}
+
+.cf-hero-actions {
+    margin-top: 28px;
+}
+
+.cf-hero-actions .btn {
+    min-height: 46px;
+}
+
+.cf-btn-secondary {
+    background: transparent;
+    border-color: rgba(11, 27, 38, 0.3);
+    color: #0b1b26;
+}
+
+.cf-btn-secondary:hover {
+    background: #ffffff;
+    border-color: rgba(11, 27, 38, 0.55);
+}
+
+.cf-hero-kpis {
+    margin-top: auto;
+    padding-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 1.4vw, 22px);
+}
+
+.cf-hero-kpis div {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.cf-hero-kpis strong {
+    color: #0b1b26;
+    font-size: 0.8rem;
+}
+
+.cf-hero-kpis span {
+    margin-top: 1px;
+    color: rgba(11, 27, 38, 0.55);
+    font-size: 0.72rem;
+}
+
+.cf-hero-media {
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #0b1b26;
+}
+
+.cf-hero-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(11, 27, 38, 0.36) 0%, rgba(11, 27, 38, 0.03) 34%, rgba(11, 27, 38, 0.5) 100%),
+        linear-gradient(180deg, rgba(11, 27, 38, 0.04) 0%, rgba(11, 27, 38, 0.62) 100%);
+    pointer-events: none;
+}
+
+.cf-hero-media img {
+    height: 100%;
+    min-height: clamp(520px, 70vh, 680px);
+    object-fit: cover;
+    filter: saturate(0.95) contrast(1.08) brightness(0.82);
+}
+
+.cf-hero-media figcaption {
+    left: auto;
+    right: clamp(18px, 3vw, 36px);
+    bottom: clamp(18px, 4vw, 58px);
+    width: min(300px, calc(100% - 36px));
+    padding: 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(11, 27, 38, 0.76);
+    box-shadow: 0 28px 42px -28px rgba(0, 0, 0, 0.76);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #eef4f8;
+    display: grid;
+    gap: 10px;
+    z-index: 2;
+}
+
+.cf-hero-media figcaption::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: #eef4f8;
+    mask: radial-gradient(circle at 35% 35%, transparent 0 3px, #000 3.4px);
+}
+
+.cf-hero-media figcaption span {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: rgba(238, 244, 248, 0.84);
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+.cf-hero-media figcaption span:first-of-type {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.cf-hero-media figcaption i,
+.cf-hero-media figcaption svg {
+    width: 15px;
+    height: 15px;
+    flex: 0 0 auto;
+    color: #fbd749;
+    margin-top: 2px;
+}
+
+@media (max-width: 1080px) {
+    .cf-hero-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .cf-hero-copy::before,
+    .cf-hero-copy::after {
+        display: none;
+    }
+
+    .cf-hero-copy {
+        min-height: 420px;
+    }
+
+    .cf-hero-media img {
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 720px) {
+    .cf-hero {
+        padding-top: calc(var(--header-h) + 20px);
+    }
+
+    .cf-hero-grid {
+        width: min(100% - 28px, 1180px);
+        border-radius: 8px;
+    }
+
+    .cf-hero-copy {
+        min-height: auto;
+        padding: 58px 22px 28px;
+    }
+
+    .cf-hero-copy .eyebrow {
+        left: 22px;
+        top: 18px;
+    }
+
+    .cf-hero-copy h1 {
+        max-width: 12.5ch;
+    }
+
+    .cf-hero-actions .btn {
+        width: 100%;
+    }
+
+    .cf-hero-kpis {
+        gap: 12px 18px;
+        padding-top: 24px;
+    }
+
+    .cf-hero-media img {
+        min-height: 360px;
+    }
+
+    .cf-hero-media figcaption {
+        position: static;
+        width: auto;
+        margin: -118px 14px 14px;
+    }
+}
+
+/* Freight panel direction requested */
+.cf-page .cf-hero {
+    background: #0b1b26 !important;
+}
+
+.cf-page .cf-hero-grid {
+    width: min(1180px, calc(100vw - 56px));
+    border-radius: 8px;
+    background: #f1f2f3;
+}
+
+.cf-page .cf-hero-copy {
+    padding-bottom: 74px;
+    background: #f1f2f3;
+}
+
+.cf-page .cf-hero-copy::before {
+    background: #f1f2f3;
+}
+
+.cf-page .cf-hero-copy::after {
+    content: "Coleta    Consolidação    Roteirização    Cotação";
+    right: auto;
+    left: clamp(26px, 4vw, 50px);
+    bottom: 24px;
+    top: auto;
+    width: calc(100% - clamp(52px, 8vw, 100px));
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+    color: rgba(11, 27, 38, 0.58);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0;
+    white-space: normal;
+}
+
+.cf-page .cf-hero-copy .eyebrow {
+    color: rgba(11, 27, 38, 0.48);
+}
+
+.cf-page .cf-hero-copy h1 {
+    max-width: 16ch;
+    display: grid;
+    gap: 8px;
+    font-size: clamp(2.1rem, 3.9vw, 4.15rem);
+    line-height: 1.02;
+}
+
+.cf-page .cf-hero-copy h1 span {
+    display: block;
+}
+
+.cf-page .cf-hero-copy h1 span:not(:first-child) {
+    color: rgba(11, 27, 38, 0.52);
+    font-weight: 500;
+}
+
+.cf-page .cf-hero-lead,
+.cf-page .cf-hero-actions,
+.cf-page .cf-hero-kpis {
+    display: none !important;
+}
+
+.cf-page .cf-hero-media {
+    border-radius: 0;
+}
+
+.cf-page .cf-hero-media img {
+    filter: saturate(0.86) contrast(1.14) brightness(0.68);
+}
+
+.cf-page .cf-hero-media figcaption {
+    width: min(278px, calc(100% - 44px));
+    right: clamp(20px, 4vw, 48px);
+    bottom: clamp(22px, 5vw, 70px);
+    background: rgba(11, 27, 38, 0.72);
+}
+
+@media (max-width: 1080px) {
+    .cf-page .cf-hero-copy::after {
+        width: auto;
+        right: clamp(26px, 4vw, 50px);
+    }
+}
+
+@media (max-width: 720px) {
+    .cf-page .cf-hero-grid {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .cf-page .cf-hero-copy {
+        padding-bottom: 72px;
+    }
+
+    .cf-page .cf-hero-copy::after {
+        left: 22px;
+        right: 22px;
+        bottom: 22px;
+        font-size: 0.68rem;
+    }
+
+    .cf-page .cf-hero-media figcaption {
+        margin-top: -110px;
+    }
+}
+
+/* Closer match to the compact reference banner */
+.cf-page .cf-hero {
+    min-height: auto !important;
+    padding: calc(var(--header-h) + 24px) 0 46px !important;
+    background: #071d27 !important;
+}
+
+.cf-page .cf-hero > .container {
+    width: 100%;
+    max-width: none;
+    padding-inline: 0;
+}
+
+.cf-page .cf-hero-grid {
+    width: 100%;
+    min-height: clamp(360px, 42vw, 470px);
+    grid-template-columns: minmax(300px, 0.43fr) minmax(0, 0.57fr);
+    border-radius: 6px;
+    box-shadow: 0 26px 64px -42px rgba(0, 0, 0, 0.82);
+}
+
+.cf-page .cf-hero-copy {
+    min-height: clamp(360px, 42vw, 470px);
+    justify-content: center;
+    padding: clamp(24px, 3.6vw, 42px) clamp(24px, 4vw, 52px) 58px;
+    background: #f2f3f4;
+}
+
+.cf-page .cf-hero-copy::before {
+    right: -16px;
+    width: 30px;
+    height: 66px;
+    background: #f2f3f4;
+    border-bottom-right-radius: 10px;
+}
+
+.cf-page .cf-hero-copy::after {
+    content: "Coleta   Consolidação   Roteirização   Cotação";
+    left: clamp(24px, 4vw, 52px);
+    bottom: 20px;
+    width: calc(100% - clamp(48px, 8vw, 104px));
+    color: rgba(11, 27, 38, 0.62);
+    font-size: 0.58rem;
+    font-weight: 700;
+    word-spacing: 7px;
+}
+
+.cf-page .cf-hero-copy .eyebrow {
+    top: 18px;
+    left: clamp(24px, 4vw, 52px);
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: rgba(11, 27, 38, 0.48);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.cf-page .cf-hero-copy .eyebrow::before {
+    display: none;
+}
+
+.cf-page .cf-hero-copy h1 {
+    max-width: 10.7ch;
+    gap: 3px;
+    font-size: clamp(1.72rem, 2.7vw, 2.55rem);
+    line-height: 1.03;
+    letter-spacing: -0.055em;
+}
+
+.cf-page .cf-hero-copy h1 span:first-child {
+    color: #111820;
+    font-weight: 800;
+}
+
+.cf-page .cf-hero-copy h1 span:not(:first-child) {
+    color: rgba(17, 24, 32, 0.48);
+    font-weight: 500;
+}
+
+.cf-page .cf-hero-media {
+    min-height: clamp(360px, 42vw, 470px);
+}
+
+.cf-page .cf-hero-media::after {
+    background:
+        linear-gradient(90deg, rgba(7, 29, 39, 0.18) 0%, rgba(7, 29, 39, 0.08) 46%, rgba(7, 29, 39, 0.62) 100%),
+        linear-gradient(180deg, rgba(7, 29, 39, 0.06) 0%, rgba(7, 29, 39, 0.7) 100%);
+}
+
+.cf-page .cf-hero-media img {
+    min-height: clamp(360px, 42vw, 470px);
+    filter: saturate(0.78) contrast(1.15) brightness(0.6);
+}
+
+.cf-page .cf-hero-media figcaption {
+    width: min(260px, calc(100% - 42px));
+    right: clamp(22px, 4vw, 44px);
+    bottom: clamp(24px, 5vw, 56px);
+    padding: 15px 16px;
+    border-radius: 12px;
+    background: rgba(7, 29, 39, 0.78);
+    gap: 8px;
+}
+
+.cf-page .cf-hero-media figcaption::before {
+    width: 20px;
+    height: 20px;
+}
+
+.cf-page .cf-hero-media figcaption span {
+    font-size: 0.68rem;
+    line-height: 1.42;
+}
+
+.cf-page .cf-hero-media figcaption i,
+.cf-page .cf-hero-media figcaption svg {
+    width: 12px;
+    height: 12px;
+}
+
+@media (max-width: 1080px) {
+    .cf-page .cf-hero-grid {
+        grid-template-columns: minmax(300px, 0.43fr) minmax(0, 0.57fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .cf-page .cf-hero-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .cf-page .cf-hero-copy {
+        min-height: 320px;
+    }
+
+    .cf-page .cf-hero-copy::before {
+        display: none;
+    }
+
+    .cf-page .cf-hero-copy h1 {
+        max-width: 11ch;
+        font-size: clamp(1.95rem, 10vw, 2.5rem);
+    }
+
+    .cf-page .cf-hero-media,
+    .cf-page .cf-hero-media img {
+        min-height: 330px;
+    }
+
+    .cf-page .cf-hero-media figcaption {
+        position: absolute;
+        margin: 0;
+        right: 16px;
+        bottom: 16px;
+        width: min(250px, calc(100% - 32px));
+    }
+}
+
+/* Full-bleed hero with 1200px content rail */
+.cf-page .cf-hero {
+    padding: calc(var(--header-h) + 22px) 0 42px !important;
+}
+
+.cf-page .cf-hero > .container {
+    width: 100%;
+    max-width: none;
+    padding-inline: 0;
+}
+
+.cf-page .cf-hero-grid {
+    width: 100%;
+    min-height: clamp(330px, 34vw, 420px);
+    display: grid;
+    grid-template-columns:
+        minmax(24px, 1fr)
+        minmax(300px, 480px)
+        minmax(420px, 720px)
+        minmax(0, 1fr);
+    border-radius: 0;
+    overflow: visible;
+    background: transparent;
+    box-shadow: none;
+}
+
+.cf-page .cf-hero-copy {
+    grid-column: 2;
+    min-height: clamp(330px, 34vw, 420px);
+    padding: clamp(22px, 3vw, 34px) clamp(24px, 3vw, 44px) 56px;
+    border-radius: 7px 0 0 7px;
+    background: #f2f3f4;
+    overflow: visible;
+}
+
+.cf-page .cf-hero-copy::before {
+    right: -17px;
+    width: 31px;
+    height: 62px;
+}
+
+.cf-page .cf-hero-copy::after {
+    left: clamp(24px, 3vw, 44px);
+    bottom: 18px;
+    width: calc(100% - clamp(48px, 6vw, 88px));
+    font-size: 0.56rem;
+}
+
+.cf-page .cf-hero-copy .eyebrow {
+    top: 16px;
+    left: clamp(24px, 3vw, 44px);
+}
+
+.cf-page .cf-hero-copy h1 {
+    max-width: 10.5ch;
+    font-size: clamp(1.65rem, 2.45vw, 2.38rem);
+}
+
+.cf-page .cf-hero-media {
+    grid-column: 3 / 5;
+    min-height: clamp(330px, 34vw, 420px);
+    border-radius: 0 7px 7px 0;
+    overflow: hidden;
+}
+
+.cf-page .cf-hero-media img {
+    min-height: clamp(330px, 34vw, 420px);
+    height: 100%;
+}
+
+.cf-page .cf-hero-media figcaption {
+    right: max(22px, calc((100vw - 1200px) / 2 + 22px));
+    bottom: clamp(20px, 4vw, 44px);
+}
+
+@media (max-width: 900px) {
+    .cf-page .cf-hero-grid {
+        grid-template-columns: minmax(16px, 1fr) minmax(0, calc(100% - 32px)) minmax(16px, 1fr);
+    }
+
+    .cf-page .cf-hero-copy,
+    .cf-page .cf-hero-media {
+        grid-column: 2;
+    }
+
+    .cf-page .cf-hero-copy {
+        min-height: 300px;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .cf-page .cf-hero-copy::before {
+        display: none;
+    }
+
+    .cf-page .cf-hero-media {
+        min-height: 320px;
+        border-radius: 0 0 7px 7px;
+    }
+
+    .cf-page .cf-hero-media img {
+        min-height: 320px;
+    }
+
+    .cf-page .cf-hero-media figcaption {
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
+/* Final hero sizing: compact full-width banner */
+.cf-page .cf-hero {
+    height: 87vh;
+    min-height: 430px;
+    max-height: 76vh;
+    padding: 0 !important;
+    overflow: hidden;
+    background: #fbd749 !important;
+}
+
+.cf-page .cf-hero-grid {
+    height: 100%;
+    min-height: 0;
+    grid-template-columns:
+        minmax(24px, 1fr)
+        minmax(300px, 480px)
+        minmax(0, 720px)
+        minmax(0, 1fr);
+}
+
+.cf-page .cf-hero-copy,
+.cf-page .cf-hero-media,
+.cf-page .cf-hero-media img {
+    height: 100%;
+    min-height: 0;
+}
+
+.cf-page .cf-hero-copy {
+    grid-column: 2;
+    min-height: clamp(330px, 34vw, 420px);
+    justify-content: center;
+    padding: clamp(22px, 3vw, 34px) clamp(24px, 3vw, 44px) 56px;
+    border-radius: 7px 0 0 7px;
+    background: #fbd749;
+    overflow: visible;
+    z-index: 9;
+}
+
+.cf-page .cf-hero-copy::before {
+    right: -18px;
+    width: 51px;
+    height: 214px;
+    top: 7rem;
+    background: #fbd749;
+    border-radius: 1rem;
+}
+
+.cf-page .cf-hero-copy h1 {
+    max-width: 10.8ch;
+    font-size: clamp(3.1rem, 3.2vw, 2.25rem);
+    line-height: 1.04;
+    gap: 2px;
+}
+
+.cf-page .cf-hero-copy::after {
+    bottom: 18px;
+    left: clamp(24px, 3vw, 44px);
+    width: calc(100% - clamp(48px, 6vw, 88px));
+    font-size: 1rem;
+}
+
+.cf-page .cf-hero-media {
+    grid-column: 3 / 5;
+}
+
+.cf-page .cf-hero-media img {
+    object-position: center center;
+}
+
+.cf-page .cf-hero-media figcaption {
+    bottom: 32px;
+}
+
+@media (max-width: 900px) {
+    .cf-page .cf-hero {
+        height: auto;
+        min-height: 0;
+        max-height: none;
+    }
+
+    .cf-page .cf-hero-grid {
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .cf-page .cf-hero-copy,
+    .cf-page .cf-hero-media,
+    .cf-page .cf-hero-media img {
+        height: auto;
+    }
+
+    .cf-page .cf-hero-copy {
+        min-height: 320px;
+    }
+
+    .cf-page .cf-hero-media,
+    .cf-page .cf-hero-media img {
+        min-height: 300px;
+    }
+}

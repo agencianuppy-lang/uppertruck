@@ -165,7 +165,7 @@
 
 .about-culture-card h3 {
     margin: 0 0 16px;
-    color: #072156;
+    color: #0b1b26;
     font-size: clamp(1.4rem, 2.3vw, 2rem);
 }
 
@@ -183,7 +183,7 @@
 
 .about-culture-point h4 {
     margin: 10px 0 6px;
-    color: #072156;
+    color: #0b1b26;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.15rem;
     line-height: 1.2;
@@ -227,7 +227,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(7, 33, 86, 0.16);
-    background: rgba(24, 77, 131, 0.08);
+    background: rgb(255 255 255);
     color: #184d83;
 }
 
@@ -238,7 +238,7 @@
 
 .about-principle-card h3 {
     margin: 14px 0 8px;
-    color: #072156;
+    color: #0b1b26;
 }
 
 .about-principle-card p {

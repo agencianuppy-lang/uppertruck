@@ -259,49 +259,13 @@ $demandCards = [
                     <p>Além de estruturar o modelo, a Uppertruck acompanha a operação para identificar ajustes, reduzir ruídos e manter a logística alinhada ao ritmo da empresa.</p>
                 </div>
 
-                <div class="osm-panel__shell reveal" style="--delay:85ms;">
-                    <div class="osm-panel__tabs" role="tablist" aria-label="Etapas da operação personalizada">
-                        <button type="button" class="is-active" data-osm-tab="diagnostico" aria-selected="true">Diagnóstico</button>
-                        <button type="button" data-osm-tab="planejamento" aria-selected="false">Planejamento</button>
-                        <button type="button" data-osm-tab="operacao" aria-selected="false">Operação ativa</button>
+                <div class="osm-panel__shell osm-panel__callout reveal" style="--delay:85ms;">
+                    <div class="osm-panel__copy">
+                        <p class="osm-panel__chip">Modelo operacional personalizado</p>
+                        <h3>Vamos desenhar uma operação sob medida para sua empresa?</h3>
+                        <p>Conte com a Uppertruck para entender sua rotina logística, estruturar o melhor fluxo e acompanhar os ajustes necessários para manter a operação eficiente.</p>
                     </div>
-
-                    <div class="osm-panel__grid">
-                        <div class="osm-panel__summary">
-                            <p class="osm-panel__chip">Modelo operacional: Personalizado</p>
-                            <h3 id="osm-tab-title">Operação em análise</h3>
-                            <p id="osm-tab-text">Mapeamento de rotas, volumes, pontos críticos e prioridades.</p>
-
-                            <div class="osm-progress">
-                                <div class="osm-progress__meta">
-                                    <span>Progresso do projeto</span>
-                                    <strong id="osm-progress-value">30%</strong>
-                                </div>
-                                <div class="osm-progress__track">
-                                    <span id="osm-progress-bar" style="width:30%"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="osm-panel__status">
-                            <ul>
-                                <li><span>Rota</span><strong id="osm-route">Sob planejamento</strong></li>
-                                <li><span>Frequência</span><strong id="osm-frequency">Em definição</strong></li>
-                                <li><span>Pontos críticos</span><strong id="osm-crítical">Mapeamento inicial</strong></li>
-                                <li><span>Contingência</span><strong id="osm-contingency">Em estudo</strong></li>
-                                <li><span>Acompanhamento</span><strong id="osm-follow">Ativo</strong></li>
-                            </ul>
-                        </div>
-
-                        <div class="osm-panel__metrics">
-                            <article><span>Pontos de coleta</span><strong id="osm-m1">4</strong></article>
-                            <article><span>Destinos recorrentes</span><strong id="osm-m2">8</strong></article>
-                            <article><span>Janelas críticas</span><strong id="osm-m3">3</strong></article>
-                            <article><span>SLA</span><strong id="osm-m4">Em acompanhamento</strong></article>
-                            <article><span>Ajustes sugeridos</span><strong id="osm-m5">2</strong></article>
-                            <article><span>Plano de contingência</span><strong id="osm-m6">1</strong></article>
-                        </div>
-                    </div>
+                    <a class="btn btn-primary" href="/uppertruck/cotacao-contato/solicitar-cotacao.php">Solicitar análise da operação</a>
                 </div>
             </div>
         </section>
